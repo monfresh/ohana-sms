@@ -4,6 +4,8 @@ ruby '2.2.0'
 
 gem 'rails', '4.2.0'
 
+gem 'figaro'
+
 gem 'puma'
 
 gem 'twilio-ruby'
