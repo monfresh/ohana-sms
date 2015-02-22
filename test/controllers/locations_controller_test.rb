@@ -33,19 +33,15 @@ class LocationsControllerTest < ActionController::TestCase
     assert_equal 'Please enter a valid 5-digit ZIP code', sms_body
   end
 
-  test 'does not set session[:start] when body is not 5 digits' do
-    get_reply_with_body('foo')
-    assert_equal nil, session[:start]
-  end
-
   test 'returns locations when body matches 5 digits' do
     get_reply_with_body('94103')
     assert_match(/Here are 5 locations/, sms_body)
   end
 
-  test 'sets session[:start] to false when body matches 5 digits' do
+  test 'returns locations when body matches 5 digits after initial SMS' do
+    get_reply_with_body('foo')
     get_reply_with_body('94103')
-    assert_equal false, session[:start]
+    assert_match(/Here are 5 locations/, sms_body)
   end
 
   test 'sets session[:zip] to true when body matches 5 digits' do
@@ -77,12 +73,6 @@ class LocationsControllerTest < ActionController::TestCase
     assert_equal false, session[:zip]
   end
 
-  test 'sets session[:start] to true when body = reset' do
-    get_reply_with_body('94103')
-    get_reply_with_body('reset')
-    assert_equal true, session[:start]
-  end
-
   test 'resets session[:counter] to 0 when body = reset' do
     get_reply_with_body('94103')
     get_reply_with_body('reset')
@@ -99,6 +89,48 @@ class LocationsControllerTest < ActionController::TestCase
     get_reply_with_body('94103')
     get_reply_with_body('resetz')
     assert_equal 2, session[:counter]
+  end
+
+  test 'resets the conversation when finished' do
+    get_reply_with_body('94103')
+    get_reply_with_body('2')
+    get_reply_with_body('foo')
+    assert_equal 'Please enter a valid 5-digit ZIP code', sms_body
+  end
+
+  test 'resets the conversation if interrupted before the end' do
+    get_reply_with_body('94103')
+    get_reply_with_body('reset')
+    assert_equal 'Please enter a valid 5-digit ZIP code', sms_body
+  end
+
+  test 'sets session[:zip] to false when the conversation is finished' do
+    get_reply_with_body('94103')
+    get_reply_with_body('2')
+    assert_equal false, session[:zip]
+  end
+
+  test 'sets session[:zip] to false when the conversation is reset' do
+    get_reply_with_body('94103')
+    get_reply_with_body('reset')
+    assert_equal false, session[:zip]
+  end
+
+  test 'tracks conversation from beginning to end' do
+    get_reply_with_body('hi')
+    get_reply_with_body('94103')
+    get_reply_with_body('hi')
+    get_reply_with_body('2')
+    assert_equal 'You chose 2', sms_body
+  end
+
+  test 'tracks conversation after reset' do
+    get_reply_with_body('hi')
+    get_reply_with_body('94103')
+    get_reply_with_body('hello')
+    get_reply_with_body('reset')
+    get_reply_with_body('foo')
+    assert_equal 'Please enter a valid 5-digit ZIP code', sms_body
   end
 
   private

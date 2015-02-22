@@ -7,12 +7,11 @@ class ConversationTracker
 
   def restart
     @session[:counter] = 0
-    @session[:start] = true
+    @session[:zip] = false
   end
 
   def enable_second_step
     @session[:zip] = true
-    @session[:start] = false
   end
 
   def first_step_message
@@ -36,7 +35,7 @@ class ConversationTracker
   end
 
   def first_step?
-    @session[:counter] == 0 || @session[:start] == true
+    @session[:counter] == 0 || !second_step?
   end
 
   def second_step?
@@ -46,6 +45,5 @@ class ConversationTracker
   def message
     return first_step_message if first_step?
     return second_step_message if second_step?
-    'Please enter a valid 5-digit ZIP code'
   end
 end

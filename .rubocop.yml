@@ -1,2 +1,6 @@
 Documentation:
   Enabled: false
+
+Metrics/ClassLength:
+  Exclude:
+    - 'test/controllers/locations_controller_test.rb'
