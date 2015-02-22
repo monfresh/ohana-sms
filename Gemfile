@@ -13,4 +13,5 @@ end
 
 group :test do
   gem 'rubocop'
+  gem 'mocha'
 end
