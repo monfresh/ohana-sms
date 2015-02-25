@@ -21,7 +21,7 @@ class ConversationTracker
 
   def process_valid_zip
     enable_second_step
-    'Here are 5 locations in your zip. Enter a number to choose.'
+    Messenger.new(@body).search_results
   end
 
   def second_step_message
@@ -31,7 +31,7 @@ class ConversationTracker
 
   def process_valid_choice
     @session[:zip] = false
-    "You chose #{@body}"
+    Messenger.new(@body).location_details
   end
 
   def first_step?

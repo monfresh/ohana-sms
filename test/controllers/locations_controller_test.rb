@@ -33,9 +33,14 @@ class LocationsControllerTest < ActionController::TestCase
     assert_equal 'Please enter a valid 5-digit ZIP code', sms_body
   end
 
-  test 'returns locations when body matches 5 digits' do
+  test 'returns locations prefix when body matches 5 digits' do
     get_reply_with_body('94103')
     assert_match(/Here are 5 locations/, sms_body)
+  end
+
+  test 'returns numbered locations when body matches 5 digits' do
+    get_reply_with_body('94103')
+    assert_match(/#1/, sms_body)
   end
 
   test 'returns locations when body matches 5 digits after initial SMS' do
@@ -61,10 +66,10 @@ class LocationsControllerTest < ActionController::TestCase
     assert_equal 'Please enter a number', sms_body
   end
 
-  test 'returns number when session[:zip] is true & body is 1-5' do
+  test 'returns location phone when session[:zip] is true & body is 1-5' do
     get_reply_with_body('94103')
     get_reply_with_body('2')
-    assert_equal 'You chose 2', sms_body
+    assert_equal '415 456-9980', sms_body
   end
 
   test 'sets session[:zip] to false when body is 1-5' do
@@ -121,7 +126,7 @@ class LocationsControllerTest < ActionController::TestCase
     get_reply_with_body('94103')
     get_reply_with_body('hi')
     get_reply_with_body('2')
-    assert_equal 'You chose 2', sms_body
+    assert_equal '415 456-9980', sms_body
   end
 
   test 'tracks conversation after reset' do
