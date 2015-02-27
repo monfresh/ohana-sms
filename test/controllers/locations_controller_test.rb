@@ -33,49 +33,115 @@ class LocationsControllerTest < ActionController::TestCase
     assert_equal 'Please enter a valid 5-digit ZIP code', sms_body
   end
 
-  test 'returns locations prefix when body matches 5 digits' do
+  test 'asks for category choice when body matches 5 digits' do
     get_reply_with_body('94103')
+    assert_match(/Please choose a category/, sms_body)
+  end
+
+  test 'returns numbered categories when body matches 5 digits' do
+    get_reply_with_body('94103')
+    assert_match(/#1: Care/, sms_body)
+  end
+
+  test 'asks for category when body matches 5 digits after initial SMS' do
+    get_reply_with_body('foo')
+    get_reply_with_body('94103')
+    assert_match(/Please choose a category/, sms_body)
+  end
+
+  test 'sets session[:zip] to the body when body matches 5 digits' do
+    get_reply_with_body('94103')
+    assert_equal '94103', session[:zip]
+  end
+
+  test 'sets session[:step_2] to true when body matches 5 digits' do
+    get_reply_with_body('94103')
+    assert_equal true, session[:step_2]
+  end
+
+  test 'asks for number when session[:step_2] is true & body is not 1-11' do
+    get_reply_with_body('94103')
+    get_reply_with_body('foo')
+    assert_equal 'Please enter a number between 1 and 11', sms_body
+  end
+
+  test 'asks for number when session[:step_2] is true & number out of range' do
+    get_reply_with_body('94103')
+    get_reply_with_body('12')
+    assert_equal 'Please enter a number between 1 and 11', sms_body
+  end
+
+  test 'returns 5 locations when category choice is 1-11' do
+    get_reply_with_body('94103')
+    get_reply_with_body('11')
     assert_match(/Here are 5 locations/, sms_body)
   end
 
-  test 'returns numbered locations when body matches 5 digits' do
-    get_reply_with_body('94103')
-    assert_match(/#1/, sms_body)
+  test 'returns helpful message when no results are found' do
+    get_reply_with_body('94388')
+    get_reply_with_body('11')
+    assert_equal 'Sorry, no results found.', sms_body
   end
 
-  test 'returns locations when body matches 5 digits after initial SMS' do
-    get_reply_with_body('foo')
-    get_reply_with_body('94103')
-    assert_match(/Here are 5 locations/, sms_body)
+  test 'resets conversation when no results are found' do
+    get_reply_with_body('94388')
+    get_reply_with_body('11')
+    assert_equal false, session[:step_2]
+    assert_equal false, session[:step_3]
+    assert_equal 1, session[:counter]
   end
 
-  test 'sets session[:zip] to true when body matches 5 digits' do
-    get_reply_with_body('94103')
-    assert_equal true, session[:zip]
-  end
-
-  test 'asks for number when session[:zip] is true & body is not 1-5' do
-    get_reply_with_body('94103')
-    get_reply_with_body('foo')
-    assert_equal 'Please enter a number', sms_body
-  end
-
-  test 'asks for number when session[:zip] is true & number out of range' do
-    get_reply_with_body('94103')
-    get_reply_with_body('10')
-    assert_equal 'Please enter a number', sms_body
-  end
-
-  test 'returns location phone when session[:zip] is true & body is 1-5' do
+  test 'sets session[:step_3] to true when category is 1-11' do
     get_reply_with_body('94103')
     get_reply_with_body('2')
-    assert_equal '415 456-9980', sms_body
+    assert_equal true, session[:step_3]
   end
 
-  test 'sets session[:zip] to false when body is 1-5' do
+  test 'sets session[:cats] to body when category is 1-11' do
     get_reply_with_body('94103')
     get_reply_with_body('2')
-    assert_equal false, session[:zip]
+    assert_equal '2', session[:cats]
+  end
+
+  test 'sets session[:step_2] to false when category is 1-11' do
+    get_reply_with_body('94103')
+    get_reply_with_body('2')
+    assert_equal false, session[:step_2]
+  end
+
+  test 'returns location details when location choice is 1-5' do
+    get_reply_with_body('94103')
+    get_reply_with_body('4')
+    get_reply_with_body('1')
+    assert_match(/Phone:/, sms_body)
+  end
+
+  test 'asks for valid choice when body is not 1-5' do
+    get_reply_with_body('94103')
+    get_reply_with_body('4')
+    get_reply_with_body('6')
+    assert_equal 'Please enter a number between 1 and 5', sms_body
+  end
+
+  test 'sets session[:step_2] to false when location is 1-5' do
+    get_reply_with_body('94103')
+    get_reply_with_body('2')
+    get_reply_with_body('4')
+    assert_equal false, session[:step_2]
+  end
+
+  test 'sets session[:step_3] to false when location is 1-5' do
+    get_reply_with_body('94103')
+    get_reply_with_body('2')
+    get_reply_with_body('4')
+    assert_equal false, session[:step_3]
+  end
+
+  test 'sets session[:location] to body when location is 1-5' do
+    get_reply_with_body('94103')
+    get_reply_with_body('2')
+    get_reply_with_body('4')
+    assert_equal '4', session[:location]
   end
 
   test 'resets session[:counter] to 0 when body = reset' do
@@ -99,6 +165,7 @@ class LocationsControllerTest < ActionController::TestCase
   test 'resets the conversation when finished' do
     get_reply_with_body('94103')
     get_reply_with_body('2')
+    get_reply_with_body('3')
     get_reply_with_body('foo')
     assert_equal 'Please enter a valid 5-digit ZIP code', sms_body
   end
@@ -109,16 +176,16 @@ class LocationsControllerTest < ActionController::TestCase
     assert_equal 'Please enter a valid 5-digit ZIP code', sms_body
   end
 
-  test 'sets session[:zip] to false when the conversation is finished' do
+  test 'sets session[:step_2] to false when the conversation is finished' do
     get_reply_with_body('94103')
     get_reply_with_body('2')
-    assert_equal false, session[:zip]
+    assert_equal false, session[:step_2]
   end
 
-  test 'sets session[:zip] to false when the conversation is reset' do
+  test 'sets session[:step_2] to false when the conversation is reset' do
     get_reply_with_body('94103')
     get_reply_with_body('reset')
-    assert_equal false, session[:zip]
+    assert_equal false, session[:step_2]
   end
 
   test 'tracks conversation from beginning to end' do
@@ -126,7 +193,8 @@ class LocationsControllerTest < ActionController::TestCase
     get_reply_with_body('94103')
     get_reply_with_body('hi')
     get_reply_with_body('2')
-    assert_equal '415 456-9980', sms_body
+    get_reply_with_body('5')
+    assert_match(/Phone:/, sms_body)
   end
 
   test 'tracks conversation after reset' do
