@@ -19,18 +19,18 @@ class LocationsControllerTest < ActionController::TestCase
 
   test 'asks for valid zip when body is empty' do
     get_reply_with_body('')
-    assert_equal 'Please enter a valid 5-digit ZIP code', sms_body
+    assert_equal t('intro'), sms_body
   end
 
   test 'keeps asking for valid zip until body matches 5 digits' do
     get_reply_with_body('')
     get_reply_with_body('foo')
-    assert_equal 'Please enter a valid 5-digit ZIP code', sms_body
+    assert_equal t('intro'), sms_body
   end
 
   test 'asks for valid zip when body is not 5 digits' do
     get_reply_with_body('foo')
-    assert_equal 'Please enter a valid 5-digit ZIP code', sms_body
+    assert_equal t('intro'), sms_body
   end
 
   test 'asks for category choice when body matches 5 digits' do
@@ -120,21 +120,21 @@ class LocationsControllerTest < ActionController::TestCase
     get_reply_with_body('94103')
     get_reply_with_body('4')
     get_reply_with_body('6')
-    assert_equal 'Please enter a number between 1 and 5', sms_body
+    assert_equal t('choose_location'), sms_body
   end
 
-  test 'sets session[:step_2] to false when location is 1-5' do
+  test 'leaves session[:step_2] set to false when location is 1-5' do
     get_reply_with_body('94103')
     get_reply_with_body('2')
     get_reply_with_body('4')
     assert_equal false, session[:step_2]
   end
 
-  test 'sets session[:step_3] to false when location is 1-5' do
+  test 'leaves session[:step_3] set to true when location is 1-5' do
     get_reply_with_body('94103')
     get_reply_with_body('2')
     get_reply_with_body('4')
-    assert_equal false, session[:step_3]
+    assert_equal true, session[:step_3]
   end
 
   test 'sets session[:location] to body when location is 1-5' do
@@ -162,18 +162,28 @@ class LocationsControllerTest < ActionController::TestCase
     assert_equal 2, session[:counter]
   end
 
-  test 'resets the conversation when finished' do
+  test 'asks for a location number if the conversation is not reset' do
     get_reply_with_body('94103')
     get_reply_with_body('2')
     get_reply_with_body('3')
     get_reply_with_body('foo')
-    assert_equal 'Please enter a valid 5-digit ZIP code', sms_body
+    assert_equal t('choose_location'), sms_body
+  end
+
+  test 'returns details for different location when new number is entered' do
+    get_reply_with_body('94103')
+    get_reply_with_body('2')
+    get_reply_with_body('3')
+    first_phone = sms_body.delete('^0-9')
+    get_reply_with_body('5')
+    second_phone = sms_body.delete('^0-9')
+    refute_equal first_phone, second_phone
   end
 
   test 'resets the conversation if interrupted before the end' do
     get_reply_with_body('94103')
     get_reply_with_body('reset')
-    assert_equal 'Please enter a valid 5-digit ZIP code', sms_body
+    assert_equal t('intro'), sms_body
   end
 
   test 'sets session[:step_2] to false when the conversation is finished' do
@@ -203,7 +213,7 @@ class LocationsControllerTest < ActionController::TestCase
     get_reply_with_body('hello')
     get_reply_with_body('reset')
     get_reply_with_body('foo')
-    assert_equal 'Please enter a valid 5-digit ZIP code', sms_body
+    assert_equal t('intro'), sms_body
   end
 
   private

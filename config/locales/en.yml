@@ -20,4 +20,6 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  intro: 'Hi! Please enter a 5-digit ZIP code to get started.'
+  choose_location: >
+    Please enter a number between 1 and 5, or enter "reset" to start over.

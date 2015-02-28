@@ -14,7 +14,7 @@ class Messenger
 
   def locations_list
     locations.map.with_index do |location, i|
-      "##{i + 1}: #{location.name}"
+      "##{i + 1}: #{location.name} (#{location.organization.name})"
     end.join(', ')
   end
 
@@ -35,10 +35,15 @@ class Messenger
       'search',
       location: @session[:zip],
       kind: 'Human Services',
-      category: cat_array[@session[:cats].to_i - 1],
+      keyword: search_term,
+      category: search_term,
       page: 1,
       per_page: 5
     )
+  end
+
+  def search_term
+    cat_array[@session[:cats].to_i - 1]
   end
 
   def location

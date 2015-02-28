@@ -18,7 +18,7 @@ class ConversationTracker
 
   def first_step_message
     return process_valid_zip if @body =~ /\A\d{5}\z/
-    'Please enter a valid 5-digit ZIP code'
+    I18n.t('intro')
   end
 
   def process_valid_zip
@@ -54,13 +54,11 @@ class ConversationTracker
 
   def third_step_message
     return process_location_details if @body =~ /\A[1-5]\z/
-    'Please enter a number between 1 and 5'
+    I18n.t('choose_location')
   end
 
   def process_location_details
     @session[:location] = @body
-    @session[:step_2] = false
-    @session[:step_3] = false
     Messenger.new(@session).location_details
   end
 
