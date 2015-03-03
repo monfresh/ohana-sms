@@ -14,7 +14,7 @@ class Messenger
 
   def locations_list
     locations.map.with_index do |location, i|
-      "##{i + 1}: #{location.name} (#{location.organization.name})"
+      "##{i + 1}: #{location.name}#{org_name_for(location)}"
     end.join(', ')
   end
 
@@ -56,6 +56,11 @@ class Messenger
 
   def name_and_short_desc
     "#{location.name}: #{location.short_desc}"
+  end
+
+  def org_name_for(location)
+    return if location.name == location.organization.name
+    " (#{location.organization.name})"
   end
 
   def phone

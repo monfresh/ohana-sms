@@ -77,6 +77,12 @@ class LocationsControllerTest < ActionController::TestCase
     assert_match(/Here are 5 locations/, sms_body)
   end
 
+  test 'does not duplicate location and org name if equal' do
+    get_reply_with_body('94103')
+    get_reply_with_body('3')
+    refute_match(/Breast Cancer Emergency Fund \(Breast Cancer Emergency Fund\)/, sms_body)
+  end
+
   test 'returns helpful message when no results are found' do
     get_reply_with_body('94388')
     get_reply_with_body('11')
