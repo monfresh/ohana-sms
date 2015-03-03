@@ -1,0 +1,29 @@
+#!/bin/sh
+
+set -e
+
+if [ $1 ]
+then
+  herokuApp="$1"
+
+  echo "Creating Heroku app $herokuApp"
+  heroku create $herokuApp
+
+  echo "Getting ready to set environment variables for $herokuApp"
+  figaro heroku:set -e production --app $herokuApp
+
+  echo "Getting ready to install add-ons for $herokuApp"
+
+  echo "Installing Memcachier"
+  heroku addons:add memcachier --app $herokuApp
+
+  echo "New Relic"
+  heroku addons:add newrelic --app $herokuApp
+
+  echo "All done setting up env vars and add-ons."
+  echo "Pushing code to Heroku now. This will take a few minutes..."
+  git push heroku master
+else
+  echo "Please add your Heroku app name to the end of the command."
+  echo "Usage: setup_heroku your_app_name"
+fi

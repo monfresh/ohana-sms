@@ -9,6 +9,12 @@ gem 'twilio-ruby'
 gem 'ohanakapa', '~> 1.1.1'
 gem 'faraday-http-cache', '~> 1.0'
 
+group :production do
+  gem 'dalli'
+  gem 'kgio'
+  gem 'rails_12factor'
+end
+
 group :development, :test do
   gem 'spring'
 end
