@@ -12,6 +12,7 @@ gem 'faraday-http-cache', '~> 1.0'
 group :production do
   gem 'dalli'
   gem 'kgio'
+  gem 'newrelic_rpm'
   gem 'rails_12factor'
 end
 
