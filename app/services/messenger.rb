@@ -8,7 +8,7 @@ class Messenger
   end
 
   def locations_list_prefix
-    'Here are 5 locations that match your search. ' \
+    'Here are up to 5 locations that match your search. ' \
     'To get more details about a location, enter its number. '
   end
 
@@ -36,7 +36,6 @@ class Messenger
       location: @session[:zip],
       kind: 'Human Services',
       keyword: search_term,
-      category: search_term,
       page: 1,
       per_page: 5
     )

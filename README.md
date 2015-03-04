@@ -46,11 +46,63 @@ next to `twilio_auth_token`.
 5. Enter your Twilio phone number (including the `+1`) next to `twilio_number`.
 
 [settings]: https://www.twilio.com/user/account/settings
+
+## Deploy to Heroku
+
+1. Click this button: [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+2. Sign in, or sign up if you don't already have a Heroku account
+
+3. Fill in the `App Name` field with your desired name, such as `ohana-sms-demo`
+
+4. Scroll down and click `Deploy for Free`
+
+5. Once your app is created, go to your computer's command line
+and run `figaro heroku:set -e production -a your_app_name`,
+where `your_app_name` is the name you chose in step 3.
+This will configure your Heroku app with your secret Twilio information
+from your `application.yml`.
+
+6. Go to the Twilio [Manage Numbers][manage] page and click on your number.
+
+7. Under `Messaging`, in `Request URL`, enter
+`https://ohana-sms-demo.herokuapp.com/locations/reply`, making sure to
+replace `ohana-sms-demo` with your actual Heroku app name. Then select
+`HTTP GET` from the dropdown, and click `Save`. It should look like this:
+
+![Twilio Messaging Request URL](http://cl.ly/image/061w3F2H0W0X/download/Image%202015-03-03%20at%2011.51.27%20PM.png)
+
 [manage]: https://www.twilio.com/user/account/phone-numbers/incoming
 
-## Deploy to Heroku and test the app
+## Test the app with your phone
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+1. Send an SMS to your Twilio number. You should be asked to enter a ZIP code:
+   ```
+   Hi! Please enter a 5-digit ZIP code to get started.
+   ```
+
+2. Send `94025`. You should be offered to choose a category:
+   ```
+   Please choose a category by entering its number: #1: Care,
+   #2: Education...
+   ```
+
+3. Send `1`. You should get up to 5 results if there's a match:
+   ```
+   Here are up to 5 locations that match your search.
+   To get more details about a location, enter its number.
+   #1: Rosener House Adult Day Services (Peninsula Volunteers)...
+   ```
+   If there isn't a match, you should get:
+   ```
+   Sorry, no results found. Please try again with a different ZIP code or category.
+   ```
+
+4. Send `1`. You should get more details about Rosener House.
+
+5. You can now send a different result number to see details about another location.
+
+6. To reset the conversation, send `reset` (it's not case-sensitive).
 
 ## Running the tests
 

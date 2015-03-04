@@ -43,7 +43,8 @@ class ConversationTracker
 
   def apologize_and_restart
     restart
-    'Sorry, no results found.'
+    'Sorry, no results found. ' \
+    'Please try again with a different ZIP code or category.'
   end
 
   def enable_third_step

@@ -74,19 +74,19 @@ class LocationsControllerTest < ActionController::TestCase
   test 'returns 5 locations when category choice is 1-11' do
     get_reply_with_body('94103')
     get_reply_with_body('11')
-    assert_match(/Here are 5 locations/, sms_body)
+    assert_match(/Here are up to 5 locations/, sms_body)
   end
 
   test 'does not duplicate location and org name if equal' do
     get_reply_with_body('94103')
     get_reply_with_body('3')
-    refute_match(/Breast Cancer Emergency Fund \(Breast Cancer Emergency Fund\)/, sms_body)
+    refute_match(/Breast Cancer Emergency Fund \(Breast Cancer/, sms_body)
   end
 
   test 'returns helpful message when no results are found' do
     get_reply_with_body('94388')
     get_reply_with_body('11')
-    assert_equal 'Sorry, no results found.', sms_body
+    assert_match(/Sorry, no results found/, sms_body)
   end
 
   test 'resets conversation when no results are found' do
