@@ -20,8 +20,9 @@ but it can be modified to work with any API.
 You'll need a Ruby development environment on your computer, and a Twilio account.
 
 #### Ruby
-If you're on a Mac, the easiest way to get up and running is to run my [laptop script](https://github.com/monfresh/laptop). On Linux, you'll need to install [Build tools][build-tools], [Ruby with RVM][ruby],
-and [Node.js][node].
+If you're on a Mac, the easiest way to get up and running is to run my
+[laptop script](https://github.com/monfresh/laptop). On Linux, you'll need to
+install [Build tools][build-tools], [Ruby with RVM][ruby], and [Node.js][node].
 
 Once your environment is ready to go, install the app:
 
@@ -57,11 +58,29 @@ Run tests locally with this simple command:
 
     script/test
 
-To see the actual tests, browse through the [spec](https://github.com/monfresh/ohana-sms/tree/master/test) directory.
+To see the actual tests, browse through the [test] directory.
 
-## Contributing
+[test]: https://github.com/monfresh/ohana-sms/tree/master/test
 
-I'd love to get your help developing this project! Take a look at the [Contribution Document](https://github.com/monfresh/ohana-api/blob/master/CONTRIBUTING.md) to see how you can make a difference.
+Credits
+-------
 
-## Copyright
-Copyright (c) 2015 Moncef Belyamani. See [LICENSE](https://github.com/monfresh/ohana-sms/blob/master/LICENSE.md) for details.
+Created by [Moncef Belyamani](https://twitter.com/monfresh).
+
+Inspired by and built upon the work of
+[Mark Silverberg](https://github.com/marks/ohana-sms).
+
+### Public domain
+
+This project is [dedicated to the public domain](LICENSE.md).
+As stated in [CONTRIBUTING](CONTRIBUTING.md):
+
+> This project is in the public domain within the United States, and copyright
+> and related rights in the work worldwide are waived through the
+> [CC0 1.0 Universal public domain dedication][CC0].
+>
+> All contributions to this project will be released under the CC0 dedication.
+> By submitting a pull request, you are agreeing to comply with this waiver of
+> copyright interest.
+
+[CC0]: https://creativecommons.org/publicdomain/zero/1.0/
