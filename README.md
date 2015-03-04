@@ -98,7 +98,8 @@ replace `ohana-sms-demo` with your actual Heroku app name. Then select
    Sorry, no results found. Please try again with a different ZIP code or category.
    ```
 
-4. Send `1`. You should get more details about Rosener House.
+4. Send `1`. You should get more details about Rosener House
+(short description, phone, and address).
 
 5. You can now send a different result number to see details about another location.
 
@@ -106,7 +107,7 @@ replace `ohana-sms-demo` with your actual Heroku app name. Then select
 
 ## Running the tests
 
-Run tests locally with this simple command:
+Run tests locally with this command:
 
     script/test
 
