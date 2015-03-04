@@ -1,0 +1,6 @@
+# Add configuration values here, as shown below.
+#
+twilio_account_sid: 'xxx'
+twilio_auth_token: 'xxx'
+twilio_number: '+12025551212'
+OHANA_API_ENDPOINT: 'https://ohana-api-demo.herokuapp.com/api'
