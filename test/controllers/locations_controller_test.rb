@@ -176,6 +176,30 @@ class LocationsControllerTest < ActionController::TestCase
     assert_equal t('choose_location'), sms_body
   end
 
+  test 'responds with welcome if user says thanks' do
+    get_reply_with_body('94103')
+    get_reply_with_body('2')
+    get_reply_with_body('3')
+    get_reply_with_body('thanks!')
+    assert_equal "#{t('you_are_welcome')} #{t('choose_location')}", sms_body
+  end
+
+  test 'responds with welcome if user says thank you' do
+    get_reply_with_body('94103')
+    get_reply_with_body('2')
+    get_reply_with_body('3')
+    get_reply_with_body('thank you')
+    assert_equal "#{t('you_are_welcome')} #{t('choose_location')}", sms_body
+  end
+
+  test 'responds with welcome if user says ty' do
+    get_reply_with_body('94103')
+    get_reply_with_body('2')
+    get_reply_with_body('3')
+    get_reply_with_body('ty')
+    assert_equal "#{t('you_are_welcome')} #{t('choose_location')}", sms_body
+  end
+
   test 'returns details for different location when new number is entered' do
     get_reply_with_body('94103')
     get_reply_with_body('2')

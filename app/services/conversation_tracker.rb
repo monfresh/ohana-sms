@@ -54,6 +54,9 @@ class ConversationTracker
 
   def third_step_message
     return process_location_details if @body =~ /\A[1-5]\z/
+    if @body =~ /ty\z|thanks!?\z|thank you!*\z/i
+      return "#{I18n.t('you_are_welcome')} #{I18n.t('choose_location')}"
+    end
     I18n.t('choose_location')
   end
 

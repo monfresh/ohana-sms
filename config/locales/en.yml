@@ -28,7 +28,9 @@ en:
     Here are up to 5 locations that match your search.
     To get more details about a location, enter its number.
   choose_location: >
-    Please enter a number between 1 and 5, or enter "reset" to start over.
+    For more info about another location, enter a number between 1 and 5.
+    To start over, enter "reset".
+  you_are_welcome: "You're welcome!"
   no_results_found: >
     Sorry, no results found. Please try again with a different ZIP code or
     category.
