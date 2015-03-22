@@ -35,7 +35,7 @@ class LocationsControllerTest < ActionController::TestCase
 
   test 'asks for category choice when body matches 5 digits' do
     get_reply_with_body('94103')
-    assert_match(/Please choose a category/, sms_body)
+    assert_match(t('choose_category', list: '#1'), sms_body)
   end
 
   test 'returns numbered categories when body matches 5 digits' do
@@ -46,7 +46,7 @@ class LocationsControllerTest < ActionController::TestCase
   test 'asks for category when body matches 5 digits after initial SMS' do
     get_reply_with_body('foo')
     get_reply_with_body('94103')
-    assert_match(/Please choose a category/, sms_body)
+    assert_match(t('choose_category', list: '#1'), sms_body)
   end
 
   test 'sets session[:zip] to the body when body matches 5 digits' do
@@ -62,19 +62,19 @@ class LocationsControllerTest < ActionController::TestCase
   test 'asks for number when session[:step_2] is true & body is not 1-11' do
     get_reply_with_body('94103')
     get_reply_with_body('foo')
-    assert_equal 'Please enter a number between 1 and 11', sms_body
+    assert_equal t('invalid_category'), sms_body
   end
 
   test 'asks for number when session[:step_2] is true & number out of range' do
     get_reply_with_body('94103')
     get_reply_with_body('12')
-    assert_equal 'Please enter a number between 1 and 11', sms_body
+    assert_equal t('invalid_category'), sms_body
   end
 
   test 'returns 5 locations when category choice is 1-11' do
     get_reply_with_body('94103')
     get_reply_with_body('11')
-    assert_match(/Here are up to 5 locations/, sms_body)
+    assert_match(t('results_intro'), sms_body)
   end
 
   test 'does not duplicate location and org name if equal' do
@@ -86,7 +86,7 @@ class LocationsControllerTest < ActionController::TestCase
   test 'returns helpful message when no results are found' do
     get_reply_with_body('94388')
     get_reply_with_body('11')
-    assert_match(/Sorry, no results found/, sms_body)
+    assert_equal t('no_results_found'), sms_body
   end
 
   test 'resets conversation when no results are found' do

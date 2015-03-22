@@ -20,6 +20,15 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  intro: 'Hi! Please enter a 5-digit ZIP code to get started.'
+  intro: >
+    Welcome to SMC-Connect! Please enter a 5-digit ZIP code to get started.
+  choose_category: 'Please choose a category by entering its number: %{list}'
+  invalid_category: 'Please enter a number between 1 and 11.'
+  results_intro: >
+    Here are up to 5 locations that match your search.
+    To get more details about a location, enter its number.
   choose_location: >
     Please enter a number between 1 and 5, or enter "reset" to start over.
+  no_results_found: >
+    Sorry, no results found. Please try again with a different ZIP code or
+    category.

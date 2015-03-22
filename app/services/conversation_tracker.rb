@@ -28,7 +28,7 @@ class ConversationTracker
 
   def second_step_message
     return process_category_choice if @body =~ /\A([1-9]|1[0-1])\z/
-    'Please enter a number between 1 and 11'
+    I18n.t('invalid_category')
   end
 
   def process_category_choice
@@ -43,8 +43,7 @@ class ConversationTracker
 
   def apologize_and_restart
     restart
-    'Sorry, no results found. ' \
-    'Please try again with a different ZIP code or category.'
+    I18n.t('no_results_found')
   end
 
   def enable_third_step

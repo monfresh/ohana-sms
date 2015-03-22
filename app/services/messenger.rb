@@ -8,8 +8,7 @@ class Messenger
   end
 
   def locations_list_prefix
-    'Here are up to 5 locations that match your search. ' \
-    'To get more details about a location, enter its number. '
+    I18n.t('results_intro')
   end
 
   def locations_list
@@ -19,7 +18,7 @@ class Messenger
   end
 
   def categories
-    "Please choose a category by entering its number: #{categories_list}"
+    I18n.t('choose_category', list: categories_list)
   end
 
   def categories_list
