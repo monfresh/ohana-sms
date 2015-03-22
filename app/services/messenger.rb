@@ -22,7 +22,11 @@ class Messenger
   end
 
   def categories_list
-    cat_array.map.with_index { |cat, i| "##{i + 1}: #{cat}" }.join(', ')
+    localized_cats.map.with_index { |cat, i| "##{i + 1}: #{cat}" }.join(', ')
+  end
+
+  def localized_cats
+    I18n.t('categories')
   end
 
   def cat_array
@@ -62,11 +66,11 @@ class Messenger
   end
 
   def phone
-    "Phone: #{location.phones.first.number}"
+    "#{I18n.t('phone')}: #{location.phones.first.number}"
   end
 
   def address
-    "Address: #{street_address}"
+    "#{I18n.t('address')}: #{street_address}"
   end
 
   def street_address

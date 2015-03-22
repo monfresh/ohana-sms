@@ -103,10 +103,10 @@ class LocationsControllerTest < ActionController::TestCase
     assert_equal true, session[:step_3]
   end
 
-  test 'sets session[:cats] to body when category is 1-11' do
-    get_reply_with_body('94103')
-    get_reply_with_body('2')
-    assert_equal '2', session[:cats]
+  test 'sets session[:cats] to body before making API request' do
+    get_reply_with_body('94388')
+    get_reply_with_body('11')
+    assert_equal '11', session[:cats]
   end
 
   test 'sets session[:step_2] to false when category is 1-11' do
@@ -253,9 +253,25 @@ class LocationsControllerTest < ActionController::TestCase
     assert_equal t('intro'), sms_body
   end
 
+  test 'uses Spanish when locale params is set to es' do
+    get_reply_with_body('', 'es')
+    assert_match(/Bienvenidos/, sms_body)
+    get_reply_with_body('94103', 'es')
+    assert_match(/elija una categoría/, sms_body)
+    get_reply_with_body('8', 'es')
+    assert_match(/Aquí hay hasta/, sms_body)
+  end
+
+  test 'uses English category names for API search' do
+    get_reply_with_body('', 'es')
+    get_reply_with_body('94103', 'es')
+    get_reply_with_body('1', 'es')
+    assert_match(/Aquí hay hasta/, sms_body)
+  end
+
   private
 
-  def get_reply_with_body(body)
-    get :reply, 'Body' => body
+  def get_reply_with_body(body, locale = 'en')
+    get :reply, 'Body' => body, locale: locale
   end
 end

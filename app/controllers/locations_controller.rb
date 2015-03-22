@@ -1,5 +1,6 @@
 class LocationsController < ApplicationController
   skip_before_action :verify_authenticity_token
+  before_action :set_locale
 
   def reply
     session[:counter] ||= 0
@@ -10,5 +11,11 @@ class LocationsController < ApplicationController
 
     session[:counter] += 1
     render xml: twiml.text
+  end
+
+  private
+
+  def set_locale
+    I18n.locale = params[:locale] || I18n.default_locale
   end
 end
