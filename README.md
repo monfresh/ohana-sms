@@ -1,5 +1,7 @@
 # Ohana SMS
 
+[![Build Status](https://travis-ci.org/monfresh/ohana-sms.png?branch=master)](https://travis-ci.org/monfresh/ohana-sms)
+
 Ohana SMS is a Ruby on Rails application that allows people in need who lack
 access to the internet to find human services via SMS.
 

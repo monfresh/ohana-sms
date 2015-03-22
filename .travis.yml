@@ -1,0 +1,10 @@
+language: ruby
+bundler_args: "--without development:production"
+cache: bundler
+sudo: false
+script: script/test
+rvm:
+- 2.2.0
+env:
+  global:
+  - OHANA_API_ENDPOINT=http://api.smc-connect.org
