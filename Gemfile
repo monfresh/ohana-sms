@@ -17,7 +17,7 @@ group :production do
 end
 
 group :development, :test do
-  gem 'spring', '= 1.3.2'
+  gem 'spring'
 end
 
 group :test do
