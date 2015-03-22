@@ -1,6 +1,6 @@
 # Ohana SMS
 
-[![Build Status](https://travis-ci.org/monfresh/ohana-sms.png?branch=master)](https://travis-ci.org/monfresh/ohana-sms) [![Code Climate](https://codeclimate.com/github/monfresh/ohana-sms/badges/gpa.svg)](https://codeclimate.com/github/monfresh/ohana-sms) [![Dependency Status](https://gemnasium.com/monfresh/ohana-sms.svg)](https://gemnasium.com/monfresh/ohana-sms)
+[![Build Status](https://travis-ci.org/monfresh/ohana-sms.png?branch=master)](https://travis-ci.org/monfresh/ohana-sms) [![Code Climate](https://codeclimate.com/github/monfresh/ohana-sms/badges/gpa.svg)](https://codeclimate.com/github/monfresh/ohana-sms) [![Dependency Status](https://gemnasium.com/monfresh/ohana-sms.svg)](https://gemnasium.com/monfresh/ohana-sms) [![Test Coverage](https://codeclimate.com/github/monfresh/ohana-sms/badges/coverage.svg)](https://codeclimate.com/github/monfresh/ohana-sms)
 
 Ohana SMS is a Ruby on Rails application that allows people in need who lack
 access to the internet to find human services via SMS.
