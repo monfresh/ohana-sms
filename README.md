@@ -13,7 +13,7 @@ but it can be modified to work with any API.
 ## Stack Overview
 
 * Ruby version 2.2.0
-* Rails version 4.2.0
+* Rails version 4.2.1
 * Testing Frameworks: MiniTest
 
 ## Local Installation
@@ -106,6 +106,30 @@ replace `ohana-sms-demo` with your actual Heroku app name. Then select
 5. You can now send a different result number to see details about another location.
 
 6. To reset the conversation, send `reset` (it's not case-sensitive).
+
+## Providing the service in multiple languages
+
+Currently, what can be translated are the greetings and instructions.
+The search results content, such as the Location names, or the short
+descriptions, are not translated. In order to translate search results,
+you would need to sign up for Google's paid translation service, but I
+have not integrated it in this app yet.
+
+To translate the greetings and instructions, copy and paste the contents of
+`config/locales/en.yml` into a new file in `config/locales` with a filename
+corresponding to the language's two-character code, and with a `.yml`
+extension. Then translate the text from English into your desired language.
+See `config/locales/es.yml` as an example. For more details, read the
+[Rails Internationalization Guide](http://guides.rubyonrails.org/i18n.html).
+
+Once your translations are in place, create a new number in your Twilio account
+that will be used for a particular language. Following the same instructions
+as in Step 7 in the [Deploy to Heroku section](#deploy-to-heroku), add `?locale=[language_code]` to
+the end of the Request URL. For example, to make your phone number use Spanish,
+your Request URL would look like this:
+```
+https://ohana-sms-demo.herokuapp.com/locations/reply?locale=es
+```
 
 ## Running the tests
 

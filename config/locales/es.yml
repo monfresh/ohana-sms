@@ -1,0 +1,27 @@
+es:
+  intro: >
+    Bienvenidos a SMC-Connect! Por favor, escriba un código postal de 5 dígitos para empezar.
+  choose_category: 'Por favor, elija una categoría escribiendo su número: %{list}'
+  invalid_category: 'Por favor, escriba un número entre 1 y 11.'
+  results_intro: >
+    Aquí hay hasta 5 lugares que coinciden con su búsqueda.
+    Para obtener más detalles sobre un lugar, ingresar el número.
+  choose_location: >
+    Para obtener más información sobre otra ubicación, escriba un número entre 1 y 5.
+    Para volver a empezar, escriba "reset".
+  you_are_welcome: "De nada!"
+  no_results_found: 'Lo sentimos, no hay resultados. Inténtalo de nuevo con un código postal diferente o categoría.'
+  phone: Fon
+  address: Dirección
+  categories:
+  - Asistencia
+  - Educación
+  - Emergencia
+  - Comida
+  - Bienes
+  - Salud
+  - Viviendas
+  - Legal
+  - Dinero
+  - Tránsito
+  - Trabajo

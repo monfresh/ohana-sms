@@ -32,6 +32,7 @@ class ConversationTracker
   end
 
   def process_category_choice
+    @session[:cats] = @body
     return apologize_and_restart if no_results?
     enable_third_step
     Messenger.new(@session).search_results
@@ -49,7 +50,6 @@ class ConversationTracker
   def enable_third_step
     @session[:step_2] = false
     @session[:step_3] = true
-    @session[:cats] = @body
   end
 
   def third_step_message
