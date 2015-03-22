@@ -122,6 +122,13 @@ class LocationsControllerTest < ActionController::TestCase
     assert_match(/Phone:/, sms_body)
   end
 
+  test 'includes address in location details' do
+    get_reply_with_body('94103')
+    get_reply_with_body('4')
+    get_reply_with_body('1')
+    assert_match(/Address:/, sms_body)
+  end
+
   test 'asks for valid choice when body is not 1-5' do
     get_reply_with_body('94103')
     get_reply_with_body('4')
