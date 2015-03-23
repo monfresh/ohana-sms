@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.smc-connect.org/search?keyword=Work&kind=Human%20Services&location=94103&page=1&per_page=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.2
+      If-None-Match:
+      - '"8c9ab9ffd065eba6334335b2e614b61c"'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 304
+      message: Not Modified
+    headers:
+      Server:
+      - Cowboy
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - '"8c9ab9ffd065eba6334335b2e614b61c"'
+      Link:
+      - <http://api.smc-connect.org/search?keyword=Work&kind=Human+Services&location=94103&page=7&per_page=5>;
+        rel="last", <http://api.smc-connect.org/search?keyword=Work&kind=Human+Services&location=94103&page=2&per_page=5>;
+        rel="next"
+      X-Total-Count:
+      - '35'
+      Cache-Control:
+      - max-age=300, public
+      X-Request-Id:
+      - daf6ab0e-103c-4b5e-a8c9-f46088562c67
+      X-Runtime:
+      - '0.062147'
+      X-Content-Digest:
+      - c0b350c5bd46ae69751dd1d5a41f9a914c747448
+      Date:
+      - Sun, 22 Mar 2015 23:41:13 GMT
+      Age:
+      - '0'
+      X-Rack-Cache:
+      - stale, valid, store
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 22 Mar 2015 23:41:13 GMT
+recorded_with: VCR 2.9.3

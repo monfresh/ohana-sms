@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.smc-connect.org/search?keyword=Food&kind=Human%20Services&location=94103&page=1&per_page=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.2
+      If-None-Match:
+      - '"7d37fe97bd175289181123802c9b0bbe"'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 304
+      message: Not Modified
+    headers:
+      Server:
+      - Cowboy
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - '"7d37fe97bd175289181123802c9b0bbe"'
+      Link:
+      - <http://api.smc-connect.org/search?keyword=Food&kind=Human+Services&location=94103&page=3&per_page=5>;
+        rel="last", <http://api.smc-connect.org/search?keyword=Food&kind=Human+Services&location=94103&page=2&per_page=5>;
+        rel="next"
+      X-Total-Count:
+      - '11'
+      Cache-Control:
+      - max-age=300, public
+      X-Request-Id:
+      - 071a9842-f1e7-47a3-9803-c4e50fd28f7e
+      X-Runtime:
+      - '0.046393'
+      X-Content-Digest:
+      - 955703fcf2c8efddf4c02e130c361d6aabc8824f
+      Date:
+      - Sun, 22 Mar 2015 23:41:13 GMT
+      Age:
+      - '0'
+      X-Rack-Cache:
+      - stale, valid, store
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 22 Mar 2015 23:41:13 GMT
+recorded_with: VCR 2.9.3

@@ -9,6 +9,15 @@ require 'rails/test_help'
 require 'mocha/mini_test'
 include AbstractController::Translation
 
+require 'webmock/minitest'
+WebMock.disable_net_connect!(allow_localhost: true)
+
+require 'vcr'
+VCR.configure do |config|
+  config.cassette_library_dir = 'test/support/fixtures/vcr_cassettes'
+  config.hook_into :webmock
+end
+
 module ActiveSupport
   class TestCase
     def sms_body

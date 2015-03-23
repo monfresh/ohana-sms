@@ -1,6 +1,9 @@
 Documentation:
   Enabled: false
 
+DotPosition:
+  Enabled: false
+
 Metrics/ClassLength:
   Exclude:
     - 'test/controllers/locations_controller_test.rb'

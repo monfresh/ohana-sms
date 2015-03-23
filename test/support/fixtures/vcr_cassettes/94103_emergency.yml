@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.smc-connect.org/search?keyword=Emergency&kind=Human%20Services&location=94103&page=1&per_page=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.2
+      If-None-Match:
+      - '"ae3958cf8b0d000eb2fd6a311dbb7b1d"'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 304
+      message: Not Modified
+    headers:
+      Server:
+      - Cowboy
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - '"ae3958cf8b0d000eb2fd6a311dbb7b1d"'
+      Link:
+      - <http://api.smc-connect.org/search?keyword=Emergency&kind=Human+Services&location=94103&page=3&per_page=5>;
+        rel="last", <http://api.smc-connect.org/search?keyword=Emergency&kind=Human+Services&location=94103&page=2&per_page=5>;
+        rel="next"
+      X-Total-Count:
+      - '15'
+      Cache-Control:
+      - max-age=300, public
+      X-Request-Id:
+      - d76a9602-c446-4a79-a7b7-3086db9a5fd5
+      X-Runtime:
+      - '0.059538'
+      X-Content-Digest:
+      - 107e06c9bfef9feb9c6703b73c9b5a7b803ffab1
+      Date:
+      - Sun, 22 Mar 2015 23:41:13 GMT
+      Age:
+      - '0'
+      X-Rack-Cache:
+      - stale, valid, store
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 22 Mar 2015 23:41:13 GMT
+recorded_with: VCR 2.9.3
