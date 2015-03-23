@@ -34,7 +34,7 @@ class Messenger
   end
 
   def locations
-    Ohanakapa.search(
+    @locations ||= Ohanakapa.search(
       'search',
       location: @session[:zip],
       kind: 'Human Services',

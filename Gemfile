@@ -24,4 +24,6 @@ group :test do
   gem 'codeclimate-test-reporter', require: nil
   gem 'rubocop'
   gem 'mocha'
+  gem 'vcr'
+  gem 'webmock'
 end
