@@ -1,6 +1,6 @@
 es:
   intro: >
-    Bienvenidos a SMC-Connect! Por favor, escriba un código postal de 5 dígitos para empezar.
+    Hola! Por favor, escriba un código postal de 5 dígitos para empezar.
   choose_category: 'Por favor, elija una categoría escribiendo su número: %{list}'
   invalid_category: 'Por favor, escriba un número entre 1 y 11.'
   results_intro: >

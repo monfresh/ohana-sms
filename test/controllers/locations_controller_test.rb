@@ -287,7 +287,7 @@ class LocationsControllerTest < ActionController::TestCase
 
   test 'uses Spanish when locale params is set to es' do
     get_reply_with_body('', 'es')
-    assert_match(/Bienvenidos/, sms_body)
+    assert_match(/Hola/, sms_body)
     get_reply_with_body('94103', 'es')
     assert_match(/elija una categoría/, sms_body)
   end
