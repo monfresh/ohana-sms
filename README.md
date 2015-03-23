@@ -41,11 +41,8 @@ bin/setup
 1. Sign up for a [free Twilio account](http://twilio.com/try-twilio).
 2. Once logged in to your Twilio account, visit the [Account Settings][settings]
 page.
-3. Copy your Test AccountSID and paste it in `config/application.yml`
-next to `twilio_account_sid`.
-4. Copy your Test AuthToken and paste it in `config/application.yml`
+3. Copy your AuthToken and paste it in `config/application.yml`
 next to `twilio_auth_token`.
-5. Enter your Twilio phone number (including the `+1`) next to `twilio_number`.
 
 [settings]: https://www.twilio.com/user/account/settings
 
@@ -107,7 +104,20 @@ replace `ohana-sms-demo` with your actual Heroku app name. Then select
 
 6. To reset the conversation, send `reset` (it's not case-sensitive).
 
-## Providing the service in multiple languages
+## Configure the app to return your own data
+If you haven't already deployed an instance of [Ohana API][ohana-api] with
+your own data, you'll need to do that first.
+
+Then, all you'll need to do is set the `OHANA_API_ENDPOINT` config var on
+Heroku to your API's URL:
+
+```
+heroku config:set OHANA_API_ENDPOINT=https://your_ohana_api_url -a your_heroku_app_name
+```
+
+[ohana-api]: https://github.com/codeforamerica/ohana-api
+
+## Customizing and translating the SMS messages
 
 Currently, what can be translated are the greetings and instructions.
 The search results content, such as the Location names, or the short
@@ -125,8 +135,8 @@ See `config/locales/es.yml` as an example. For more details, read the
 Once your translations are in place, create a new number in your Twilio account
 that will be used for a particular language. Following the same instructions
 as in Step 7 in the [Deploy to Heroku section](#deploy-to-heroku), add `?locale=[language_code]` to
-the end of the Request URL. For example, to make your phone number use Spanish,
-your Request URL would look like this:
+the end of the Request URL. For example, to make your phone number use the
+Spanish version of the app, your Request URL would look like this:
 ```
 https://ohana-sms-demo.herokuapp.com/locations/reply?locale=es
 ```

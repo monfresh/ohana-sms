@@ -21,7 +21,7 @@
 
 en:
   intro: >
-    Welcome to SMC-Connect! Please enter a 5-digit ZIP code to get started.
+    Hi! Please enter a 5-digit ZIP code to get started.
   choose_category: 'Please choose a category by entering its number: %{list}'
   invalid_category: 'Please enter a number between 1 and 11.'
   results_intro: >
