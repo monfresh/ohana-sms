@@ -11,19 +11,15 @@ http_interactions:
       - application/vnd.ohanapi-v1+json
       User-Agent:
       - Ohanakapa Ruby Gem 1.1.2
-      If-None-Match:
-      - '"d4b5e5f4d82d6b32685dae12e0b616e7"'
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
-      code: 304
-      message: Not Modified
+      code: 200
+      message: OK
     headers:
       Server:
       - Cowboy
-      Content-Length:
-      - '0'
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -39,6 +35,8 @@ http_interactions:
         rel="last"
       X-Total-Count:
       - '0'
+      Content-Type:
+      - application/json; charset=utf-8
       Cache-Control:
       - max-age=300, public
       X-Request-Id:
@@ -48,16 +46,18 @@ http_interactions:
       X-Content-Digest:
       - 97d170e1550eee4afc0af065b78cda302a97674c
       Date:
-      - Sun, 22 Mar 2015 23:41:13 GMT
+      - Mon, 23 Mar 2015 03:27:54 GMT
       Age:
       - '0'
       X-Rack-Cache:
       - stale, valid, store
+      Content-Length:
+      - '2'
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: ''
+      string: "[]"
     http_version: 
-  recorded_at: Sun, 22 Mar 2015 23:41:13 GMT
+  recorded_at: Mon, 23 Mar 2015 03:27:54 GMT
 recorded_with: VCR 2.9.3
