@@ -2,20 +2,21 @@ module TwilioRequestValidator
   extend ActiveSupport::Concern
 
   included do
-    before_action :validate_request
+    before_action :validate_request, if: :validations_enabled?
   end
 
   def validate_request
-    return unless twilio_request?
+    return if twilio_request?
+    render text: 'Twilio request signature verification failed.',
+           status: :unauthorized
   end
 
   def twilio_request?
-    return true if Rails.env.test?
     validator.validate uri, twilio_params, signature
   end
 
   def validator
-    Twilio::Util::RequestValidator.new(Figaro.env.twilio_auth_token)
+    Twilio::Util::RequestValidator.new(Figaro.env.TWILIO_AUTH_TOKEN)
   end
 
   def uri
@@ -23,10 +24,16 @@ module TwilioRequestValidator
   end
 
   def twilio_params
-    env['rack.request.query_hash']
+    request.request_parameters
   end
 
   def signature
-    env['HTTP_X_TWILIO_SIGNATURE']
+    request.headers['HTTP_X_TWILIO_SIGNATURE']
+  end
+
+  private
+
+  def validations_enabled?
+    Figaro.env.VALIDATE_REQUEST
   end
 end
