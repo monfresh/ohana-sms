@@ -44,7 +44,10 @@ class Messenger
   end
 
   def search_term
-    cat_array[@session[:cats].to_i - 1]
+    if @session[:cats] =~ /\A([1-9]|1[0-1])\z/
+      return cat_array[@session[:cats].to_i - 1]
+    end
+    @session[:cats]
   end
 
   def location
@@ -73,20 +76,24 @@ class Messenger
   end
 
   def street_address
-    return "#{street_1}, #{city}, CA #{zip}" if street_2.blank?
-    "#{street_1}, #{street_2}, #{city}, CA #{zip}"
+    return "#{address_1}, #{city}, #{state_province} #{zip}" if address_2.blank?
+    "#{address_1}, #{address_2}, #{city}, #{state_province} #{zip}"
   end
 
-  def street_1
-    location.address.street_1
+  def address_1
+    location.address.address_1
   end
 
-  def street_2
-    location.address.street_2
+  def address_2
+    location.address.address_2
   end
 
   def city
     location.address.city
+  end
+
+  def state_province
+    location.address.state_province
   end
 
   def zip

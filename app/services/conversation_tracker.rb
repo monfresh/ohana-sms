@@ -27,11 +27,6 @@ class ConversationTracker
   end
 
   def second_step_message
-    return process_category_choice if @body =~ /\A([1-9]|1[0-1])\z/
-    I18n.t('invalid_category')
-  end
-
-  def process_category_choice
     @session[:cats] = @body
     return apologize_and_restart if no_results?
     enable_third_step

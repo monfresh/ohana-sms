@@ -59,16 +59,20 @@ class LocationsControllerTest < ActionController::TestCase
     assert_equal true, session[:step_2]
   end
 
-  test 'asks for number when session[:step_2] is true & body is not 1-11' do
-    get_reply_with_body('94103')
-    get_reply_with_body('foo')
-    assert_equal t('invalid_category'), sms_body
+  test 'looks for entered search term when on step 2 and body is not 1-11' do
+    VCR.use_cassette('94103_calfresh', allow_playback_repeats: true) do
+      get_reply_with_body('94103')
+      get_reply_with_body('calfresh')
+      assert_match(t('results_intro'), sms_body)
+    end
   end
 
-  test 'asks for number when session[:step_2] is true & number out of range' do
-    get_reply_with_body('94103')
-    get_reply_with_body('12')
-    assert_equal t('invalid_category'), sms_body
+  test 'returns no results when on step 2 and search term has no matches' do
+    VCR.use_cassette('94103_foobar', allow_playback_repeats: true) do
+      get_reply_with_body('94103')
+      get_reply_with_body('foobar')
+      assert_equal t('no_results_found'), sms_body
+    end
   end
 
   test 'returns 5 locations when category choice is 1-11' do
@@ -147,6 +151,15 @@ class LocationsControllerTest < ActionController::TestCase
     end
   end
 
+  test 'includes address_2 in location details if present' do
+    VCR.use_cassette('94402_ymca', allow_playback_repeats: true) do
+      get_reply_with_body('94402')
+      get_reply_with_body('ymca')
+      get_reply_with_body('1')
+      assert_match(/Suite 115/, sms_body)
+    end
+  end
+
   test 'asks for valid choice when body is not 1-5' do
     VCR.use_cassette('94103_food', allow_playback_repeats: true) do
       get_reply_with_body('94103')
@@ -196,9 +209,11 @@ class LocationsControllerTest < ActionController::TestCase
   end
 
   test 'does not reset session[:counter] when body is not exactly /reset/i' do
-    get_reply_with_body('94103')
-    get_reply_with_body('resetz')
-    assert_equal 2, session[:counter]
+    VCR.use_cassette('94103_computer', allow_playback_repeats: true) do
+      get_reply_with_body('94103')
+      get_reply_with_body('computer')
+      assert_equal 2, session[:counter]
+    end
   end
 
   test 'asks for a location number if the conversation is not reset' do
@@ -266,7 +281,7 @@ class LocationsControllerTest < ActionController::TestCase
   end
 
   test 'tracks conversation from beginning to end' do
-    VCR.use_cassette('94103_education', allow_playback_repeats: true) do
+    VCR.use_cassette('94103_hi', allow_playback_repeats: true) do
       get_reply_with_body('hi')
       get_reply_with_body('94103')
       get_reply_with_body('hi')
@@ -277,12 +292,14 @@ class LocationsControllerTest < ActionController::TestCase
   end
 
   test 'tracks conversation after reset' do
-    get_reply_with_body('hi')
-    get_reply_with_body('94103')
-    get_reply_with_body('hello')
-    get_reply_with_body('reset')
-    get_reply_with_body('foo')
-    assert_equal t('intro'), sms_body
+    VCR.use_cassette('94103_hello', allow_playback_repeats: true) do
+      get_reply_with_body('hi')
+      get_reply_with_body('94103')
+      get_reply_with_body('hello')
+      get_reply_with_body('reset')
+      get_reply_with_body('foo')
+      assert_equal t('intro'), sms_body
+    end
   end
 
   test 'uses Spanish when locale params is set to es' do
