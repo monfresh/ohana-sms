@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.smc-connect.org/search?keyword=Food&kind=Human%20Services&location=94103&page=1&per_page=5
+    uri: https://api.smc-connect.org/search?keyword=Food&kind=Human%20Services&location=94103&page=1&per_page=5
     body:
       encoding: US-ASCII
       string: ''
@@ -22,6 +22,8 @@ http_interactions:
       - Cowboy
       Connection:
       - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -29,31 +31,33 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Etag:
-      - '"7d37fe97bd175289181123802c9b0bbe"'
+      - '"1c9390f1341b5ca0d1c9f631c92a71c4"'
       Link:
-      - <http://api.smc-connect.org/search?keyword=Food&kind=Human+Services&location=94103&page=3&per_page=5>;
-        rel="last", <http://api.smc-connect.org/search?keyword=Food&kind=Human+Services&location=94103&page=2&per_page=5>;
+      - <https://api.smc-connect.org/search?keyword=Food&kind=Human+Services&location=94103&page=3&per_page=5>;
+        rel="last", <https://api.smc-connect.org/search?keyword=Food&kind=Human+Services&location=94103&page=2&per_page=5>;
         rel="next"
       X-Total-Count:
       - '11'
+      Date:
+      - Mon, 11 May 2015 02:37:03 GMT
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
       - max-age=300, public
+      Vary:
+      - Origin
       X-Request-Id:
-      - 071a9842-f1e7-47a3-9803-c4e50fd28f7e
+      - 49357e05-3da0-4946-b7e8-f58b1bc9abf9
       X-Runtime:
-      - '0.046393'
+      - '0.068897'
       X-Content-Digest:
-      - 955703fcf2c8efddf4c02e130c361d6aabc8824f
-      Date:
-      - Mon, 23 Mar 2015 03:27:53 GMT
+      - db98c2da90344a25a45b8e2b74d4f8c585de3a64
       Age:
       - '0'
       X-Rack-Cache:
-      - stale, valid, store
+      - miss, store
       Content-Length:
-      - '11715'
+      - '11436'
       Via:
       - 1.1 vegur
     body:
@@ -83,10 +87,9 @@ http_interactions:
         infants and children, including professional work clothing. Donated itmes
         are given to participants in all programs.","kind":"Human Services","latitude":37.7712479,"longitude":-122.4194009,"name":"La
         Casa de las Madres","short_desc":"Refuge for women and their children who
-        are being physically or emotionally abused.","slug":"la-casa-de-las-madres","updated_at":"2014-11-25T17:21:58.727-08:00","url":"http://api.smc-connect.org/locations/la-casa-de-las-madres","address":{"id":190,"street":"1663
-        Mission Street, Suite 225","street_1":"1663 Mission Street, Suite 225","street_2":null,"city":"San
-        Francisco","state":"CA","state_province":"CA","postal_code":"94103","zip":"94103"},"organization":{"id":204,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"La
-        Casa de las Madres","website":null,"slug":"la-casa-de-las-madres","url":"http://api.smc-connect.org/organizations/la-casa-de-las-madres","locations_url":"http://api.smc-connect.org/organizations/la-casa-de-las-madres/locations"},"phones":[{"id":267,"department":"Adult
+        are being physically or emotionally abused.","slug":"la-casa-de-las-madres","updated_at":"2014-11-25T17:21:58.727-08:00","url":"https://api.smc-connect.org/locations/la-casa-de-las-madres","address":{"id":190,"address_1":"1663
+        Mission Street, Suite 225","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94103"},"organization":{"id":204,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"La
+        Casa de las Madres","website":null,"slug":"la-casa-de-las-madres","url":"https://api.smc-connect.org/organizations/la-casa-de-las-madres","locations_url":"https://api.smc-connect.org/organizations/la-casa-de-las-madres/locations"},"phones":[{"id":267,"department":"Adult
         Crisis Line 24 hours daily","extension":null,"number":"877-503-1850","number_type":"voice","vanity_number":null},{"id":268,"department":"Teen
         Crisis Line (24 hours daily","extension":null,"number":"877-923-0700","number_type":"voice","vanity_number":null},{"id":269,"department":"Counseling
         and Support Services","extension":null,"number":"415 503-0500","number_type":"voice","vanity_number":null},{"id":2632,"department":null,"extension":null,"number":"415
@@ -101,10 +104,9 @@ http_interactions:
         classes, job/education workshops and a children''s program. Maximum stay is
         18 months.","kind":"Human Services","latitude":37.7615573,"longitude":-122.4226693,"name":"San
         Francisco District Council., Riley Center","short_desc":"Safehouse and transitional
-        housing for women victims of domestic violence.","slug":"san-francisco-district-council-riley-center","updated_at":"2014-11-25T17:22:14.168-08:00","url":"http://api.smc-connect.org/locations/san-francisco-district-council-riley-center","address":{"id":991,"street":"3543
-        - 18th Street, 3rd Floor","street_1":"3543 - 18th Street, 3rd Floor","street_2":null,"city":"San
-        Francisco","state":"CA","state_province":"CA","postal_code":"94110","zip":"94110"},"organization":{"id":1237,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"St.
-        Vincent de Paul Society","website":null,"slug":"st-vincent-de-paul-society","url":"http://api.smc-connect.org/organizations/st-vincent-de-paul-society","locations_url":"http://api.smc-connect.org/organizations/st-vincent-de-paul-society/locations"},"phones":[{"id":1625,"department":"Crisis
+        housing for women victims of domestic violence.","slug":"san-francisco-district-council-riley-center","updated_at":"2014-11-25T17:22:14.168-08:00","url":"https://api.smc-connect.org/locations/san-francisco-district-council-riley-center","address":{"id":991,"address_1":"3543
+        - 18th Street, 3rd Floor","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94110"},"organization":{"id":1237,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"St.
+        Vincent de Paul Society","website":null,"slug":"st-vincent-de-paul-society","url":"https://api.smc-connect.org/organizations/st-vincent-de-paul-society","locations_url":"https://api.smc-connect.org/organizations/st-vincent-de-paul-society/locations"},"phones":[{"id":1625,"department":"Crisis
         Line","extension":null,"number":"415 255-0165","number_type":"voice","vanity_number":null},{"id":3271,"department":null,"extension":null,"number":"415
         552-0337","number_type":"fax","vanity_number":null}]},{"id":1343,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4375073,37.7848366],"description":"Provides
         counseling, case management, information and referral, support groups, financial
@@ -120,9 +122,9 @@ http_interactions:
         2001 Windward Way, San Mateo 94404.","kind":"Human Services","latitude":37.7848366,"longitude":-122.4375073,"name":"AIDS,
         Chronic Illness and Disabilities Program","short_desc":"Counseling, support,
         case management, crisis intervention and financial assistance for Jewish persons
-        with HIV/AIDS, family and loved ones.","slug":"aids-chronic-illness-and-disabilities-program","updated_at":"2014-11-25T17:22:16.318-08:00","url":"http://api.smc-connect.org/locations/aids-chronic-illness-and-disabilities-program","address":{"id":1083,"street":"2150
-        Post Street","street_1":"2150 Post Street","street_2":null,"city":"San Francisco","state":"CA","state_province":"CA","postal_code":"94115","zip":"94115"},"organization":{"id":1290,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Jewish
-        Family and Children''s Services","website":null,"slug":"jewish-family-and-children-s-services","url":"http://api.smc-connect.org/organizations/jewish-family-and-children-s-services","locations_url":"http://api.smc-connect.org/organizations/jewish-family-and-children-s-services/locations"},"phones":[{"id":1794,"department":null,"extension":null,"number":"415
+        with HIV/AIDS, family and loved ones.","slug":"aids-chronic-illness-and-disabilities-program","updated_at":"2014-11-25T17:22:16.318-08:00","url":"https://api.smc-connect.org/locations/aids-chronic-illness-and-disabilities-program","address":{"id":1083,"address_1":"2150
+        Post Street","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94115"},"organization":{"id":1290,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Jewish
+        Family and Children''s Services","website":null,"slug":"jewish-family-and-children-s-services","url":"https://api.smc-connect.org/organizations/jewish-family-and-children-s-services","locations_url":"https://api.smc-connect.org/organizations/jewish-family-and-children-s-services/locations"},"phones":[{"id":1794,"department":null,"extension":null,"number":"415
         449-1224","number_type":"voice","vanity_number":null},{"id":1795,"department":null,"extension":null,"number":"415
         345-1927","number_type":"tty","vanity_number":null},{"id":3328,"department":null,"extension":null,"number":"415
         449-1253","number_type":"fax","vanity_number":null}]},{"id":320,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4191082,37.7879416],"description":"Offers
@@ -136,10 +138,9 @@ http_interactions:
         Services","latitude":37.7879416,"longitude":-122.4191082,"name":"Larkin Street
         Youth Services","short_desc":"Multipurpose center for runaway, homeless and
         street youth that provides emergency services including shelter, counseling,
-        medical treatment and an on-site school.","slug":"larkin-street-youth-services","updated_at":"2014-11-25T17:22:00.149-08:00","url":"http://api.smc-connect.org/locations/larkin-street-youth-services","address":{"id":269,"street":"1138
-        Sutter Street","street_1":"1138 Sutter Street","street_2":null,"city":"San
-        Francisco","state":"CA","state_province":"CA","postal_code":"94109","zip":"94109"},"organization":{"id":320,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Larkin
-        Street Youth Services","website":null,"slug":"larkin-street-youth-services","url":"http://api.smc-connect.org/organizations/larkin-street-youth-services","locations_url":"http://api.smc-connect.org/organizations/larkin-street-youth-services/locations"},"phones":[{"id":425,"department":"Hotline","extension":null,"number":"800
+        medical treatment and an on-site school.","slug":"larkin-street-youth-services","updated_at":"2014-11-25T17:22:00.149-08:00","url":"https://api.smc-connect.org/locations/larkin-street-youth-services","address":{"id":269,"address_1":"1138
+        Sutter Street","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94109"},"organization":{"id":320,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Larkin
+        Street Youth Services","website":null,"slug":"larkin-street-youth-services","url":"https://api.smc-connect.org/organizations/larkin-street-youth-services","locations_url":"https://api.smc-connect.org/organizations/larkin-street-youth-services/locations"},"phones":[{"id":425,"department":"Hotline","extension":null,"number":"800
         447-8223","number_type":"hotline","vanity_number":null},{"id":2691,"department":null,"extension":null,"number":"415
         749-3838","number_type":"fax","vanity_number":null}]},{"id":1004,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.435672,37.7514449],"description":"Services
         include a private college preparatory education; medical, dental and optical
@@ -150,325 +151,11 @@ http_interactions:
         live in the complex. Also offers a community-based program for girls.","kind":"Human
         Services","latitude":37.7514449,"longitude":-122.435672,"name":"Boys Hope
         Girls Hope San Francisco Bay Area","short_desc":"Provides a private college
-        preparatory education.","slug":"boys-hope-girls-hope-san-francisco-bay-area","updated_at":"2014-11-25T17:22:10.020-08:00","url":"http://api.smc-connect.org/locations/boys-hope-girls-hope-san-francisco-bay-area","address":{"id":797,"street":"4174
-        24th Street","street_1":"4174 24th Street","street_2":null,"city":"San Francisco","state":"CA","state_province":"CA","postal_code":"94114","zip":"94114"},"organization":{"id":1004,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Boys
-        Hope Girls Hope San Francisco Bay Area","website":null,"slug":"boys-hope-girls-hope-san-francisco-bay-area","url":"http://api.smc-connect.org/organizations/boys-hope-girls-hope-san-francisco-bay-area","locations_url":"http://api.smc-connect.org/organizations/boys-hope-girls-hope-san-francisco-bay-area/locations"},"phones":[{"id":1309,"department":null,"extension":null,"number":"415
+        preparatory education.","slug":"boys-hope-girls-hope-san-francisco-bay-area","updated_at":"2014-11-25T17:22:10.020-08:00","url":"https://api.smc-connect.org/locations/boys-hope-girls-hope-san-francisco-bay-area","address":{"id":797,"address_1":"4174
+        24th Street","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94114"},"organization":{"id":1004,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Boys
+        Hope Girls Hope San Francisco Bay Area","website":null,"slug":"boys-hope-girls-hope-san-francisco-bay-area","url":"https://api.smc-connect.org/organizations/boys-hope-girls-hope-san-francisco-bay-area","locations_url":"https://api.smc-connect.org/organizations/boys-hope-girls-hope-san-francisco-bay-area/locations"},"phones":[{"id":1309,"department":null,"extension":null,"number":"415
         657-9302","number_type":"voice","vanity_number":null},{"id":3119,"department":null,"extension":null,"number":"415
         684-7859","number_type":"fax","vanity_number":null}]}]'
     http_version: 
-  recorded_at: Mon, 23 Mar 2015 03:27:53 GMT
-- request:
-    method: get
-    uri: http://api.smc-connect.org/search?keyword=Food&kind=Human%20Services&location=94103&page=1&per_page=5
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/vnd.ohanapi-v1+json
-      User-Agent:
-      - Ohanakapa Ruby Gem 1.1.2
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Cowboy
-      Connection:
-      - keep-alive
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Etag:
-      - '"7d37fe97bd175289181123802c9b0bbe"'
-      Link:
-      - <http://api.smc-connect.org/search?keyword=Food&kind=Human+Services&location=94103&page=3&per_page=5>;
-        rel="last", <http://api.smc-connect.org/search?keyword=Food&kind=Human+Services&location=94103&page=2&per_page=5>;
-        rel="next"
-      X-Total-Count:
-      - '11'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - max-age=300, public
-      X-Request-Id:
-      - 071a9842-f1e7-47a3-9803-c4e50fd28f7e
-      X-Runtime:
-      - '0.046393'
-      X-Content-Digest:
-      - 955703fcf2c8efddf4c02e130c361d6aabc8824f
-      Date:
-      - Mon, 23 Mar 2015 03:27:53 GMT
-      Age:
-      - '0'
-      X-Rack-Cache:
-      - fresh
-      Content-Length:
-      - '11715'
-      Via:
-      - 1.1 vegur
-    body:
-      encoding: UTF-8
-      string: '[{"id":204,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4194009,37.7712479],"description":"Adult
-        and Teen Crisis Hotlines: two toll-free lines provide 24-hour crisis counseling,
-        information and referrals to callers statewide. Drop-In Counseling Center
-        provides victims and survivors with crisis and on-going counseling; suppport
-        groups; emergency food and clothing; and resource advocacy and referrals.
-        Emergency Shelter proram provides up to 8 weeks of safe housing and supportive
-        services for women and children fleeing violence, with 24-hour intake capacity.
-        Domestic Violence Response Team provides victims with crisis intervention
-        and support through advocates who work on-site with the San Francisco Police
-        Department. Teen Program provides multi-site, adolescent-specific crisis intervention,
-        counseling, support groups, education and outreach, and advocacy to teens
-        who have experienced or are at risk of domestic and dating violence. Safe
-        Havens Project provides specialized assistance to domestic violence victims
-        in developing and implementing shared custody arrangements with their batterers.
-        Safe Housing Project works on-site at housing sites throughout San Francisco
-        to empower residents to create communities that foster ad demand violence-free
-        lives. The Mary Elizabeth Inn and Verona Hotel Case Management Program offers
-        housing stability, community-building and emotional support services to residents
-        of these two transitional/permanent housing sites. Community Education and
-        Outreach Program offers outreach, presentations, and workshops in the community
-        on domestic violence, healthy relationships, agency services, and other topics.
-        La Casa de las Madres accepts donations of clothing and toiletries for women,
-        infants and children, including professional work clothing. Donated itmes
-        are given to participants in all programs.","kind":"Human Services","latitude":37.7712479,"longitude":-122.4194009,"name":"La
-        Casa de las Madres","short_desc":"Refuge for women and their children who
-        are being physically or emotionally abused.","slug":"la-casa-de-las-madres","updated_at":"2014-11-25T17:21:58.727-08:00","url":"http://api.smc-connect.org/locations/la-casa-de-las-madres","address":{"id":190,"street":"1663
-        Mission Street, Suite 225","street_1":"1663 Mission Street, Suite 225","street_2":null,"city":"San
-        Francisco","state":"CA","state_province":"CA","postal_code":"94103","zip":"94103"},"organization":{"id":204,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"La
-        Casa de las Madres","website":null,"slug":"la-casa-de-las-madres","url":"http://api.smc-connect.org/organizations/la-casa-de-las-madres","locations_url":"http://api.smc-connect.org/organizations/la-casa-de-las-madres/locations"},"phones":[{"id":267,"department":"Adult
-        Crisis Line 24 hours daily","extension":null,"number":"877-503-1850","number_type":"voice","vanity_number":null},{"id":268,"department":"Teen
-        Crisis Line (24 hours daily","extension":null,"number":"877-923-0700","number_type":"voice","vanity_number":null},{"id":269,"department":"Counseling
-        and Support Services","extension":null,"number":"415 503-0500","number_type":"voice","vanity_number":null},{"id":2632,"department":null,"extension":null,"number":"415
-        503-0301","number_type":"fax","vanity_number":null}]},{"id":1237,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4226693,37.7615573],"description":"The
-        Riley Center operates Rosalie House, a 24-bed emergency shelter providing
-        food, counseling and advocacy for women victims of domestic violence and their
-        children. Maximum stay is 12 weeks. Case management, support groups and counseling
-        are available after the shelter stay. Has a public office for drop-in counseling,
-        follow-up services, community education and a volunteer program. Also operates
-        Brennan House, a 28-bed transitional housing program for formerly battered
-        women and their children. Services include counseling, support groups, parenting
-        classes, job/education workshops and a children''s program. Maximum stay is
-        18 months.","kind":"Human Services","latitude":37.7615573,"longitude":-122.4226693,"name":"San
-        Francisco District Council., Riley Center","short_desc":"Safehouse and transitional
-        housing for women victims of domestic violence.","slug":"san-francisco-district-council-riley-center","updated_at":"2014-11-25T17:22:14.168-08:00","url":"http://api.smc-connect.org/locations/san-francisco-district-council-riley-center","address":{"id":991,"street":"3543
-        - 18th Street, 3rd Floor","street_1":"3543 - 18th Street, 3rd Floor","street_2":null,"city":"San
-        Francisco","state":"CA","state_province":"CA","postal_code":"94110","zip":"94110"},"organization":{"id":1237,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"St.
-        Vincent de Paul Society","website":null,"slug":"st-vincent-de-paul-society","url":"http://api.smc-connect.org/organizations/st-vincent-de-paul-society","locations_url":"http://api.smc-connect.org/organizations/st-vincent-de-paul-society/locations"},"phones":[{"id":1625,"department":"Crisis
-        Line","extension":null,"number":"415 255-0165","number_type":"voice","vanity_number":null},{"id":3271,"department":null,"extension":null,"number":"415
-        552-0337","number_type":"fax","vanity_number":null}]},{"id":1343,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4375073,37.7848366],"description":"Provides
-        counseling, case management, information and referral, support groups, financial
-        assistance and advocacy for Jewish individuals with HIV/AIDS, chronic illness
-        or disability, their family and loved ones. \"Chicken Souper\" meals are prepared
-        and delivered twice a month by local congregations. Offers support and assistance
-        to out-of-town families. Volunteers provide practical support for clients.
-        Provides referrals to rabbis for pastoral counseling and spiritual support.
-        Offers a meal delivery program for low-income, physically disabled clients
-        living in San Francisco (regardless of religion) weekly which provides food
-        for seven days. Call 415-449-3824 for more information. Other offices offering
-        disability services are located at 200 Channing Avenue, Palo Alto, 94301 and
-        2001 Windward Way, San Mateo 94404.","kind":"Human Services","latitude":37.7848366,"longitude":-122.4375073,"name":"AIDS,
-        Chronic Illness and Disabilities Program","short_desc":"Counseling, support,
-        case management, crisis intervention and financial assistance for Jewish persons
-        with HIV/AIDS, family and loved ones.","slug":"aids-chronic-illness-and-disabilities-program","updated_at":"2014-11-25T17:22:16.318-08:00","url":"http://api.smc-connect.org/locations/aids-chronic-illness-and-disabilities-program","address":{"id":1083,"street":"2150
-        Post Street","street_1":"2150 Post Street","street_2":null,"city":"San Francisco","state":"CA","state_province":"CA","postal_code":"94115","zip":"94115"},"organization":{"id":1290,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Jewish
-        Family and Children''s Services","website":null,"slug":"jewish-family-and-children-s-services","url":"http://api.smc-connect.org/organizations/jewish-family-and-children-s-services","locations_url":"http://api.smc-connect.org/organizations/jewish-family-and-children-s-services/locations"},"phones":[{"id":1794,"department":null,"extension":null,"number":"415
-        449-1224","number_type":"voice","vanity_number":null},{"id":1795,"department":null,"extension":null,"number":"415
-        345-1927","number_type":"tty","vanity_number":null},{"id":3328,"department":null,"extension":null,"number":"415
-        449-1253","number_type":"fax","vanity_number":null}]},{"id":320,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4191082,37.7879416],"description":"Offers
-        a continuum of services designed to help homeless and runaway youth find permanent
-        alternatives to street life. Services include street outreach, a drop-in center
-        that includes three meals a day, counseling, support groups and recreation,
-        case management, and two emergency shelters. The agency also offers longer
-        term, transitional housing. In addition, a medical clinic provides primary
-        care as well as anonymous HIV testing and counseling. Also provides education
-        and employment services. Formerly known as Larkin Street Youth Center.","kind":"Human
-        Services","latitude":37.7879416,"longitude":-122.4191082,"name":"Larkin Street
-        Youth Services","short_desc":"Multipurpose center for runaway, homeless and
-        street youth that provides emergency services including shelter, counseling,
-        medical treatment and an on-site school.","slug":"larkin-street-youth-services","updated_at":"2014-11-25T17:22:00.149-08:00","url":"http://api.smc-connect.org/locations/larkin-street-youth-services","address":{"id":269,"street":"1138
-        Sutter Street","street_1":"1138 Sutter Street","street_2":null,"city":"San
-        Francisco","state":"CA","state_province":"CA","postal_code":"94109","zip":"94109"},"organization":{"id":320,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Larkin
-        Street Youth Services","website":null,"slug":"larkin-street-youth-services","url":"http://api.smc-connect.org/organizations/larkin-street-youth-services","locations_url":"http://api.smc-connect.org/organizations/larkin-street-youth-services/locations"},"phones":[{"id":425,"department":"Hotline","extension":null,"number":"800
-        447-8223","number_type":"hotline","vanity_number":null},{"id":2691,"department":null,"extension":null,"number":"415
-        749-3838","number_type":"fax","vanity_number":null}]},{"id":1004,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.435672,37.7514449],"description":"Services
-        include a private college preparatory education; medical, dental and optical
-        services; professional therapeutic counseling (if needed); academic support
-        services; summer athletic and enrichment programs; extended social services
-        for program graduates; and financial assistance for college. Provides full
-        room and board to youth age 10-14. Professionally trained residential counselors
-        live in the complex. Also offers a community-based program for girls.","kind":"Human
-        Services","latitude":37.7514449,"longitude":-122.435672,"name":"Boys Hope
-        Girls Hope San Francisco Bay Area","short_desc":"Provides a private college
-        preparatory education.","slug":"boys-hope-girls-hope-san-francisco-bay-area","updated_at":"2014-11-25T17:22:10.020-08:00","url":"http://api.smc-connect.org/locations/boys-hope-girls-hope-san-francisco-bay-area","address":{"id":797,"street":"4174
-        24th Street","street_1":"4174 24th Street","street_2":null,"city":"San Francisco","state":"CA","state_province":"CA","postal_code":"94114","zip":"94114"},"organization":{"id":1004,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Boys
-        Hope Girls Hope San Francisco Bay Area","website":null,"slug":"boys-hope-girls-hope-san-francisco-bay-area","url":"http://api.smc-connect.org/organizations/boys-hope-girls-hope-san-francisco-bay-area","locations_url":"http://api.smc-connect.org/organizations/boys-hope-girls-hope-san-francisco-bay-area/locations"},"phones":[{"id":1309,"department":null,"extension":null,"number":"415
-        657-9302","number_type":"voice","vanity_number":null},{"id":3119,"department":null,"extension":null,"number":"415
-        684-7859","number_type":"fax","vanity_number":null}]}]'
-    http_version: 
-  recorded_at: Mon, 23 Mar 2015 03:27:53 GMT
-- request:
-    method: get
-    uri: http://api.smc-connect.org/search?keyword=Food&kind=Human%20Services&location=94103&page=1&per_page=5
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/vnd.ohanapi-v1+json
-      User-Agent:
-      - Ohanakapa Ruby Gem 1.1.2
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Cowboy
-      Connection:
-      - keep-alive
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Etag:
-      - '"7d37fe97bd175289181123802c9b0bbe"'
-      Link:
-      - <http://api.smc-connect.org/search?keyword=Food&kind=Human+Services&location=94103&page=3&per_page=5>;
-        rel="last", <http://api.smc-connect.org/search?keyword=Food&kind=Human+Services&location=94103&page=2&per_page=5>;
-        rel="next"
-      X-Total-Count:
-      - '11'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - max-age=300, public
-      X-Request-Id:
-      - 071a9842-f1e7-47a3-9803-c4e50fd28f7e
-      X-Runtime:
-      - '0.046393'
-      X-Content-Digest:
-      - 955703fcf2c8efddf4c02e130c361d6aabc8824f
-      Date:
-      - Mon, 23 Mar 2015 03:27:53 GMT
-      Age:
-      - '1'
-      X-Rack-Cache:
-      - fresh
-      Content-Length:
-      - '11715'
-      Via:
-      - 1.1 vegur
-    body:
-      encoding: UTF-8
-      string: '[{"id":204,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4194009,37.7712479],"description":"Adult
-        and Teen Crisis Hotlines: two toll-free lines provide 24-hour crisis counseling,
-        information and referrals to callers statewide. Drop-In Counseling Center
-        provides victims and survivors with crisis and on-going counseling; suppport
-        groups; emergency food and clothing; and resource advocacy and referrals.
-        Emergency Shelter proram provides up to 8 weeks of safe housing and supportive
-        services for women and children fleeing violence, with 24-hour intake capacity.
-        Domestic Violence Response Team provides victims with crisis intervention
-        and support through advocates who work on-site with the San Francisco Police
-        Department. Teen Program provides multi-site, adolescent-specific crisis intervention,
-        counseling, support groups, education and outreach, and advocacy to teens
-        who have experienced or are at risk of domestic and dating violence. Safe
-        Havens Project provides specialized assistance to domestic violence victims
-        in developing and implementing shared custody arrangements with their batterers.
-        Safe Housing Project works on-site at housing sites throughout San Francisco
-        to empower residents to create communities that foster ad demand violence-free
-        lives. The Mary Elizabeth Inn and Verona Hotel Case Management Program offers
-        housing stability, community-building and emotional support services to residents
-        of these two transitional/permanent housing sites. Community Education and
-        Outreach Program offers outreach, presentations, and workshops in the community
-        on domestic violence, healthy relationships, agency services, and other topics.
-        La Casa de las Madres accepts donations of clothing and toiletries for women,
-        infants and children, including professional work clothing. Donated itmes
-        are given to participants in all programs.","kind":"Human Services","latitude":37.7712479,"longitude":-122.4194009,"name":"La
-        Casa de las Madres","short_desc":"Refuge for women and their children who
-        are being physically or emotionally abused.","slug":"la-casa-de-las-madres","updated_at":"2014-11-25T17:21:58.727-08:00","url":"http://api.smc-connect.org/locations/la-casa-de-las-madres","address":{"id":190,"street":"1663
-        Mission Street, Suite 225","street_1":"1663 Mission Street, Suite 225","street_2":null,"city":"San
-        Francisco","state":"CA","state_province":"CA","postal_code":"94103","zip":"94103"},"organization":{"id":204,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"La
-        Casa de las Madres","website":null,"slug":"la-casa-de-las-madres","url":"http://api.smc-connect.org/organizations/la-casa-de-las-madres","locations_url":"http://api.smc-connect.org/organizations/la-casa-de-las-madres/locations"},"phones":[{"id":267,"department":"Adult
-        Crisis Line 24 hours daily","extension":null,"number":"877-503-1850","number_type":"voice","vanity_number":null},{"id":268,"department":"Teen
-        Crisis Line (24 hours daily","extension":null,"number":"877-923-0700","number_type":"voice","vanity_number":null},{"id":269,"department":"Counseling
-        and Support Services","extension":null,"number":"415 503-0500","number_type":"voice","vanity_number":null},{"id":2632,"department":null,"extension":null,"number":"415
-        503-0301","number_type":"fax","vanity_number":null}]},{"id":1237,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4226693,37.7615573],"description":"The
-        Riley Center operates Rosalie House, a 24-bed emergency shelter providing
-        food, counseling and advocacy for women victims of domestic violence and their
-        children. Maximum stay is 12 weeks. Case management, support groups and counseling
-        are available after the shelter stay. Has a public office for drop-in counseling,
-        follow-up services, community education and a volunteer program. Also operates
-        Brennan House, a 28-bed transitional housing program for formerly battered
-        women and their children. Services include counseling, support groups, parenting
-        classes, job/education workshops and a children''s program. Maximum stay is
-        18 months.","kind":"Human Services","latitude":37.7615573,"longitude":-122.4226693,"name":"San
-        Francisco District Council., Riley Center","short_desc":"Safehouse and transitional
-        housing for women victims of domestic violence.","slug":"san-francisco-district-council-riley-center","updated_at":"2014-11-25T17:22:14.168-08:00","url":"http://api.smc-connect.org/locations/san-francisco-district-council-riley-center","address":{"id":991,"street":"3543
-        - 18th Street, 3rd Floor","street_1":"3543 - 18th Street, 3rd Floor","street_2":null,"city":"San
-        Francisco","state":"CA","state_province":"CA","postal_code":"94110","zip":"94110"},"organization":{"id":1237,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"St.
-        Vincent de Paul Society","website":null,"slug":"st-vincent-de-paul-society","url":"http://api.smc-connect.org/organizations/st-vincent-de-paul-society","locations_url":"http://api.smc-connect.org/organizations/st-vincent-de-paul-society/locations"},"phones":[{"id":1625,"department":"Crisis
-        Line","extension":null,"number":"415 255-0165","number_type":"voice","vanity_number":null},{"id":3271,"department":null,"extension":null,"number":"415
-        552-0337","number_type":"fax","vanity_number":null}]},{"id":1343,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4375073,37.7848366],"description":"Provides
-        counseling, case management, information and referral, support groups, financial
-        assistance and advocacy for Jewish individuals with HIV/AIDS, chronic illness
-        or disability, their family and loved ones. \"Chicken Souper\" meals are prepared
-        and delivered twice a month by local congregations. Offers support and assistance
-        to out-of-town families. Volunteers provide practical support for clients.
-        Provides referrals to rabbis for pastoral counseling and spiritual support.
-        Offers a meal delivery program for low-income, physically disabled clients
-        living in San Francisco (regardless of religion) weekly which provides food
-        for seven days. Call 415-449-3824 for more information. Other offices offering
-        disability services are located at 200 Channing Avenue, Palo Alto, 94301 and
-        2001 Windward Way, San Mateo 94404.","kind":"Human Services","latitude":37.7848366,"longitude":-122.4375073,"name":"AIDS,
-        Chronic Illness and Disabilities Program","short_desc":"Counseling, support,
-        case management, crisis intervention and financial assistance for Jewish persons
-        with HIV/AIDS, family and loved ones.","slug":"aids-chronic-illness-and-disabilities-program","updated_at":"2014-11-25T17:22:16.318-08:00","url":"http://api.smc-connect.org/locations/aids-chronic-illness-and-disabilities-program","address":{"id":1083,"street":"2150
-        Post Street","street_1":"2150 Post Street","street_2":null,"city":"San Francisco","state":"CA","state_province":"CA","postal_code":"94115","zip":"94115"},"organization":{"id":1290,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Jewish
-        Family and Children''s Services","website":null,"slug":"jewish-family-and-children-s-services","url":"http://api.smc-connect.org/organizations/jewish-family-and-children-s-services","locations_url":"http://api.smc-connect.org/organizations/jewish-family-and-children-s-services/locations"},"phones":[{"id":1794,"department":null,"extension":null,"number":"415
-        449-1224","number_type":"voice","vanity_number":null},{"id":1795,"department":null,"extension":null,"number":"415
-        345-1927","number_type":"tty","vanity_number":null},{"id":3328,"department":null,"extension":null,"number":"415
-        449-1253","number_type":"fax","vanity_number":null}]},{"id":320,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4191082,37.7879416],"description":"Offers
-        a continuum of services designed to help homeless and runaway youth find permanent
-        alternatives to street life. Services include street outreach, a drop-in center
-        that includes three meals a day, counseling, support groups and recreation,
-        case management, and two emergency shelters. The agency also offers longer
-        term, transitional housing. In addition, a medical clinic provides primary
-        care as well as anonymous HIV testing and counseling. Also provides education
-        and employment services. Formerly known as Larkin Street Youth Center.","kind":"Human
-        Services","latitude":37.7879416,"longitude":-122.4191082,"name":"Larkin Street
-        Youth Services","short_desc":"Multipurpose center for runaway, homeless and
-        street youth that provides emergency services including shelter, counseling,
-        medical treatment and an on-site school.","slug":"larkin-street-youth-services","updated_at":"2014-11-25T17:22:00.149-08:00","url":"http://api.smc-connect.org/locations/larkin-street-youth-services","address":{"id":269,"street":"1138
-        Sutter Street","street_1":"1138 Sutter Street","street_2":null,"city":"San
-        Francisco","state":"CA","state_province":"CA","postal_code":"94109","zip":"94109"},"organization":{"id":320,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Larkin
-        Street Youth Services","website":null,"slug":"larkin-street-youth-services","url":"http://api.smc-connect.org/organizations/larkin-street-youth-services","locations_url":"http://api.smc-connect.org/organizations/larkin-street-youth-services/locations"},"phones":[{"id":425,"department":"Hotline","extension":null,"number":"800
-        447-8223","number_type":"hotline","vanity_number":null},{"id":2691,"department":null,"extension":null,"number":"415
-        749-3838","number_type":"fax","vanity_number":null}]},{"id":1004,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.435672,37.7514449],"description":"Services
-        include a private college preparatory education; medical, dental and optical
-        services; professional therapeutic counseling (if needed); academic support
-        services; summer athletic and enrichment programs; extended social services
-        for program graduates; and financial assistance for college. Provides full
-        room and board to youth age 10-14. Professionally trained residential counselors
-        live in the complex. Also offers a community-based program for girls.","kind":"Human
-        Services","latitude":37.7514449,"longitude":-122.435672,"name":"Boys Hope
-        Girls Hope San Francisco Bay Area","short_desc":"Provides a private college
-        preparatory education.","slug":"boys-hope-girls-hope-san-francisco-bay-area","updated_at":"2014-11-25T17:22:10.020-08:00","url":"http://api.smc-connect.org/locations/boys-hope-girls-hope-san-francisco-bay-area","address":{"id":797,"street":"4174
-        24th Street","street_1":"4174 24th Street","street_2":null,"city":"San Francisco","state":"CA","state_province":"CA","postal_code":"94114","zip":"94114"},"organization":{"id":1004,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Boys
-        Hope Girls Hope San Francisco Bay Area","website":null,"slug":"boys-hope-girls-hope-san-francisco-bay-area","url":"http://api.smc-connect.org/organizations/boys-hope-girls-hope-san-francisco-bay-area","locations_url":"http://api.smc-connect.org/organizations/boys-hope-girls-hope-san-francisco-bay-area/locations"},"phones":[{"id":1309,"department":null,"extension":null,"number":"415
-        657-9302","number_type":"voice","vanity_number":null},{"id":3119,"department":null,"extension":null,"number":"415
-        684-7859","number_type":"fax","vanity_number":null}]}]'
-    http_version: 
-  recorded_at: Mon, 23 Mar 2015 03:27:54 GMT
+  recorded_at: Mon, 11 May 2015 02:37:03 GMT
 recorded_with: VCR 2.9.3

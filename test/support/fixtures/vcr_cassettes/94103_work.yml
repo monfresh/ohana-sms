@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api.smc-connect.org/search?keyword=Work&kind=Human%20Services&location=94103&page=1&per_page=5
+    uri: https://api.smc-connect.org/search?keyword=Work&kind=Human%20Services&location=94103&page=1&per_page=5
     body:
       encoding: US-ASCII
       string: ''
@@ -22,6 +22,8 @@ http_interactions:
       - Cowboy
       Connection:
       - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -29,31 +31,33 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Etag:
-      - '"8c9ab9ffd065eba6334335b2e614b61c"'
+      - '"26b3afa04907fc3c66c12d9828bb7ca1"'
       Link:
-      - <http://api.smc-connect.org/search?keyword=Work&kind=Human+Services&location=94103&page=7&per_page=5>;
-        rel="last", <http://api.smc-connect.org/search?keyword=Work&kind=Human+Services&location=94103&page=2&per_page=5>;
+      - <https://api.smc-connect.org/search?keyword=Work&kind=Human+Services&location=94103&page=7&per_page=5>;
+        rel="last", <https://api.smc-connect.org/search?keyword=Work&kind=Human+Services&location=94103&page=2&per_page=5>;
         rel="next"
       X-Total-Count:
       - '35'
+      Date:
+      - Mon, 11 May 2015 02:37:05 GMT
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
       - max-age=300, public
+      Vary:
+      - Origin
       X-Request-Id:
-      - daf6ab0e-103c-4b5e-a8c9-f46088562c67
+      - 3985813f-4de4-4fba-96b0-72822975519f
       X-Runtime:
-      - '0.062147'
+      - '0.072449'
       X-Content-Digest:
-      - c0b350c5bd46ae69751dd1d5a41f9a914c747448
-      Date:
-      - Mon, 23 Mar 2015 03:27:54 GMT
+      - e012ca70b4a54a0dcef362a11a2603d4ce61cd27
       Age:
       - '0'
       X-Rack-Cache:
-      - stale, valid, store
+      - miss, store
       Content-Length:
-      - '11588'
+      - '11291'
       Via:
       - 1.1 vegur
     body:
@@ -67,10 +71,9 @@ http_interactions:
         and family/medical leave. Clinics are located in San Francisco, Berkeley,
         East San Jose, Fresno, and Orange County.","kind":"Human Services","latitude":37.7907516,"longitude":-122.4020736,"name":"Employment
         Law Center","short_desc":"Legal representation for low-income persons with
-        employment problems.","slug":"employment-law-center","updated_at":"2014-12-04T11:17:20.943-08:00","url":"http://api.smc-connect.org/locations/employment-law-center","address":{"id":927,"street":"180
-        Montgomery Street","street_1":"180 Montgomery Street","street_2":null,"city":"San
-        Francisco","state":"CA","state_province":"CA","postal_code":"94104","zip":"94104"},"organization":{"id":1161,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Legal
-        Aid Society of San Francisco","website":null,"slug":"legal-aid-society-of-san-francisco","url":"http://api.smc-connect.org/organizations/legal-aid-society-of-san-francisco","locations_url":"http://api.smc-connect.org/organizations/legal-aid-society-of-san-francisco/locations"},"phones":[{"id":1521,"department":null,"extension":null,"number":"415
+        employment problems.","slug":"employment-law-center","updated_at":"2014-12-04T11:17:20.943-08:00","url":"https://api.smc-connect.org/locations/employment-law-center","address":{"id":927,"address_1":"180
+        Montgomery Street","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94104"},"organization":{"id":1161,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Legal
+        Aid Society of San Francisco","website":null,"slug":"legal-aid-society-of-san-francisco","url":"https://api.smc-connect.org/organizations/legal-aid-society-of-san-francisco","locations_url":"https://api.smc-connect.org/organizations/legal-aid-society-of-san-francisco/locations"},"phones":[{"id":1521,"department":null,"extension":null,"number":"415
         864-8848","number_type":"voice","vanity_number":null},{"id":1522,"department":null,"extension":null,"number":"415
         864-8208","number_type":"voice","vanity_number":null},{"id":3217,"department":null,"extension":null,"number":"415
         864-8199","number_type":"fax","vanity_number":null}]},{"id":371,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4185755,37.7650243],"description":"Offers
@@ -85,10 +88,9 @@ http_interactions:
         Language. Helps coordinate labor studies programs in colleges. Consults frequently
         with Hispanic unionists on courses and programs. .","kind":"Human Services","latitude":37.7650243,"longitude":-122.4185755,"name":"Instituto
         Laboral de la Raza","short_desc":"Supportive services for Hispanic workers
-        union or nonunion who are having labor-related problems.","slug":"instituto-laboral-de-la-raza","updated_at":"2014-11-25T17:22:00.864-08:00","url":"http://api.smc-connect.org/locations/instituto-laboral-de-la-raza","address":{"id":314,"street":"2947
-        - 16th Street","street_1":"2947 - 16th Street","street_2":null,"city":"San
-        Francisco","state":"CA","state_province":"CA","postal_code":"94103","zip":"94103"},"organization":{"id":371,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Instituto
-        Laboral de la Raza","website":null,"slug":"instituto-laboral-de-la-raza","url":"http://api.smc-connect.org/organizations/instituto-laboral-de-la-raza","locations_url":"http://api.smc-connect.org/organizations/instituto-laboral-de-la-raza/locations"},"phones":[{"id":498,"department":"San
+        union or nonunion who are having labor-related problems.","slug":"instituto-laboral-de-la-raza","updated_at":"2014-11-25T17:22:00.864-08:00","url":"https://api.smc-connect.org/locations/instituto-laboral-de-la-raza","address":{"id":314,"address_1":"2947
+        - 16th Street","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94103"},"organization":{"id":371,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Instituto
+        Laboral de la Raza","website":null,"slug":"instituto-laboral-de-la-raza","url":"https://api.smc-connect.org/organizations/instituto-laboral-de-la-raza","locations_url":"https://api.smc-connect.org/organizations/instituto-laboral-de-la-raza/locations"},"phones":[{"id":498,"department":"San
         Francisco","extension":null,"number":"415 431-7522","number_type":"voice","vanity_number":null},{"id":2727,"department":null,"extension":null,"number":"415
         431-4846","number_type":"fax","vanity_number":null}]},{"id":204,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4194009,37.7712479],"description":"Adult
         and Teen Crisis Hotlines: two toll-free lines provide 24-hour crisis counseling,
@@ -115,10 +117,9 @@ http_interactions:
         infants and children, including professional work clothing. Donated itmes
         are given to participants in all programs.","kind":"Human Services","latitude":37.7712479,"longitude":-122.4194009,"name":"La
         Casa de las Madres","short_desc":"Refuge for women and their children who
-        are being physically or emotionally abused.","slug":"la-casa-de-las-madres","updated_at":"2014-11-25T17:21:58.727-08:00","url":"http://api.smc-connect.org/locations/la-casa-de-las-madres","address":{"id":190,"street":"1663
-        Mission Street, Suite 225","street_1":"1663 Mission Street, Suite 225","street_2":null,"city":"San
-        Francisco","state":"CA","state_province":"CA","postal_code":"94103","zip":"94103"},"organization":{"id":204,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"La
-        Casa de las Madres","website":null,"slug":"la-casa-de-las-madres","url":"http://api.smc-connect.org/organizations/la-casa-de-las-madres","locations_url":"http://api.smc-connect.org/organizations/la-casa-de-las-madres/locations"},"phones":[{"id":267,"department":"Adult
+        are being physically or emotionally abused.","slug":"la-casa-de-las-madres","updated_at":"2014-11-25T17:21:58.727-08:00","url":"https://api.smc-connect.org/locations/la-casa-de-las-madres","address":{"id":190,"address_1":"1663
+        Mission Street, Suite 225","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94103"},"organization":{"id":204,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"La
+        Casa de las Madres","website":null,"slug":"la-casa-de-las-madres","url":"https://api.smc-connect.org/organizations/la-casa-de-las-madres","locations_url":"https://api.smc-connect.org/organizations/la-casa-de-las-madres/locations"},"phones":[{"id":267,"department":"Adult
         Crisis Line 24 hours daily","extension":null,"number":"877-503-1850","number_type":"voice","vanity_number":null},{"id":268,"department":"Teen
         Crisis Line (24 hours daily","extension":null,"number":"877-923-0700","number_type":"voice","vanity_number":null},{"id":269,"department":"Counseling
         and Support Services","extension":null,"number":"415 503-0500","number_type":"voice","vanity_number":null},{"id":2632,"department":null,"extension":null,"number":"415
@@ -133,10 +134,9 @@ http_interactions:
         with lenders to do loan modifications where possible.","kind":"Human Services","latitude":37.789251,"longitude":-122.400811,"name":"Consumer
         Credit Counseling Service of San Francisco","short_desc":"Counseling on alternatives
         for family money management, debt liquidation, budget planning and the use
-        of credit.","slug":"consumer-credit-counseling-service-of-san-francisco","updated_at":"2014-11-25T17:15:02.653-08:00","url":"http://api.smc-connect.org/locations/consumer-credit-counseling-service-of-san-francisco","address":{"id":32,"street":"595
-        Market Street, 15th Floor","street_1":"595 Market Street, 15th Floor","street_2":null,"city":"San
-        Francisco","state":"CA","state_province":"CA","postal_code":"94105","zip":"94105"},"organization":{"id":33,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Consumer
-        Credit Counseling Service of San Francisco","website":null,"slug":"consumer-credit-counseling-service-of-san-francisco","url":"http://api.smc-connect.org/organizations/consumer-credit-counseling-service-of-san-francisco","locations_url":"http://api.smc-connect.org/organizations/consumer-credit-counseling-service-of-san-francisco/locations"},"phones":[{"id":49,"department":null,"extension":null,"number":"800
+        of credit.","slug":"consumer-credit-counseling-service-of-san-francisco","updated_at":"2014-11-25T17:15:02.653-08:00","url":"https://api.smc-connect.org/locations/consumer-credit-counseling-service-of-san-francisco","address":{"id":32,"address_1":"595
+        Market Street, 15th Floor","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94105"},"organization":{"id":33,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Consumer
+        Credit Counseling Service of San Francisco","website":null,"slug":"consumer-credit-counseling-service-of-san-francisco","url":"https://api.smc-connect.org/organizations/consumer-credit-counseling-service-of-san-francisco","locations_url":"https://api.smc-connect.org/organizations/consumer-credit-counseling-service-of-san-francisco/locations"},"phones":[{"id":49,"department":null,"extension":null,"number":"800
         777-7526","number_type":"voice","vanity_number":"800 777-PLAN"},{"id":50,"department":"San
         Francisco","extension":null,"number":"415 788-0288","number_type":"voice","vanity_number":null},{"id":51,"department":"Santa
         Rosa","extension":null,"number":"707 527-9221","number_type":"voice","vanity_number":null}]},{"id":1199,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4052981,37.78597],"description":"Assists
@@ -148,168 +148,11 @@ http_interactions:
         The Benefits Counseling Program for San Francisco residents provides individualized
         benefits counseling and advocacy.","kind":"Human Services","latitude":37.78597,"longitude":-122.4052981,"name":"Taft
         School Health Services","short_desc":"An employment service for persons with
-        AIDS/HIV.","slug":"taft-school-health-services","updated_at":"2014-11-25T17:22:13.037-08:00","url":"http://api.smc-connect.org/locations/taft-school-health-services","address":{"id":957,"street":"785
-        Market Street, 10th Floor","street_1":"785 Market Street, 10th Floor","street_2":null,"city":"San
-        Francisco","state":"CA","state_province":"CA","postal_code":"94103","zip":"94103"},"organization":{"id":1199,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Positive
-        Resource Center","website":null,"slug":"positive-resource-center","url":"http://api.smc-connect.org/organizations/positive-resource-center","locations_url":"http://api.smc-connect.org/organizations/positive-resource-center/locations"},"phones":[{"id":1572,"department":null,"extension":null,"number":"415
+        AIDS/HIV.","slug":"taft-school-health-services","updated_at":"2014-11-25T17:22:13.037-08:00","url":"https://api.smc-connect.org/locations/taft-school-health-services","address":{"id":957,"address_1":"785
+        Market Street, 10th Floor","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94103"},"organization":{"id":1199,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Positive
+        Resource Center","website":null,"slug":"positive-resource-center","url":"https://api.smc-connect.org/organizations/positive-resource-center","locations_url":"https://api.smc-connect.org/organizations/positive-resource-center/locations"},"phones":[{"id":1572,"department":null,"extension":null,"number":"415
         777-0333","number_type":"voice","vanity_number":null},{"id":3239,"department":null,"extension":null,"number":"415
         777-1770","number_type":"fax","vanity_number":null}]}]'
     http_version: 
-  recorded_at: Mon, 23 Mar 2015 03:27:54 GMT
-- request:
-    method: get
-    uri: http://api.smc-connect.org/search?keyword=Work&kind=Human%20Services&location=94103&page=1&per_page=5
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/vnd.ohanapi-v1+json
-      User-Agent:
-      - Ohanakapa Ruby Gem 1.1.2
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Cowboy
-      Connection:
-      - keep-alive
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Etag:
-      - '"8c9ab9ffd065eba6334335b2e614b61c"'
-      Link:
-      - <http://api.smc-connect.org/search?keyword=Work&kind=Human+Services&location=94103&page=7&per_page=5>;
-        rel="last", <http://api.smc-connect.org/search?keyword=Work&kind=Human+Services&location=94103&page=2&per_page=5>;
-        rel="next"
-      X-Total-Count:
-      - '35'
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - max-age=300, public
-      X-Request-Id:
-      - daf6ab0e-103c-4b5e-a8c9-f46088562c67
-      X-Runtime:
-      - '0.062147'
-      X-Content-Digest:
-      - c0b350c5bd46ae69751dd1d5a41f9a914c747448
-      Date:
-      - Mon, 23 Mar 2015 03:27:54 GMT
-      Age:
-      - '0'
-      X-Rack-Cache:
-      - fresh
-      Content-Length:
-      - '11588'
-      Via:
-      - 1.1 vegur
-    body:
-      encoding: UTF-8
-      string: '[{"id":1161,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4020736,37.7907516],"description":"Provides
-        information, advocacy, counseling and legal services on employment-related
-        issues to low-income individuals. Access to services is provided through Workers''
-        Rights Clinics which address the full range of employment issues including
-        unpaid wages, workplace discrimination, harassment, wrongful termination,
-        disability rights in the workplace, workplace injuries, unemployment compensation,
-        and family/medical leave. Clinics are located in San Francisco, Berkeley,
-        East San Jose, Fresno, and Orange County.","kind":"Human Services","latitude":37.7907516,"longitude":-122.4020736,"name":"Employment
-        Law Center","short_desc":"Legal representation for low-income persons with
-        employment problems.","slug":"employment-law-center","updated_at":"2014-12-04T11:17:20.943-08:00","url":"http://api.smc-connect.org/locations/employment-law-center","address":{"id":927,"street":"180
-        Montgomery Street","street_1":"180 Montgomery Street","street_2":null,"city":"San
-        Francisco","state":"CA","state_province":"CA","postal_code":"94104","zip":"94104"},"organization":{"id":1161,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Legal
-        Aid Society of San Francisco","website":null,"slug":"legal-aid-society-of-san-francisco","url":"http://api.smc-connect.org/organizations/legal-aid-society-of-san-francisco","locations_url":"http://api.smc-connect.org/organizations/legal-aid-society-of-san-francisco/locations"},"phones":[{"id":1521,"department":null,"extension":null,"number":"415
-        864-8848","number_type":"voice","vanity_number":null},{"id":1522,"department":null,"extension":null,"number":"415
-        864-8208","number_type":"voice","vanity_number":null},{"id":3217,"department":null,"extension":null,"number":"415
-        864-8199","number_type":"fax","vanity_number":null}]},{"id":371,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4185755,37.7650243],"description":"Offers
-        supportive services for Hispanic workers, union and non-union. Provides legal
-        counseling, referrals and representation for monolingual persons in areas
-        of employment, unemployment, wage claims, worker''s compensation referrals,
-        domestic work and labor-related problems. Assists in writing work authorization
-        letters and contacting employers for workers who are having difficulty as
-        a result of the new immigration law. Offers classes and workshops in labor
-        affairs, leadership skills, collective bargaining, labor history, contracts,
-        negotiations, women and comparable worth, legalization and English as a Second
-        Language. Helps coordinate labor studies programs in colleges. Consults frequently
-        with Hispanic unionists on courses and programs. .","kind":"Human Services","latitude":37.7650243,"longitude":-122.4185755,"name":"Instituto
-        Laboral de la Raza","short_desc":"Supportive services for Hispanic workers
-        union or nonunion who are having labor-related problems.","slug":"instituto-laboral-de-la-raza","updated_at":"2014-11-25T17:22:00.864-08:00","url":"http://api.smc-connect.org/locations/instituto-laboral-de-la-raza","address":{"id":314,"street":"2947
-        - 16th Street","street_1":"2947 - 16th Street","street_2":null,"city":"San
-        Francisco","state":"CA","state_province":"CA","postal_code":"94103","zip":"94103"},"organization":{"id":371,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Instituto
-        Laboral de la Raza","website":null,"slug":"instituto-laboral-de-la-raza","url":"http://api.smc-connect.org/organizations/instituto-laboral-de-la-raza","locations_url":"http://api.smc-connect.org/organizations/instituto-laboral-de-la-raza/locations"},"phones":[{"id":498,"department":"San
-        Francisco","extension":null,"number":"415 431-7522","number_type":"voice","vanity_number":null},{"id":2727,"department":null,"extension":null,"number":"415
-        431-4846","number_type":"fax","vanity_number":null}]},{"id":204,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4194009,37.7712479],"description":"Adult
-        and Teen Crisis Hotlines: two toll-free lines provide 24-hour crisis counseling,
-        information and referrals to callers statewide. Drop-In Counseling Center
-        provides victims and survivors with crisis and on-going counseling; suppport
-        groups; emergency food and clothing; and resource advocacy and referrals.
-        Emergency Shelter proram provides up to 8 weeks of safe housing and supportive
-        services for women and children fleeing violence, with 24-hour intake capacity.
-        Domestic Violence Response Team provides victims with crisis intervention
-        and support through advocates who work on-site with the San Francisco Police
-        Department. Teen Program provides multi-site, adolescent-specific crisis intervention,
-        counseling, support groups, education and outreach, and advocacy to teens
-        who have experienced or are at risk of domestic and dating violence. Safe
-        Havens Project provides specialized assistance to domestic violence victims
-        in developing and implementing shared custody arrangements with their batterers.
-        Safe Housing Project works on-site at housing sites throughout San Francisco
-        to empower residents to create communities that foster ad demand violence-free
-        lives. The Mary Elizabeth Inn and Verona Hotel Case Management Program offers
-        housing stability, community-building and emotional support services to residents
-        of these two transitional/permanent housing sites. Community Education and
-        Outreach Program offers outreach, presentations, and workshops in the community
-        on domestic violence, healthy relationships, agency services, and other topics.
-        La Casa de las Madres accepts donations of clothing and toiletries for women,
-        infants and children, including professional work clothing. Donated itmes
-        are given to participants in all programs.","kind":"Human Services","latitude":37.7712479,"longitude":-122.4194009,"name":"La
-        Casa de las Madres","short_desc":"Refuge for women and their children who
-        are being physically or emotionally abused.","slug":"la-casa-de-las-madres","updated_at":"2014-11-25T17:21:58.727-08:00","url":"http://api.smc-connect.org/locations/la-casa-de-las-madres","address":{"id":190,"street":"1663
-        Mission Street, Suite 225","street_1":"1663 Mission Street, Suite 225","street_2":null,"city":"San
-        Francisco","state":"CA","state_province":"CA","postal_code":"94103","zip":"94103"},"organization":{"id":204,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"La
-        Casa de las Madres","website":null,"slug":"la-casa-de-las-madres","url":"http://api.smc-connect.org/organizations/la-casa-de-las-madres","locations_url":"http://api.smc-connect.org/organizations/la-casa-de-las-madres/locations"},"phones":[{"id":267,"department":"Adult
-        Crisis Line 24 hours daily","extension":null,"number":"877-503-1850","number_type":"voice","vanity_number":null},{"id":268,"department":"Teen
-        Crisis Line (24 hours daily","extension":null,"number":"877-923-0700","number_type":"voice","vanity_number":null},{"id":269,"department":"Counseling
-        and Support Services","extension":null,"number":"415 503-0500","number_type":"voice","vanity_number":null},{"id":2632,"department":null,"extension":null,"number":"415
-        503-0301","number_type":"fax","vanity_number":null}]},{"id":33,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.400811,37.789251],"description":"Provides
-        counseling on personal money management, budget planning, bankruptcy and the
-        various uses of credit. Also assists individuals to develop a workable plan
-        for the orderly liquidation of debts if necessary. Free workshops are offered
-        on surviving unemployment, first-time home buying and mastering credit for
-        high school students. Also offers counseling for the purchase of a house,
-        default counseling, and transitional housing and tenant counseling. Also offers
-        foreclosure prevention counseling to help families keep their homes by working
-        with lenders to do loan modifications where possible.","kind":"Human Services","latitude":37.789251,"longitude":-122.400811,"name":"Consumer
-        Credit Counseling Service of San Francisco","short_desc":"Counseling on alternatives
-        for family money management, debt liquidation, budget planning and the use
-        of credit.","slug":"consumer-credit-counseling-service-of-san-francisco","updated_at":"2014-11-25T17:15:02.653-08:00","url":"http://api.smc-connect.org/locations/consumer-credit-counseling-service-of-san-francisco","address":{"id":32,"street":"595
-        Market Street, 15th Floor","street_1":"595 Market Street, 15th Floor","street_2":null,"city":"San
-        Francisco","state":"CA","state_province":"CA","postal_code":"94105","zip":"94105"},"organization":{"id":33,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Consumer
-        Credit Counseling Service of San Francisco","website":null,"slug":"consumer-credit-counseling-service-of-san-francisco","url":"http://api.smc-connect.org/organizations/consumer-credit-counseling-service-of-san-francisco","locations_url":"http://api.smc-connect.org/organizations/consumer-credit-counseling-service-of-san-francisco/locations"},"phones":[{"id":49,"department":null,"extension":null,"number":"800
-        777-7526","number_type":"voice","vanity_number":"800 777-PLAN"},{"id":50,"department":"San
-        Francisco","extension":null,"number":"415 788-0288","number_type":"voice","vanity_number":null},{"id":51,"department":"Santa
-        Rosa","extension":null,"number":"707 527-9221","number_type":"voice","vanity_number":null}]},{"id":1199,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4052981,37.78597],"description":"Assists
-        people affected by, or at risk for, HIV/AIDS through culturally appropriate
-        counseling, education and advocacy to make informed choices which maximize
-        available benefits and employment opportunities. The Employment Services Program
-        includes job search skills workshops, computer training, resume assistance,
-        career counseling/vocational testing and Working While Disabled workshops.
-        The Benefits Counseling Program for San Francisco residents provides individualized
-        benefits counseling and advocacy.","kind":"Human Services","latitude":37.78597,"longitude":-122.4052981,"name":"Taft
-        School Health Services","short_desc":"An employment service for persons with
-        AIDS/HIV.","slug":"taft-school-health-services","updated_at":"2014-11-25T17:22:13.037-08:00","url":"http://api.smc-connect.org/locations/taft-school-health-services","address":{"id":957,"street":"785
-        Market Street, 10th Floor","street_1":"785 Market Street, 10th Floor","street_2":null,"city":"San
-        Francisco","state":"CA","state_province":"CA","postal_code":"94103","zip":"94103"},"organization":{"id":1199,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Positive
-        Resource Center","website":null,"slug":"positive-resource-center","url":"http://api.smc-connect.org/organizations/positive-resource-center","locations_url":"http://api.smc-connect.org/organizations/positive-resource-center/locations"},"phones":[{"id":1572,"department":null,"extension":null,"number":"415
-        777-0333","number_type":"voice","vanity_number":null},{"id":3239,"department":null,"extension":null,"number":"415
-        777-1770","number_type":"fax","vanity_number":null}]}]'
-    http_version: 
-  recorded_at: Mon, 23 Mar 2015 03:27:54 GMT
+  recorded_at: Mon, 11 May 2015 02:37:05 GMT
 recorded_with: VCR 2.9.3

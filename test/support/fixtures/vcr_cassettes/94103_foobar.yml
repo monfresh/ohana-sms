@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.smc-connect.org/search?keyword=Work&kind=Human%20Services&location=94388&page=1&per_page=5
+    uri: https://api.smc-connect.org/search?keyword=foobar&kind=Human%20Services&location=94103&page=1&per_page=5
     body:
       encoding: US-ASCII
       string: ''
@@ -31,14 +31,14 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Etag:
-      - '"d4247f9e20940ab55a3c7dd9094413e5"'
+      - '"16c3049458228ea83575d75b67465260"'
       Link:
-      - <https://api.smc-connect.org/search?keyword=Work&kind=Human+Services&location=94388&page=0&per_page=5>;
+      - <https://api.smc-connect.org/search?keyword=foobar&kind=Human+Services&location=94103&page=0&per_page=5>;
         rel="last"
       X-Total-Count:
       - '0'
       Date:
-      - Mon, 11 May 2015 02:37:02 GMT
+      - Mon, 11 May 2015 02:40:56 GMT
       Content-Type:
       - application/json; charset=utf-8
       Cache-Control:
@@ -46,15 +46,15 @@ http_interactions:
       Vary:
       - Origin
       X-Request-Id:
-      - b0756495-d38b-4d11-8336-47911c63b1d8
+      - c7e3268c-eea7-4dbe-89c2-50570537efb0
       X-Runtime:
-      - '0.046830'
+      - '0.045277'
       X-Content-Digest:
       - 97d170e1550eee4afc0af065b78cda302a97674c
       Age:
-      - '0'
+      - '73'
       X-Rack-Cache:
-      - miss, store
+      - fresh
       Content-Length:
       - '2'
       Via:
@@ -63,5 +63,5 @@ http_interactions:
       encoding: UTF-8
       string: "[]"
     http_version: 
-  recorded_at: Mon, 11 May 2015 02:37:02 GMT
+  recorded_at: Mon, 11 May 2015 02:42:10 GMT
 recorded_with: VCR 2.9.3

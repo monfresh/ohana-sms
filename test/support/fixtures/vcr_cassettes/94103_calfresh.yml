@@ -1,0 +1,92 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.smc-connect.org/search?keyword=calfresh&kind=Human%20Services&location=94103&page=1&per_page=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - '"d0d4adc7d14facbbaa44488475a3466d"'
+      X-Total-Count:
+      - '1'
+      Date:
+      - Mon, 11 May 2015 02:37:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - max-age=300, public
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 9535f787-9b43-45b5-a8c0-24f0569cd045
+      X-Runtime:
+      - '0.070743'
+      X-Content-Digest:
+      - 4653c78b223f4331313bc994082af9cdfd963299
+      Age:
+      - '0'
+      X-Rack-Cache:
+      - miss, store
+      Content-Length:
+      - '3085'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":1250,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.3926748,37.7901873],"description":"Provides
+        the 211 regional information and referral service to anyone needing information
+        about nonprofit health and human services in Marin, Napa, San Francisco San
+        Mateo, Santa Cruz and Solano counties. 211 is an easy to remember three digit
+        telephone number that is free, confidential, multi-lingual and available 24
+        hours a day. Following an assessment, referrals are given and follow-up calls
+        are made to determine if the problem was resolved. Information is available
+        for a wide variety of issues including basic needs (clothing, food and shelter),
+        childcare, disaster-related services, employment services, foster care, healthcare,
+        legal assistance, mental health services, substance abuse and support groups.
+        Along with other 211 providers in California, provides assessment and screening
+        for CalFresh (formerly known as Food Stamps) as well as screening and technology-related
+        referrals, in partnership with the California Emerging Technologies Fund (CETF).
+        La Linea provides information and referral services to Spanish-speaking individuals.
+        The Immigrant Assistance Line assists immigrants with basic immigration/naturalization
+        questions and links them to direct service providers. Welcomes information
+        requests from other agencies, doctors, schools, social workers and corporations.
+        Periodically publishes publishes a variety of resource guides including \"Help
+        for Hard Times,\" a regional resource guide for people impacted by a lay-off
+        or reduced income.","kind":"Human Services","latitude":37.7901873,"longitude":-122.3926748,"name":"HELPLINK
+        - 211 San Francisco","short_desc":"Comprehensive information and referral
+        service.","slug":"helplink-211-san-francisco","updated_at":"2014-12-04T11:17:22.959-08:00","url":"https://api.smc-connect.org/locations/helplink-211-san-francisco","address":{"id":1002,"address_1":"221
+        Main Street, Suite 300","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94105"},"organization":{"id":220,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"United
+        Way of the Bay Area","website":null,"slug":"united-way-of-the-bay-area","url":"https://api.smc-connect.org/organizations/united-way-of-the-bay-area","locations_url":"https://api.smc-connect.org/organizations/united-way-of-the-bay-area/locations"},"phones":[{"id":1648,"department":null,"extension":null,"number":"800
+        273-6222","number_type":"voice","vanity_number":null},{"id":1649,"department":null,"extension":null,"number":"415
+        808-4357","number_type":"voice","vanity_number":"415 808-HELP"},{"id":1650,"department":"Spanish","extension":null,"number":"415
+        808-4444","number_type":"voice","vanity_number":null},{"id":1651,"department":"Chinese","extension":null,"number":"415
+        808-7339","number_type":"voice","vanity_number":null},{"id":1652,"department":null,"extension":null,"number":"415
+        808-4440","number_type":"tty","vanity_number":null}]}]'
+    http_version: 
+  recorded_at: Mon, 11 May 2015 02:37:05 GMT
+recorded_with: VCR 2.9.3

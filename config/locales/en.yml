@@ -22,8 +22,7 @@
 en:
   intro: >
     Hi! Please enter a 5-digit ZIP code to get started.
-  choose_category: 'Please choose a category by entering its number: %{list}'
-  invalid_category: 'Please enter a number between 1 and 11.'
+  choose_category: 'Please enter a search term, or choose one by entering its number: %{list}'
   results_intro: >
     Here are up to 5 locations that match your search.
     To get more details about a location, enter its number.
@@ -32,8 +31,8 @@ en:
     To start over, enter "reset".
   you_are_welcome: "You're welcome!"
   no_results_found: >
-    Sorry, no results found. Please try again with a different ZIP code or
-    category.
+    Sorry, no results found. Please try again with a different search term or
+    ZIP code.
   phone: Phone
   address: Address
   categories:
