@@ -19,6 +19,7 @@ end
 group :development, :test do
   gem 'spring'
   gem 'spring-watcher-listen'
+  gem 'bummr'
 end
 
 group :test do
