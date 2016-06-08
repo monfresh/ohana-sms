@@ -40,8 +40,12 @@ GEM
     arel (6.0.3)
     ast (2.2.0)
     builder (3.2.2)
+    bummr (0.1.2)
+      colorize
+      thor
     codeclimate-test-reporter (0.4.8)
       simplecov (>= 0.7.1, < 1.0.0)
+    colorize (0.7.7)
     concurrent-ruby (1.0.0)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
@@ -167,6 +171,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bummr
   codeclimate-test-reporter
   dalli
   faraday-http-cache (~> 1.0)
