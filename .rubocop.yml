@@ -25,7 +25,7 @@ Metrics/MethodLength:
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#short-methods
   Enabled: true
   CountComments: false
-  Max: 7
+  Max: 8
 
 Style/Documentation:
   Description: Document classes and non-namespace modules.

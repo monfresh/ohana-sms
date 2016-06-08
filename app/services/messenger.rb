@@ -40,7 +40,8 @@ class Messenger
       keyword: search_term,
       kind: 'Human Services',
       page: 1,
-      per_page: 5)
+      per_page: 5
+    )
   end
 
   def search_term
