@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class ConversationTracker
   def initialize(body, session)
     @body = body
@@ -61,7 +62,7 @@ class ConversationTracker
   end
 
   def first_step?
-    @session[:counter] == 0 || (!second_step? && !third_step?)
+    (@session[:counter]).zero? || (!second_step? && !third_step?)
   end
 
   def second_step?
