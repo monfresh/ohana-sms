@@ -40,12 +40,12 @@ GEM
     arel (6.0.3)
     ast (2.3.0)
     builder (3.2.2)
-    bummr (0.1.2)
+    bummr (0.1.5)
       colorize
       thor
     codeclimate-test-reporter (0.5.1)
       simplecov (>= 0.7.1, < 1.0.0)
-    colorize (0.7.7)
+    colorize (0.8.1)
     concurrent-ruby (1.0.2)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
@@ -196,5 +196,8 @@ DEPENDENCIES
   vcr
   webmock
 
+RUBY VERSION
+   ruby 2.3.1p112
+
 BUNDLED WITH
-   1.10.6
+   1.12.4
