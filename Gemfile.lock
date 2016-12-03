@@ -82,7 +82,7 @@ GEM
       metaclass (~> 0.0.1)
     multi_json (1.12.1)
     multipart-post (2.0.0)
-    newrelic_rpm (3.16.0.318)
+    newrelic_rpm (3.17.1.326)
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
