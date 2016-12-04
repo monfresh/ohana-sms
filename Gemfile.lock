@@ -43,8 +43,8 @@ GEM
     bummr (0.1.6)
       rainbow
       thor
-    codeclimate-test-reporter (0.6.0)
-      simplecov (>= 0.7.1, < 1.0.0)
+    codeclimate-test-reporter (1.0.3)
+      simplecov
     concurrent-ruby (1.0.2)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
