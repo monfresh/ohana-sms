@@ -2,8 +2,6 @@
 class LocationsController < ApplicationController
   skip_before_action :verify_authenticity_token
 
-  include TwilioRequestValidator
-
   before_action :set_locale
 
   def reply

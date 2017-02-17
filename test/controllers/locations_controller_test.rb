@@ -319,14 +319,6 @@ class LocationsControllerTest < ActionController::TestCase
     end
   end
 
-  test 'validate_request' do
-    @request.stubs(:headers).returns('HTTP_X_TWILIO_SIGNATURE' => 'foo')
-    Figaro.env.stubs(:VALIDATE_REQUEST).returns('true')
-
-    get :reply
-    assert_response :unauthorized
-  end
-
   private
 
   def get_reply_with_body(body, locale = 'en')
