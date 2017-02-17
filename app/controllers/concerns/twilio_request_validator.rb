@@ -35,6 +35,6 @@ module TwilioRequestValidator
   private
 
   def validations_enabled?
-    Figaro.env.VALIDATE_REQUEST
+    Figaro.env.VALIDATE_REQUEST == 'true'
   end
 end
