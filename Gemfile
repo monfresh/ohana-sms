@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 
 ruby '2.3.3'
 
-gem 'faraday-http-cache', '~> 1.0'
+gem 'faraday-http-cache', '~> 2.0'
 gem 'figaro'
 gem 'ohanakapa', '~> 1.1.1'
 gem 'puma'
