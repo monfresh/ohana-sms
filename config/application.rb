@@ -1,5 +1,6 @@
 # frozen_string_literal: true
-require File.expand_path('../boot', __FILE__)
+
+require File.expand_path('boot', __dir__)
 
 # Pick the frameworks you want:
 require 'action_controller/railtie'
