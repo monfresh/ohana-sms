@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class ConversationTracker
   def initialize(body, session)
     @body = body
