@@ -8,7 +8,7 @@ gem 'faraday-http-cache', '~> 2.0'
 gem 'figaro'
 gem 'ohanakapa', '~> 1.1.1'
 gem 'puma'
-gem 'rails', '~> 4.2.0'
+gem 'rails', '~> 5.2.0'
 gem 'twilio-ruby'
 
 group :production do
