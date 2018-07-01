@@ -1,9 +1,7 @@
 # frozen_string_literal: true
 
-if ENV['TRAVIS']
-  require 'simplecov'
-  SimpleCov.start
-end
+require 'simplecov'
+SimpleCov.start
 
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../config/environment', __dir__)

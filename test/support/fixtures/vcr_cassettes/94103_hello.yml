@@ -37,15 +37,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 01 Jul 2018 01:50:55 GMT
+      - Sun, 01 Jul 2018 19:58:08 GMT
       Cache-Control:
       - max-age=300, public
       Vary:
       - Origin
       X-Request-Id:
-      - d657125f-f7d5-42ff-8538-a4ca065acede
+      - 3b25e2e7-0b2a-4cef-998e-261f2bd6b43c
       X-Runtime:
-      - '0.023909'
+      - '0.025494'
       Strict-Transport-Security:
       - max-age=15552000; includeSubDomains
       Transfer-Encoding:
@@ -56,5 +56,5 @@ http_interactions:
       encoding: UTF-8
       string: "[]"
     http_version: 
-  recorded_at: Sun, 01 Jul 2018 01:50:55 GMT
+  recorded_at: Sun, 01 Jul 2018 19:58:08 GMT
 recorded_with: VCR 4.0.0

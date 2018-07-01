@@ -38,15 +38,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 01 Jul 2018 01:51:01 GMT
+      - Sun, 01 Jul 2018 19:58:06 GMT
       Cache-Control:
       - max-age=300, public
       Vary:
       - Origin
       X-Request-Id:
-      - 8a02f096-73f7-41cd-ba2c-bbc6b5eaec3f
+      - 4743269e-06ce-42f2-abe9-7ee9b7c385fd
       X-Runtime:
-      - '0.054040'
+      - '0.155493'
       Strict-Transport-Security:
       - max-age=15552000; includeSubDomains
       Transfer-Encoding:
@@ -131,7 +131,7 @@ http_interactions:
         333-HELP"},{"id":438,"department":null,"extension":null,"number":"415 777-5500","number_type":"voice","vanity_number":null},{"id":2700,"department":null,"extension":null,"number":"415
         777-5565","number_type":"fax","vanity_number":null}]}]'
     http_version: 
-  recorded_at: Sun, 01 Jul 2018 01:51:01 GMT
+  recorded_at: Sun, 01 Jul 2018 19:58:06 GMT
 - request:
     method: get
     uri: https://api.smc-connect.org/search?keyword=Care&kind=Human%20Services&location=94103&page=1&per_page=5
@@ -170,15 +170,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 01 Jul 2018 01:51:02 GMT
+      - Sun, 01 Jul 2018 19:58:06 GMT
       Cache-Control:
       - max-age=300, public
       Vary:
       - Origin
       X-Request-Id:
-      - 97198004-4390-4833-b709-5a323d8610e8
+      - 12f06c4c-2ac7-4075-834e-c53ebff3da76
       X-Runtime:
-      - '0.086815'
+      - '0.066369'
       Strict-Transport-Security:
       - max-age=15552000; includeSubDomains
       Transfer-Encoding:
@@ -263,5 +263,5 @@ http_interactions:
         333-HELP"},{"id":438,"department":null,"extension":null,"number":"415 777-5500","number_type":"voice","vanity_number":null},{"id":2700,"department":null,"extension":null,"number":"415
         777-5565","number_type":"fax","vanity_number":null}]}]'
     http_version: 
-  recorded_at: Sun, 01 Jul 2018 01:51:02 GMT
+  recorded_at: Sun, 01 Jul 2018 19:58:06 GMT
 recorded_with: VCR 4.0.0

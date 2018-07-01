@@ -9,8 +9,12 @@ AllCops:
     - '**/Gemfile'
     - '**/Rakefile'
 
-  TargetRubyVersion: 2.3
+  TargetRubyVersion: 2.5
+  TargetRailsVersion: 5.2
   UseCache: true
+
+Rails:
+  Enabled: true
 
 Layout/AlignParameters:
   # Alignment of parameters in multi-line method calls.
@@ -91,6 +95,13 @@ Metrics/AbcSize:
   Enabled: true
   Max: 15
 
+Metrics/BlockLength:
+  CountComments: false  # count full line comments?
+  Enabled: true
+  Max: 25
+  Exclude:
+    - 'config/environments/production.rb'
+
 Metrics/ClassLength:
   Description: Avoid classes longer than 100 lines of code.
   Enabled: true
@@ -103,7 +114,7 @@ Metrics/LineLength:
   Description: Limit lines to 80 characters.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#80-character-limits
   Enabled: true
-  Max: 80
+  Max: 95
   AllowURI: true
   URISchemes:
   - http

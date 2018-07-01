@@ -24,9 +24,9 @@ group :development, :test do
 end
 
 group :test do
-  gem 'codeclimate-test-reporter', require: nil
   gem 'mocha'
   gem 'rubocop'
+  gem 'simplecov', require: false
   gem 'vcr'
   gem 'webmock'
 end

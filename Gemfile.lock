@@ -50,8 +50,6 @@ GEM
     bummr (0.3.2)
       rainbow
       thor
-    codeclimate-test-reporter (1.0.8)
-      simplecov (<= 0.13)
     concurrent-ruby (1.0.5)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
@@ -193,7 +191,6 @@ PLATFORMS
 
 DEPENDENCIES
   bummr
-  codeclimate-test-reporter
   dalli
   faraday-http-cache (~> 2.0)
   figaro
@@ -204,6 +201,7 @@ DEPENDENCIES
   puma
   rails (~> 5.2.0)
   rubocop
+  simplecov
   spring
   spring-watcher-listen
   twilio-ruby

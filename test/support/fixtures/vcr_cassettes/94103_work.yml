@@ -38,15 +38,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 01 Jul 2018 01:50:58 GMT
+      - Sun, 01 Jul 2018 19:58:06 GMT
       Cache-Control:
       - max-age=300, public
       Vary:
       - Origin
       X-Request-Id:
-      - 44759c74-6088-4743-8941-491c6ecab525
+      - 75dae1a5-cfe0-4bd0-927b-afee297f9671
       X-Runtime:
-      - '0.087969'
+      - '0.125882'
       Strict-Transport-Security:
       - max-age=15552000; includeSubDomains
       Transfer-Encoding:
@@ -120,7 +120,7 @@ http_interactions:
         546-9902","number_type":"voice","vanity_number":null},{"id":2683,"department":null,"extension":null,"number":"415
         546-7479","number_type":"fax","vanity_number":null}]}]'
     http_version: 
-  recorded_at: Sun, 01 Jul 2018 01:50:58 GMT
+  recorded_at: Sun, 01 Jul 2018 19:58:06 GMT
 - request:
     method: get
     uri: https://api.smc-connect.org/search?keyword=Work&kind=Human%20Services&location=94103&page=1&per_page=5
@@ -159,15 +159,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 01 Jul 2018 01:50:58 GMT
+      - Sun, 01 Jul 2018 19:58:06 GMT
       Cache-Control:
       - max-age=300, public
       Vary:
       - Origin
       X-Request-Id:
-      - 1e7bfa3c-87b6-427d-85c5-ecd1b89e44fb
+      - 8ccf685b-507c-4533-943d-f5e1a627fc30
       X-Runtime:
-      - '0.055708'
+      - '0.087574'
       Strict-Transport-Security:
       - max-age=15552000; includeSubDomains
       Transfer-Encoding:
@@ -241,5 +241,5 @@ http_interactions:
         546-9902","number_type":"voice","vanity_number":null},{"id":2683,"department":null,"extension":null,"number":"415
         546-7479","number_type":"fax","vanity_number":null}]}]'
     http_version: 
-  recorded_at: Sun, 01 Jul 2018 01:50:58 GMT
+  recorded_at: Sun, 01 Jul 2018 19:58:06 GMT
 recorded_with: VCR 4.0.0
