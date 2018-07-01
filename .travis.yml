@@ -8,7 +8,7 @@ script:
 - bundle exec rubocop --rails
 - bundle exec codeclimate-test-reporter
 rvm:
-- 2.3.3
+- 2.5.1
 env:
   global:
   - OHANA_API_ENDPOINT=https://api.smc-connect.org
