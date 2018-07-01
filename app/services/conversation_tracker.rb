@@ -35,8 +35,12 @@ class ConversationTracker
     Messenger.new(@session).search_results
   end
 
+  def results
+    @results ||= Messenger.new(@session).locations
+  end
+
   def no_results?
-    Messenger.new(@session).locations.blank?
+    results.empty?
   end
 
   def apologize_and_restart
@@ -50,7 +54,7 @@ class ConversationTracker
   end
 
   def third_step_message
-    return process_location_details if @body =~ /\A[1-5]\z/
+    return process_location_details if @body =~ /\A[1-5]\z/ && results.size >= @body.to_i
     if @body =~ /ty\z|thanks!?\z|thank you!*\z/i
       return "#{I18n.t('you_are_welcome')} #{I18n.t('choose_location')}"
     end

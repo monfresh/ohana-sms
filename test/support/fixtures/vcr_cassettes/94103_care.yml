@@ -10,7 +10,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.2
+      - Ohanakapa Ruby Gem 1.1.3
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -22,8 +22,6 @@ http_interactions:
       - Cowboy
       Connection:
       - keep-alive
-      Strict-Transport-Security:
-      - max-age=31536000
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -31,159 +29,239 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Etag:
-      - '"80c295d4ea629e8ff77be5e3fa021432"'
+      - W/"901d098223c212ae6e7f429638874500"
       Link:
-      - <https://api.smc-connect.org/search?keyword=Care&kind=Human+Services&location=94103&page=13&per_page=5>;
-        rel="last", <https://api.smc-connect.org/search?keyword=Care&kind=Human+Services&location=94103&page=2&per_page=5>;
-        rel="next"
+      - <https://api.smc-connect.org/search?keyword=Care&page=12&per_page=5>; rel="last",
+        <https://api.smc-connect.org/search?keyword=Care&page=2&per_page=5>; rel="next"
       X-Total-Count:
-      - '62'
-      Date:
-      - Mon, 11 May 2015 02:37:04 GMT
+      - '60'
       Content-Type:
       - application/json; charset=utf-8
+      Date:
+      - Sun, 01 Jul 2018 01:51:01 GMT
       Cache-Control:
       - max-age=300, public
       Vary:
       - Origin
       X-Request-Id:
-      - eb19b63f-244d-43c4-9b43-c75fefe108c5
+      - 8a02f096-73f7-41cd-ba2c-bbc6b5eaec3f
       X-Runtime:
-      - '0.132691'
-      X-Content-Digest:
-      - 2c2bb1e5429a6863bb3b325ef70561b4a4759743
-      Age:
-      - '0'
-      X-Rack-Cache:
-      - miss, store
-      Content-Length:
-      - '13803'
+      - '0.054040'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '[{"id":1122,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4052981,37.78597],"description":"Family
-        Caregiver Alliance (FCA) as the Bay Area Caregiver Resource Center, offers
-        direct, comprehensive services for caregivers (partners/spouses, family, and
-        friends) of adults who became cognitively impaired, due to illness or injury,
-        after age 18. Diagnoses served include Alzheimer''s disease, stroke, Traumatic
-        Brain Injury, Huntington''s disease, Parkinson''s disease, multiple sclerosis,
-        Amyotrophic Lateral Scleroses (ALS), and others. Offers information and referral
-        regarding caregiver issues, brain impairing conditions, community resources,
-        and public awareness, education and training. In some counties, FCA also provides
-        services to caregivers of adults age 60 or over (with or without cognitive
-        impairment) and to adults age 59 or under with demintia (not including stroke)
-        through funding from the National Family Caregiver Support Program administered
-        locally through Area Agencies on Aging. Long-term care planning services include:
-        individual and family consultation in the home regarding the client''s caregiving
-        situation; legal consultation; counseling; respite, Link2Care, an on-line
-        caregiver support services program; a comprehensive Web site; an on-line support
-        group for all caregivers, an on-line group for Huntington''s caregivers, and
-        an on-line group for Lesbian/Gay/Bisexual/Transgender (LGBT) caregivers; workshops
-        and classes that focus on relieving caregiver stress by teaching caregivers
-        new skills for interacting with people with dementia and caregiver self care.
-        Also offers professional training, conferences, publications, in-service trainings
-        to other professionals, and technical assistance. Publishes fact sheets in
-        English, Spanish and Chinese on specific brain impairing illnesses, legal
-        issues, in-home care, community resources, and caregiver issues. Also publishes
-        three fact sheets focusing on the needs of LGBT caregivers. Produces UPDATE,
-        an award-winning quarterly newsletter, which is also available on-line. The
-        National Center on Caregiving is a program that advocates for caregivers,
-        as well as provides information and conducts research, at the national level,
-        and works to affect policy by supporting legislation that will improve awareness
-        and availability of services to people taking care of family or friends with
-        cognitive impairment, or who are elderly and frail.","kind":"Human Services","latitude":37.78597,"longitude":-122.4052981,"name":"Bay
-        Area Caregiver Resource Center","short_desc":"Offers a comprehensive range
-        of services for family, partners, friends and others concerned with or caring
-        for a brain impaired adult.","slug":"bay-area-caregiver-resource-center","updated_at":"2014-11-25T17:22:11.783-08:00","url":"https://api.smc-connect.org/locations/bay-area-caregiver-resource-center","address":{"id":893,"address_1":"785
-        Market Street, Suite 750","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94103"},"organization":{"id":1122,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Family
-        Caregiver Alliance (FCA)","website":null,"slug":"family-caregiver-alliance-fca","url":"https://api.smc-connect.org/organizations/family-caregiver-alliance-fca","locations_url":"https://api.smc-connect.org/organizations/family-caregiver-alliance-fca/locations"},"phones":[{"id":1467,"department":null,"extension":null,"number":"800
-        445-8106","number_type":"voice","vanity_number":null},{"id":1468,"department":null,"extension":null,"number":"415
-        434-3388","number_type":"voice","vanity_number":null},{"id":3191,"department":null,"extension":null,"number":"415
-        434-3508","number_type":"fax","vanity_number":null}]},{"id":1176,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.393666,37.766979],"description":"Provides
-        services for persons with multiple sclerosis (MS), their families and the
-        community, including peer counseling, educational seminars and social events.
-        Phone for information about local support groups and referrals to professional
-        counseling. Staff also make referrals to doctors, therapists and other agencies
-        and rehabilitation facilities. Provides equipment purchase assistance based
-        on financial need. Offers home respite care services by application. Printed
-        and audio educational material is available on request. Supports a lending
-        library and provides information and referral services. Provides benefits
-        information and legislative advocacy. Educates the public and health professionals
-        about MS and supports research. Publishes a quarterly newsletter.","kind":"Human
-        Services","latitude":37.766979,"longitude":-122.393666,"name":"Northern California
-        Chapter","short_desc":"Services and information for persons with multiple
-        sclerosis, their families and the community.","slug":"northern-california-chapter-1700-owens-street-suite-190","updated_at":"2014-11-25T17:22:12.652-08:00","url":"https://api.smc-connect.org/locations/northern-california-chapter-1700-owens-street-suite-190","address":{"id":939,"address_1":"1700
-        Owens Street, Suite 190","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94158"},"organization":{"id":1176,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"National
-        Multiple Sclerosis Society","website":null,"slug":"national-multiple-sclerosis-society","url":"https://api.smc-connect.org/organizations/national-multiple-sclerosis-society","locations_url":"https://api.smc-connect.org/organizations/national-multiple-sclerosis-society/locations"},"phones":[{"id":1542,"department":null,"extension":null,"number":"415
-        230-6678","number_type":"voice","vanity_number":null},{"id":1543,"department":null,"extension":null,"number":"800
-        344-4867","number_type":"voice","vanity_number":null},{"id":3226,"department":null,"extension":null,"number":"415
-        230-6652","number_type":"fax","vanity_number":null}]},{"id":1341,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4388051,37.7843564],"description":"Provides
-        a comprehensive range of services which help seniors to live in the community
-        independently. Services include home care, palliative and end-of-life care,
-        healthcare advocacy, skilled nursing, care management, counseling , money
-        management and conservatorship, spiritual care, volunteer services, JFCS RIDES
-        transportation services, caregiver support, meals and Holocaust survivor services.
-        Home care services are RN supervised. Caregivers are available from 4 to 24
-        hours per day to assist with personal care, homemaking and companionship.
-        Employs its caregivers and handles all responsibilities, such as taxes, training,
-        scheduling and supervision. Caregivers are bonded and insured, and background
-        screenings are performed. Separate records exist for offices in Palo Alto
-        (200 Channing Avenue, Palo Alto, 94301) and in San Mateo (2001 Windward Way,
-        San Mateo 94404). Seniors At Home is a division of Jewish Family and Children''s
-        Services. Its services are open to people of all faiths and backgrounds.","kind":"Human
-        Services","latitude":37.7843564,"longitude":-122.4388051,"name":"Seniors-At-Home","short_desc":"Multiple
-        services to help Jewish elders remain in their community independently.","slug":"seniors-at-home-2245-post-street","updated_at":"2014-12-04T11:17:21.528-08:00","url":"https://api.smc-connect.org/locations/seniors-at-home-2245-post-street","address":{"id":1081,"address_1":"2245
+      string: '[{"id":327,"active":true,"admin_emails":null,"alternate_name":"","coordinates":[-122.4033,37.774674],"description":"Provides
+        supportive services to everyone impacted by domestic violence. Maintains a
+        daily inventory of bed space at Bay Area battered women''s shelters. A drop-in
+        center provides crisis assistance, options counseling and individual long-term
+        therapy. Offers support groups for battered women and referrals to selected
+        therapists and attorneys who work with abused women. The Latina Services program
+        provides 24-hour, culturally appropriate services to monolingual Spanish speaking
+        survivors. Provides training on domestic violence issues to other community
+        organizations, hospitals and corporations. Volunteer program offers 40-hour
+        certification trainings 3-4 times a year. Outreach program offers 10-hour
+        training and also gives presentations in the community and tables at local
+        events.","kind":"Human Services","latitude":37.774674,"longitude":-122.4033,"name":"WOMAN,
+        Inc. (Women Organized to Make Abuse Nonexistent)","short_desc":"Supportive/social
+        services to victims of domestic violence.","slug":"woman-inc-women-organized-to-make-abuse-nonexistent","updated_at":"2016-12-12T15:35:51.681-08:00","website":"http://www.womaninc.org","url":"https://api.smc-connect.org/locations/woman-inc-women-organized-to-make-abuse-nonexistent","address":{"id":276,"address_1":"26
+        Boardman Place","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94103"},"organization":{"id":327,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"WOMAN,
+        Inc. (Women Organized to Make Abuse Nonexistent)","website":null,"slug":"woman-inc-women-organized-to-make-abuse-nonexistent","url":"https://api.smc-connect.org/organizations/woman-inc-women-organized-to-make-abuse-nonexistent","locations_url":"https://api.smc-connect.org/organizations/woman-inc-women-organized-to-make-abuse-nonexistent/locations"},"phones":[{"id":433,"department":null,"extension":null,"number":"415
+        864-4777","number_type":"voice","vanity_number":null},{"id":434,"department":"Crisis
+        Line 24 hours daily","extension":null,"number":"415 864-4722","number_type":"voice","vanity_number":null},{"id":2697,"department":null,"extension":null,"number":"415
+        864-1082","number_type":"fax","vanity_number":null}]},{"id":297,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.405848,37.7896823],"description":"Helps
+        individuals and couples facing infertility. Offers telephone counseling, local
+        support groups, information about infertility and adoption, two symposiums
+        a year on all aspects of infertility and adoption, pre-adoption information
+        meetings, monthly focus workshops on related topics, a quarterly newsletter,
+        a member network and a lending library. Membership also includes access to
+        National Resolve, Inc. which offers a newsletter, referral services and more.","kind":"Human
+        Services","latitude":37.7896823,"longitude":-122.405848,"name":"Resolve of
+        Northern California, Inc.","short_desc":null,"slug":"resolve-of-northern-california-inc","updated_at":"2014-12-04T11:08:51.948-08:00","website":"http://www.resolvenc.org","url":"https://api.smc-connect.org/locations/resolve-of-northern-california-inc","address":{"id":252,"address_1":"312
+        Sutter Street, Suite 405","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94108"},"organization":{"id":297,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Resolve
+        of Northern California, Inc.","website":null,"slug":"resolve-of-northern-california-inc","url":"https://api.smc-connect.org/organizations/resolve-of-northern-california-inc","locations_url":"https://api.smc-connect.org/organizations/resolve-of-northern-california-inc/locations"},"phones":[{"id":394,"department":"Helpline","extension":null,"number":"415
+        788-3002","number_type":"voice","vanity_number":null},{"id":395,"department":null,"extension":null,"number":"415
+        788-6772","number_type":"voice","vanity_number":null},{"id":2674,"department":null,"extension":null,"number":"415
+        788-6774","number_type":"fax","vanity_number":null}]},{"id":1343,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4375073,37.7848366],"description":"Provides
+        counseling, case management, information and referral, support groups, financial
+        assistance and advocacy for Jewish individuals with HIV/AIDS, chronic illness
+        or disability, their family and loved ones. \"Chicken Souper\" meals are prepared
+        and delivered twice a month by local congregations. Offers support and assistance
+        to out-of-town families. Volunteers provide practical support for clients.
+        Provides referrals to rabbis for pastoral counseling and spiritual support.
+        Offers a meal delivery program for low-income, physically disabled clients
+        living in San Francisco (regardless of religion) weekly which provides food
+        for seven days. Call 415-449-3824 for more information. Other offices offering
+        disability services are located at 200 Channing Avenue, Palo Alto, 94301 and
+        2001 Windward Way, San Mateo 94404.","kind":"Human Services","latitude":37.7848366,"longitude":-122.4375073,"name":"AIDS,
+        Chronic Illness and Disabilities Program","short_desc":"Counseling, support,
+        case management, crisis intervention and financial assistance for Jewish persons
+        with HIV/AIDS, family and loved ones.","slug":"aids-chronic-illness-and-disabilities-program","updated_at":"2014-11-25T17:22:16.318-08:00","website":"http://www.jfcs.org","url":"https://api.smc-connect.org/locations/aids-chronic-illness-and-disabilities-program","address":{"id":1083,"address_1":"2150
         Post Street","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94115"},"organization":{"id":1290,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Jewish
-        Family and Children''s Services","website":null,"slug":"jewish-family-and-children-s-services","url":"https://api.smc-connect.org/organizations/jewish-family-and-children-s-services","locations_url":"https://api.smc-connect.org/organizations/jewish-family-and-children-s-services/locations"},"phones":[{"id":1790,"department":null,"extension":null,"number":"415
-        449-3777","number_type":"voice","vanity_number":null},{"id":3326,"department":null,"extension":null,"number":"415
-        449-3742","number_type":"fax","vanity_number":null}]},{"id":312,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.3995258,37.7915817],"description":"Raises
-        funds to support brain tumor research. Provides information to brain tumor
-        patients and their families. Offers support group listings nationwide. Publishes
-        \"The Essential Guide to Brain Tumors\" (among several other titles) and a
-        quarterly newsletter called. Provides a free phone consultation with a medical
-        information nurse, conducts free caregiver trainings nationwide, and offers
-        regional conferences. Message boards are on the Web site for patients and
-        caregivers. Also offers a patient and caregiver support network to connect
-        survivors other patients who have been diagnosed.","kind":"Human Services","latitude":37.7915817,"longitude":-122.3995258,"name":"National
-        Brain Tumor Society","short_desc":"Raises funds for brain tumor research and
-        provides support group information to brain tumor patients and their families.","slug":"national-brain-tumor-society","updated_at":"2014-11-25T17:21:59.891-08:00","url":"https://api.smc-connect.org/locations/national-brain-tumor-society","address":{"id":262,"address_1":"22
-        Battery Street, Suite 612","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94111"},"organization":{"id":312,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"National
-        Brain Tumor Society","website":null,"slug":"national-brain-tumor-society","url":"https://api.smc-connect.org/organizations/national-brain-tumor-society","locations_url":"https://api.smc-connect.org/organizations/national-brain-tumor-society/locations"},"phones":[{"id":415,"department":null,"extension":null,"number":"800
-        934-2873","number_type":"voice","vanity_number":"800 934-CURE"},{"id":416,"department":null,"extension":null,"number":"415
-        834-9970","number_type":"voice","vanity_number":null},{"id":2684,"department":null,"extension":null,"number":"415
-        834-9980","number_type":"fax","vanity_number":null}]},{"id":204,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4194009,37.7712479],"description":"Adult
-        and Teen Crisis Hotlines: two toll-free lines provide 24-hour crisis counseling,
-        information and referrals to callers statewide. Drop-In Counseling Center
-        provides victims and survivors with crisis and on-going counseling; suppport
-        groups; emergency food and clothing; and resource advocacy and referrals.
-        Emergency Shelter proram provides up to 8 weeks of safe housing and supportive
-        services for women and children fleeing violence, with 24-hour intake capacity.
-        Domestic Violence Response Team provides victims with crisis intervention
-        and support through advocates who work on-site with the San Francisco Police
-        Department. Teen Program provides multi-site, adolescent-specific crisis intervention,
-        counseling, support groups, education and outreach, and advocacy to teens
-        who have experienced or are at risk of domestic and dating violence. Safe
-        Havens Project provides specialized assistance to domestic violence victims
-        in developing and implementing shared custody arrangements with their batterers.
-        Safe Housing Project works on-site at housing sites throughout San Francisco
-        to empower residents to create communities that foster ad demand violence-free
-        lives. The Mary Elizabeth Inn and Verona Hotel Case Management Program offers
-        housing stability, community-building and emotional support services to residents
-        of these two transitional/permanent housing sites. Community Education and
-        Outreach Program offers outreach, presentations, and workshops in the community
-        on domestic violence, healthy relationships, agency services, and other topics.
-        La Casa de las Madres accepts donations of clothing and toiletries for women,
-        infants and children, including professional work clothing. Donated itmes
-        are given to participants in all programs.","kind":"Human Services","latitude":37.7712479,"longitude":-122.4194009,"name":"La
-        Casa de las Madres","short_desc":"Refuge for women and their children who
-        are being physically or emotionally abused.","slug":"la-casa-de-las-madres","updated_at":"2014-11-25T17:21:58.727-08:00","url":"https://api.smc-connect.org/locations/la-casa-de-las-madres","address":{"id":190,"address_1":"1663
-        Mission Street, Suite 225","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94103"},"organization":{"id":204,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"La
-        Casa de las Madres","website":null,"slug":"la-casa-de-las-madres","url":"https://api.smc-connect.org/organizations/la-casa-de-las-madres","locations_url":"https://api.smc-connect.org/organizations/la-casa-de-las-madres/locations"},"phones":[{"id":267,"department":"Adult
-        Crisis Line 24 hours daily","extension":null,"number":"877-503-1850","number_type":"voice","vanity_number":null},{"id":268,"department":"Teen
-        Crisis Line (24 hours daily","extension":null,"number":"877-923-0700","number_type":"voice","vanity_number":null},{"id":269,"department":"Counseling
-        and Support Services","extension":null,"number":"415 503-0500","number_type":"voice","vanity_number":null},{"id":2632,"department":null,"extension":null,"number":"415
-        503-0301","number_type":"fax","vanity_number":null}]}]'
+        Family and Children''s Services","website":null,"slug":"jewish-family-and-children-s-services","url":"https://api.smc-connect.org/organizations/jewish-family-and-children-s-services","locations_url":"https://api.smc-connect.org/organizations/jewish-family-and-children-s-services/locations"},"phones":[{"id":1794,"department":null,"extension":null,"number":"415
+        449-1224","number_type":"voice","vanity_number":null},{"id":1795,"department":null,"extension":null,"number":"415
+        345-1927","number_type":"tty","vanity_number":null},{"id":3328,"department":null,"extension":null,"number":"415
+        449-1253","number_type":"fax","vanity_number":null}]},{"id":723,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4298896,37.7646447],"description":"Provides
+        complementary medicine including acupuncture, massage, herbal therapy and
+        nutritional counseling. Addresses a full range of health concerns with a holistic
+        approach that is customized to individual needs and can be complementary to
+        Western medicine regimens.","kind":"Human Services","latitude":37.7646447,"longitude":-122.4298896,"name":"Immune
+        Enhancement Project","short_desc":"Alternative healing using Chinese herbs
+        and acupuncture for persons with HIV/AIDS.","slug":"immune-enhancement-project","updated_at":"2014-11-25T17:22:06.163-08:00","website":"http://www.iepclinic.com","url":"https://api.smc-connect.org/locations/immune-enhancement-project","address":{"id":605,"address_1":"3450
+        - 16th Street","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94114"},"organization":{"id":723,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Immune
+        Enhancement Project","website":null,"slug":"immune-enhancement-project","url":"https://api.smc-connect.org/organizations/immune-enhancement-project","locations_url":"https://api.smc-connect.org/organizations/immune-enhancement-project/locations"},"phones":[{"id":974,"department":null,"extension":null,"number":"415
+        252-8711","number_type":"voice","vanity_number":null},{"id":2950,"department":null,"extension":null,"number":"415
+        252-8710","number_type":"fax","vanity_number":null}]},{"id":330,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4186253,37.7639793],"description":"Provides
+        assistance to victims of hate and domestic violence and develops strategies
+        to prevent violence. Counseling is offered on an individual basis. Individual
+        counseling is provided to battered individuals through the domestic violence
+        education program. Does community organizing and offers a youth safety project,
+        and a hate violence and domestic violence survivor program. Assists with restraining
+        order paperwork and court accompaniment. Provides legal referrals.","kind":"Human
+        Services","latitude":37.7639793,"longitude":-122.4186253,"name":"Community
+        United Against Violence (CUAV)","short_desc":"Assistance and services to gay/lesbian/bisexual/transgender
+        victims of hate violence and domestic violence.","slug":"community-united-against-violence-cuav","updated_at":"2014-11-25T17:22:00.329-08:00","website":"http://www.cuav.org","url":"https://api.smc-connect.org/locations/community-united-against-violence-cuav","address":{"id":279,"address_1":"170A
+        - Capp Street","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94110"},"organization":{"id":330,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Community
+        United Against Violence (CUAV)","website":null,"slug":"community-united-against-violence-cuav","url":"https://api.smc-connect.org/organizations/community-united-against-violence-cuav","locations_url":"https://api.smc-connect.org/organizations/community-united-against-violence-cuav/locations"},"phones":[{"id":437,"department":"Safety
+        Line","extension":null,"number":"415 333-4357","number_type":"voice","vanity_number":"415
+        333-HELP"},{"id":438,"department":null,"extension":null,"number":"415 777-5500","number_type":"voice","vanity_number":null},{"id":2700,"department":null,"extension":null,"number":"415
+        777-5565","number_type":"fax","vanity_number":null}]}]'
     http_version: 
-  recorded_at: Mon, 11 May 2015 02:37:04 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Sun, 01 Jul 2018 01:51:01 GMT
+- request:
+    method: get
+    uri: https://api.smc-connect.org/search?keyword=Care&kind=Human%20Services&location=94103&page=1&per_page=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"901d098223c212ae6e7f429638874500"
+      Link:
+      - <https://api.smc-connect.org/search?keyword=Care&page=12&per_page=5>; rel="last",
+        <https://api.smc-connect.org/search?keyword=Care&page=2&per_page=5>; rel="next"
+      X-Total-Count:
+      - '60'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 01 Jul 2018 01:51:02 GMT
+      Cache-Control:
+      - max-age=300, public
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 97198004-4390-4833-b709-5a323d8610e8
+      X-Runtime:
+      - '0.086815'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":327,"active":true,"admin_emails":null,"alternate_name":"","coordinates":[-122.4033,37.774674],"description":"Provides
+        supportive services to everyone impacted by domestic violence. Maintains a
+        daily inventory of bed space at Bay Area battered women''s shelters. A drop-in
+        center provides crisis assistance, options counseling and individual long-term
+        therapy. Offers support groups for battered women and referrals to selected
+        therapists and attorneys who work with abused women. The Latina Services program
+        provides 24-hour, culturally appropriate services to monolingual Spanish speaking
+        survivors. Provides training on domestic violence issues to other community
+        organizations, hospitals and corporations. Volunteer program offers 40-hour
+        certification trainings 3-4 times a year. Outreach program offers 10-hour
+        training and also gives presentations in the community and tables at local
+        events.","kind":"Human Services","latitude":37.774674,"longitude":-122.4033,"name":"WOMAN,
+        Inc. (Women Organized to Make Abuse Nonexistent)","short_desc":"Supportive/social
+        services to victims of domestic violence.","slug":"woman-inc-women-organized-to-make-abuse-nonexistent","updated_at":"2016-12-12T15:35:51.681-08:00","website":"http://www.womaninc.org","url":"https://api.smc-connect.org/locations/woman-inc-women-organized-to-make-abuse-nonexistent","address":{"id":276,"address_1":"26
+        Boardman Place","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94103"},"organization":{"id":327,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"WOMAN,
+        Inc. (Women Organized to Make Abuse Nonexistent)","website":null,"slug":"woman-inc-women-organized-to-make-abuse-nonexistent","url":"https://api.smc-connect.org/organizations/woman-inc-women-organized-to-make-abuse-nonexistent","locations_url":"https://api.smc-connect.org/organizations/woman-inc-women-organized-to-make-abuse-nonexistent/locations"},"phones":[{"id":433,"department":null,"extension":null,"number":"415
+        864-4777","number_type":"voice","vanity_number":null},{"id":434,"department":"Crisis
+        Line 24 hours daily","extension":null,"number":"415 864-4722","number_type":"voice","vanity_number":null},{"id":2697,"department":null,"extension":null,"number":"415
+        864-1082","number_type":"fax","vanity_number":null}]},{"id":297,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.405848,37.7896823],"description":"Helps
+        individuals and couples facing infertility. Offers telephone counseling, local
+        support groups, information about infertility and adoption, two symposiums
+        a year on all aspects of infertility and adoption, pre-adoption information
+        meetings, monthly focus workshops on related topics, a quarterly newsletter,
+        a member network and a lending library. Membership also includes access to
+        National Resolve, Inc. which offers a newsletter, referral services and more.","kind":"Human
+        Services","latitude":37.7896823,"longitude":-122.405848,"name":"Resolve of
+        Northern California, Inc.","short_desc":null,"slug":"resolve-of-northern-california-inc","updated_at":"2014-12-04T11:08:51.948-08:00","website":"http://www.resolvenc.org","url":"https://api.smc-connect.org/locations/resolve-of-northern-california-inc","address":{"id":252,"address_1":"312
+        Sutter Street, Suite 405","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94108"},"organization":{"id":297,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Resolve
+        of Northern California, Inc.","website":null,"slug":"resolve-of-northern-california-inc","url":"https://api.smc-connect.org/organizations/resolve-of-northern-california-inc","locations_url":"https://api.smc-connect.org/organizations/resolve-of-northern-california-inc/locations"},"phones":[{"id":394,"department":"Helpline","extension":null,"number":"415
+        788-3002","number_type":"voice","vanity_number":null},{"id":395,"department":null,"extension":null,"number":"415
+        788-6772","number_type":"voice","vanity_number":null},{"id":2674,"department":null,"extension":null,"number":"415
+        788-6774","number_type":"fax","vanity_number":null}]},{"id":1343,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4375073,37.7848366],"description":"Provides
+        counseling, case management, information and referral, support groups, financial
+        assistance and advocacy for Jewish individuals with HIV/AIDS, chronic illness
+        or disability, their family and loved ones. \"Chicken Souper\" meals are prepared
+        and delivered twice a month by local congregations. Offers support and assistance
+        to out-of-town families. Volunteers provide practical support for clients.
+        Provides referrals to rabbis for pastoral counseling and spiritual support.
+        Offers a meal delivery program for low-income, physically disabled clients
+        living in San Francisco (regardless of religion) weekly which provides food
+        for seven days. Call 415-449-3824 for more information. Other offices offering
+        disability services are located at 200 Channing Avenue, Palo Alto, 94301 and
+        2001 Windward Way, San Mateo 94404.","kind":"Human Services","latitude":37.7848366,"longitude":-122.4375073,"name":"AIDS,
+        Chronic Illness and Disabilities Program","short_desc":"Counseling, support,
+        case management, crisis intervention and financial assistance for Jewish persons
+        with HIV/AIDS, family and loved ones.","slug":"aids-chronic-illness-and-disabilities-program","updated_at":"2014-11-25T17:22:16.318-08:00","website":"http://www.jfcs.org","url":"https://api.smc-connect.org/locations/aids-chronic-illness-and-disabilities-program","address":{"id":1083,"address_1":"2150
+        Post Street","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94115"},"organization":{"id":1290,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Jewish
+        Family and Children''s Services","website":null,"slug":"jewish-family-and-children-s-services","url":"https://api.smc-connect.org/organizations/jewish-family-and-children-s-services","locations_url":"https://api.smc-connect.org/organizations/jewish-family-and-children-s-services/locations"},"phones":[{"id":1794,"department":null,"extension":null,"number":"415
+        449-1224","number_type":"voice","vanity_number":null},{"id":1795,"department":null,"extension":null,"number":"415
+        345-1927","number_type":"tty","vanity_number":null},{"id":3328,"department":null,"extension":null,"number":"415
+        449-1253","number_type":"fax","vanity_number":null}]},{"id":723,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4298896,37.7646447],"description":"Provides
+        complementary medicine including acupuncture, massage, herbal therapy and
+        nutritional counseling. Addresses a full range of health concerns with a holistic
+        approach that is customized to individual needs and can be complementary to
+        Western medicine regimens.","kind":"Human Services","latitude":37.7646447,"longitude":-122.4298896,"name":"Immune
+        Enhancement Project","short_desc":"Alternative healing using Chinese herbs
+        and acupuncture for persons with HIV/AIDS.","slug":"immune-enhancement-project","updated_at":"2014-11-25T17:22:06.163-08:00","website":"http://www.iepclinic.com","url":"https://api.smc-connect.org/locations/immune-enhancement-project","address":{"id":605,"address_1":"3450
+        - 16th Street","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94114"},"organization":{"id":723,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Immune
+        Enhancement Project","website":null,"slug":"immune-enhancement-project","url":"https://api.smc-connect.org/organizations/immune-enhancement-project","locations_url":"https://api.smc-connect.org/organizations/immune-enhancement-project/locations"},"phones":[{"id":974,"department":null,"extension":null,"number":"415
+        252-8711","number_type":"voice","vanity_number":null},{"id":2950,"department":null,"extension":null,"number":"415
+        252-8710","number_type":"fax","vanity_number":null}]},{"id":330,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4186253,37.7639793],"description":"Provides
+        assistance to victims of hate and domestic violence and develops strategies
+        to prevent violence. Counseling is offered on an individual basis. Individual
+        counseling is provided to battered individuals through the domestic violence
+        education program. Does community organizing and offers a youth safety project,
+        and a hate violence and domestic violence survivor program. Assists with restraining
+        order paperwork and court accompaniment. Provides legal referrals.","kind":"Human
+        Services","latitude":37.7639793,"longitude":-122.4186253,"name":"Community
+        United Against Violence (CUAV)","short_desc":"Assistance and services to gay/lesbian/bisexual/transgender
+        victims of hate violence and domestic violence.","slug":"community-united-against-violence-cuav","updated_at":"2014-11-25T17:22:00.329-08:00","website":"http://www.cuav.org","url":"https://api.smc-connect.org/locations/community-united-against-violence-cuav","address":{"id":279,"address_1":"170A
+        - Capp Street","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94110"},"organization":{"id":330,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Community
+        United Against Violence (CUAV)","website":null,"slug":"community-united-against-violence-cuav","url":"https://api.smc-connect.org/organizations/community-united-against-violence-cuav","locations_url":"https://api.smc-connect.org/organizations/community-united-against-violence-cuav/locations"},"phones":[{"id":437,"department":"Safety
+        Line","extension":null,"number":"415 333-4357","number_type":"voice","vanity_number":"415
+        333-HELP"},{"id":438,"department":null,"extension":null,"number":"415 777-5500","number_type":"voice","vanity_number":null},{"id":2700,"department":null,"extension":null,"number":"415
+        777-5565","number_type":"fax","vanity_number":null}]}]'
+    http_version: 
+  recorded_at: Sun, 01 Jul 2018 01:51:02 GMT
+recorded_with: VCR 4.0.0
