@@ -49,7 +49,7 @@ GEM
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     crass (1.0.3)
-    dalli (2.7.7)
+    dalli (2.7.8)
     docile (1.1.5)
     erubis (2.7.0)
     faraday (0.14.0)
