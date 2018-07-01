@@ -323,6 +323,6 @@ class LocationsControllerTest < ActionController::TestCase
   private
 
   def get_reply_with_body(body, locale = 'en')
-    get :reply, 'Body' => body, locale: locale
+    get :reply, params: { 'Body' => body, locale: locale }
   end
 end
