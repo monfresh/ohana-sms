@@ -40,7 +40,7 @@ GEM
     arel (6.0.4)
     ast (2.4.0)
     builder (3.2.3)
-    bummr (0.2.1)
+    bummr (0.3.2)
       rainbow
       thor
     codeclimate-test-reporter (1.0.8)
@@ -204,4 +204,4 @@ RUBY VERSION
    ruby 2.3.3p222
 
 BUNDLED WITH
-   1.14.6
+   1.16.2
