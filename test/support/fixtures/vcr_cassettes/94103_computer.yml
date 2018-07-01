@@ -10,7 +10,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.2
+      - Ohanakapa Ruby Gem 1.1.3
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -22,8 +22,6 @@ http_interactions:
       - Cowboy
       Connection:
       - keep-alive
-      Strict-Transport-Security:
-      - max-age=31536000
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -31,34 +29,30 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Etag:
-      - '"c0e985fcff035449a92bf7dbf686a114"'
+      - W/"e23acf7d92173fa66d2e94d944ea81d0"
       X-Total-Count:
       - '1'
-      Date:
-      - Mon, 11 May 2015 02:54:11 GMT
       Content-Type:
       - application/json; charset=utf-8
+      Date:
+      - Sun, 01 Jul 2018 01:50:55 GMT
       Cache-Control:
       - max-age=300, public
       Vary:
       - Origin
       X-Request-Id:
-      - 648601be-16bc-454a-9f84-c49f2337e7a6
+      - c3d4ab13-a40d-4570-9cbb-28ac2439a6a5
       X-Runtime:
-      - '0.072063'
-      X-Content-Digest:
-      - 1c983d49d4a524c408ed8e9a10e94bfd37194ffb
-      Age:
-      - '13'
-      X-Rack-Cache:
-      - fresh
-      Content-Length:
-      - '1756'
+      - '0.034293'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '[{"id":1199,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4052981,37.78597],"description":"Assists
+      string: '[{"id":1199,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4052981,37.78597],"description":"Assists
         people affected by, or at risk for, HIV/AIDS through culturally appropriate
         counseling, education and advocacy to make informed choices which maximize
         available benefits and employment opportunities. The Employment Services Program
@@ -67,11 +61,79 @@ http_interactions:
         The Benefits Counseling Program for San Francisco residents provides individualized
         benefits counseling and advocacy.","kind":"Human Services","latitude":37.78597,"longitude":-122.4052981,"name":"Taft
         School Health Services","short_desc":"An employment service for persons with
-        AIDS/HIV.","slug":"taft-school-health-services","updated_at":"2014-11-25T17:22:13.037-08:00","url":"https://api.smc-connect.org/locations/taft-school-health-services","address":{"id":957,"address_1":"785
+        AIDS/HIV.","slug":"taft-school-health-services","updated_at":"2014-11-25T17:22:13.037-08:00","website":"http://www.positiveresource.org","url":"https://api.smc-connect.org/locations/taft-school-health-services","address":{"id":957,"address_1":"785
         Market Street, 10th Floor","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94103"},"organization":{"id":1199,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Positive
         Resource Center","website":null,"slug":"positive-resource-center","url":"https://api.smc-connect.org/organizations/positive-resource-center","locations_url":"https://api.smc-connect.org/organizations/positive-resource-center/locations"},"phones":[{"id":1572,"department":null,"extension":null,"number":"415
         777-0333","number_type":"voice","vanity_number":null},{"id":3239,"department":null,"extension":null,"number":"415
         777-1770","number_type":"fax","vanity_number":null}]}]'
     http_version: 
-  recorded_at: Mon, 11 May 2015 02:54:25 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Sun, 01 Jul 2018 01:50:55 GMT
+- request:
+    method: get
+    uri: https://api.smc-connect.org/search?keyword=computer&kind=Human%20Services&location=94103&page=1&per_page=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"e23acf7d92173fa66d2e94d944ea81d0"
+      X-Total-Count:
+      - '1'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 01 Jul 2018 01:50:55 GMT
+      Cache-Control:
+      - max-age=300, public
+      Vary:
+      - Origin
+      X-Request-Id:
+      - cc50e4cd-3ad0-47c8-9bef-0ec0b5357c11
+      X-Runtime:
+      - '0.036099'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":1199,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4052981,37.78597],"description":"Assists
+        people affected by, or at risk for, HIV/AIDS through culturally appropriate
+        counseling, education and advocacy to make informed choices which maximize
+        available benefits and employment opportunities. The Employment Services Program
+        includes job search skills workshops, computer training, resume assistance,
+        career counseling/vocational testing and Working While Disabled workshops.
+        The Benefits Counseling Program for San Francisco residents provides individualized
+        benefits counseling and advocacy.","kind":"Human Services","latitude":37.78597,"longitude":-122.4052981,"name":"Taft
+        School Health Services","short_desc":"An employment service for persons with
+        AIDS/HIV.","slug":"taft-school-health-services","updated_at":"2014-11-25T17:22:13.037-08:00","website":"http://www.positiveresource.org","url":"https://api.smc-connect.org/locations/taft-school-health-services","address":{"id":957,"address_1":"785
+        Market Street, 10th Floor","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94103"},"organization":{"id":1199,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Positive
+        Resource Center","website":null,"slug":"positive-resource-center","url":"https://api.smc-connect.org/organizations/positive-resource-center","locations_url":"https://api.smc-connect.org/organizations/positive-resource-center/locations"},"phones":[{"id":1572,"department":null,"extension":null,"number":"415
+        777-0333","number_type":"voice","vanity_number":null},{"id":3239,"department":null,"extension":null,"number":"415
+        777-1770","number_type":"fax","vanity_number":null}]}]'
+    http_version: 
+  recorded_at: Sun, 01 Jul 2018 01:50:55 GMT
+recorded_with: VCR 4.0.0

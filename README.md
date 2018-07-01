@@ -38,13 +38,13 @@ bin/setup
 [node]: https://github.com/codeforamerica/howto/blob/master/Node.js.md
 
 #### Twilio
-1. Sign up for a [free Twilio account](http://twilio.com/try-twilio).
-2. Once logged in to your Twilio account, visit the [Account Settings][settings]
-page.
+1. Sign up for a [free Twilio account](https://twilio.com/try-twilio).
+2. Once logged in to your Twilio account, create a project, then visit your
+[Project Settings][settings] page.
 3. Copy your AuthToken and paste it in `config/application.yml`
 next to `twilio_auth_token`.
 
-[settings]: https://www.twilio.com/user/account/settings
+[settings]: https://www.twilio.com/console/project/settings
 
 ## Deploy to Heroku
 
@@ -62,16 +62,18 @@ where `your_app_name` is the name you chose in step 3.
 This will configure your Heroku app with your secret Twilio information
 from your `application.yml`.
 
-6. Go to the Twilio [Manage Numbers][manage] page and click on your number.
+6. Go to Twilio's [Messaging Services](https://www.twilio.com/console/sms/services)
+and create a new service and select `Chat Bot/Interactive 2-Way` as the Use Case.
 
-7. Under `Messaging`, in `Request URL`, enter
+7. Under `Inbound Settings`, check the `Process Inbound Messages` checkbox and
+in the `Request URL` field, enter
 `https://ohana-sms-demo.herokuapp.com/locations/reply`, making sure to
 replace `ohana-sms-demo` with your actual Heroku app name. Then select
 `HTTP GET` from the dropdown, and click `Save`. It should look like this:
 
-![Twilio Messaging Request URL](http://cl.ly/image/061w3F2H0W0X/download/Image%202015-03-03%20at%2011.51.27%20PM.png)
+![Twilio Messaging Request URL](https://cl.ly/2E0Y0H2b3Q0M/download/Screen%20Shot%202018-06-30%20at%2011.12.03%20PM.png)
 
-[manage]: https://www.twilio.com/user/account/phone-numbers/incoming
+8. Click on `Numbers` under `Configure` in the sidebar on the left, and buy a new Twilio number.
 
 ## Test the app with your phone
 

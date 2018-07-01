@@ -10,7 +10,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.2
+      - Ohanakapa Ruby Gem 1.1.3
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -22,8 +22,6 @@ http_interactions:
       - Cowboy
       Connection:
       - keep-alive
-      Strict-Transport-Security:
-      - max-age=31536000
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -31,108 +29,173 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Etag:
-      - '"29460c314553527d99cf465a3e21bc50"'
-      Link:
-      - <https://api.smc-connect.org/search?keyword=hi&kind=Human+Services&location=94103&page=3&per_page=5>;
-        rel="last", <https://api.smc-connect.org/search?keyword=hi&kind=Human+Services&location=94103&page=2&per_page=5>;
-        rel="next"
+      - W/"5a18b0481ede5144244718ff9b3a1e1e"
       X-Total-Count:
-      - '13'
-      Date:
-      - Mon, 11 May 2015 02:37:04 GMT
+      - '1'
       Content-Type:
       - application/json; charset=utf-8
+      Date:
+      - Sun, 01 Jul 2018 01:50:52 GMT
       Cache-Control:
       - max-age=300, public
       Vary:
       - Origin
       X-Request-Id:
-      - dc1b5eb8-dd9a-4a69-8a97-f0a0ca942ef6
+      - 25d67116-0038-421d-9ea5-027825b81a6d
       X-Runtime:
-      - '0.139878'
-      X-Content-Digest:
-      - e12005d61e0a80e95aabc2a7de040612e4b3e299
-      Age:
-      - '0'
-      X-Rack-Cache:
-      - miss, store
-      Content-Length:
-      - '9328'
+      - '0.564308'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '[{"id":371,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4185755,37.7650243],"description":"Offers
-        supportive services for Hispanic workers, union and non-union. Provides legal
-        counseling, referrals and representation for monolingual persons in areas
-        of employment, unemployment, wage claims, worker''s compensation referrals,
-        domestic work and labor-related problems. Assists in writing work authorization
-        letters and contacting employers for workers who are having difficulty as
-        a result of the new immigration law. Offers classes and workshops in labor
-        affairs, leadership skills, collective bargaining, labor history, contracts,
-        negotiations, women and comparable worth, legalization and English as a Second
-        Language. Helps coordinate labor studies programs in colleges. Consults frequently
-        with Hispanic unionists on courses and programs. .","kind":"Human Services","latitude":37.7650243,"longitude":-122.4185755,"name":"Instituto
-        Laboral de la Raza","short_desc":"Supportive services for Hispanic workers
-        union or nonunion who are having labor-related problems.","slug":"instituto-laboral-de-la-raza","updated_at":"2014-11-25T17:22:00.864-08:00","url":"https://api.smc-connect.org/locations/instituto-laboral-de-la-raza","address":{"id":314,"address_1":"2947
-        - 16th Street","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94103"},"organization":{"id":371,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Instituto
-        Laboral de la Raza","website":null,"slug":"instituto-laboral-de-la-raza","url":"https://api.smc-connect.org/organizations/instituto-laboral-de-la-raza","locations_url":"https://api.smc-connect.org/organizations/instituto-laboral-de-la-raza/locations"},"phones":[{"id":498,"department":"San
-        Francisco","extension":null,"number":"415 431-7522","number_type":"voice","vanity_number":null},{"id":2727,"department":null,"extension":null,"number":"415
-        431-4846","number_type":"fax","vanity_number":null}]},{"id":488,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4184108,37.7485824],"description":"Provides
-        prenatal care, specialized HIV medical care, HIV counseling, antibody testing
-        and delivery at San Francisco General Hospital. Women and their children will
-        be seen in follow-up appointments when applicable.","kind":"Human Services","latitude":37.7485824,"longitude":-122.4184108,"name":"Bay
-        Area Perinatal AIDS Center (BAPAC)","short_desc":"Research project studying
-        HIV infection in pregnant women and their infants. Prenatal and postnatal
-        medical care.","slug":"bay-area-perinatal-aids-center-bapac","updated_at":"2014-11-25T17:22:01.901-08:00","url":"https://api.smc-connect.org/locations/bay-area-perinatal-aids-center-bapac","address":{"id":405,"address_1":"1001
-        Potrero, Ward 6D, Room 33","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94110"},"organization":{"id":488,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Bay
-        Area Perinatal AIDS Center (BAPAC)","website":null,"slug":"bay-area-perinatal-aids-center-bapac","url":"https://api.smc-connect.org/organizations/bay-area-perinatal-aids-center-bapac","locations_url":"https://api.smc-connect.org/organizations/bay-area-perinatal-aids-center-bapac/locations"},"phones":[{"id":632,"department":null,"extension":null,"number":"415
-        206-8919","number_type":"voice","vanity_number":null},{"id":2791,"department":null,"extension":null,"number":"415
-        206-3626","number_type":"fax","vanity_number":null}]},{"id":229,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.410785,37.781219],"description":"Provides
-        callers with up-to-date information about AIDS and HIV disease and makes referrals
-        to medical and psychological service providers who are informed about and
-        sensitive to AIDS. Provides subsidized housing for qualified clients and financial
-        benefits counseling. Offers drop-in programs for African American and Latino
-        men, as well as those with substance abuse problems. Advocates for increased
-        funding for services and prevention/education about HIV and AIDS with local,
-        state and federal governments and within the private sector.","kind":"Human
-        Services","latitude":37.781219,"longitude":-122.410785,"name":"San Francisco
-        AIDS Foundation","short_desc":"Up-to-date information about AIDS, referrals
-        to supportive services.","slug":"san-francisco-aids-foundation","updated_at":"2014-11-25T17:15:08.683-08:00","url":"https://api.smc-connect.org/locations/san-francisco-aids-foundation","address":{"id":212,"address_1":"1035
-        Market Street, Suite 400","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94103"},"organization":{"id":229,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"San
-        Francisco AIDS Foundation","website":null,"slug":"san-francisco-aids-foundation","url":"https://api.smc-connect.org/organizations/san-francisco-aids-foundation","locations_url":"https://api.smc-connect.org/organizations/san-francisco-aids-foundation/locations"},"phones":[{"id":305,"department":"SF
-        Hotline","extension":null,"number":"415 863-2437","number_type":"hotline","vanity_number":"415
-        863-AIDS"},{"id":306,"department":"Spanish","extension":null,"number":"800
-        367-2437","number_type":"voice","vanity_number":"800 FOR-AIDS"},{"id":307,"department":"Office","extension":null,"number":"415
-        487-3000","number_type":"voice","vanity_number":null},{"id":308,"department":null,"extension":null,"number":"888
-        225-2437","number_type":"tty","vanity_number":null}]},{"id":333,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.41408,37.781163],"description":"A
-        national nonprofit legal services organization that advocates to make high
-        quality, affordable child care available to every child, family and community.
-        CCLC is the only organization in the country devoted exclusively to the complex
-        legal issues that affect the establishment and provision of child care. Provides
-        legal information and referral services to over 800 people each year, trains
-        legal services attorneys and advocates, represents clients in cases with a
-        broad impact, and works with other organizations on policy development and
-        advocacy. High priority is placed on collaboration with other advocates. CCLC''s
-        diverse substantive work focuses on child care subsidies and on inclusion
-        of children with disabilities.","kind":"Human Services","latitude":37.781163,"longitude":-122.41408,"name":"Child
-        Care Law Center (CCLC)","short_desc":"Advocacy, education, advice and legal
-        representation about child care issues.","slug":"child-care-law-center-cclc","updated_at":"2014-11-25T17:15:10.997-08:00","url":"https://api.smc-connect.org/locations/child-care-law-center-cclc","address":{"id":282,"address_1":"100
-        McAllister Street, Suite 360","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94102"},"organization":{"id":333,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Child
-        Care Law Center (CCLC)","website":null,"slug":"child-care-law-center-cclc","url":"https://api.smc-connect.org/organizations/child-care-law-center-cclc","locations_url":"https://api.smc-connect.org/organizations/child-care-law-center-cclc/locations"},"phones":[{"id":442,"department":null,"extension":null,"number":"415
-        558-8005","number_type":"voice","vanity_number":null}]},{"id":870,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4308207,37.7739556],"description":"Helps
-        young people, age 26 or under, living with HIV/AIDS to live longer, happier,
-        healthier, more productive and quality-filled lives. Works to decrease a sense
-        of isolation, reduce self-destructive behaviors and advocate for clients in
-        HIV/AIDS care systems. Offers individual counseling and support groups, case
-        management, education, outreach, retreats, and social and recreational events.","kind":"Human
-        Services","latitude":37.7739556,"longitude":-122.4308207,"name":"Bay Area
-        Young Positives","short_desc":"Support groups and other services for young
-        people age 26 or under who are HIV positive.","slug":"bay-area-young-positives","updated_at":"2014-11-25T17:22:08.173-08:00","url":"https://api.smc-connect.org/locations/bay-area-young-positives","address":{"id":699,"address_1":"701
-        Oak Street","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94117"},"organization":{"id":870,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Bay
-        Area Young Positives","website":null,"slug":"bay-area-young-positives","url":"https://api.smc-connect.org/organizations/bay-area-young-positives","locations_url":"https://api.smc-connect.org/organizations/bay-area-young-positives/locations"},"phones":[{"id":1153,"department":null,"extension":null,"number":"415
-        487-1616","number_type":"voice","vanity_number":null},{"id":3033,"department":null,"extension":null,"number":"415
-        487-1617","number_type":"fax","vanity_number":null}]}]'
+      string: '[{"id":898,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.402844,37.791402],"description":"Offers
+        training for service providers in the area of adolescent health and youth
+        development. Also offers health workshops for youth on such topics as self
+        esteem, sexuality, safer sex, substance use and harm reduction, and anti-homophobia.
+        Also offers training and technical assistance for peer educator groups. Extended
+        youth development training also available.","kind":"Human Services","latitude":37.791402,"longitude":-122.402844,"name":"Health
+        Initiatives for Youth (Hi-Fy)","short_desc":"Offers training programs in health
+        for service providers and health workshops for youth.","slug":"health-initiatives-for-youth-hi-fy","updated_at":"2014-11-25T17:22:08.664-08:00","website":"http://www.youtube.com/hifymedia","url":"https://api.smc-connect.org/locations/health-initiatives-for-youth-hi-fy","address":{"id":723,"address_1":"235
+        Montgomery Street, Suite 430","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94104"},"organization":{"id":898,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Health
+        Initiatives for Youth (Hi-Fy)","website":null,"slug":"health-initiatives-for-youth-hi-fy","url":"https://api.smc-connect.org/organizations/health-initiatives-for-youth-hi-fy","locations_url":"https://api.smc-connect.org/organizations/health-initiatives-for-youth-hi-fy/locations"},"phones":[{"id":1193,"department":null,"extension":null,"number":"415
+        274-1970","number_type":"voice","vanity_number":null},{"id":3056,"department":null,"extension":null,"number":"415
+        274-1976","number_type":"fax","vanity_number":null}]}]'
     http_version: 
-  recorded_at: Mon, 11 May 2015 02:37:04 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Sun, 01 Jul 2018 01:50:52 GMT
+- request:
+    method: get
+    uri: https://api.smc-connect.org/search?keyword=hi&kind=Human%20Services&location=94103&page=1&per_page=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"5a18b0481ede5144244718ff9b3a1e1e"
+      X-Total-Count:
+      - '1'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 01 Jul 2018 01:50:52 GMT
+      Cache-Control:
+      - max-age=300, public
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 9cc49201-b862-4e25-9b0d-6b8980f58d8f
+      X-Runtime:
+      - '0.033211'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":898,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.402844,37.791402],"description":"Offers
+        training for service providers in the area of adolescent health and youth
+        development. Also offers health workshops for youth on such topics as self
+        esteem, sexuality, safer sex, substance use and harm reduction, and anti-homophobia.
+        Also offers training and technical assistance for peer educator groups. Extended
+        youth development training also available.","kind":"Human Services","latitude":37.791402,"longitude":-122.402844,"name":"Health
+        Initiatives for Youth (Hi-Fy)","short_desc":"Offers training programs in health
+        for service providers and health workshops for youth.","slug":"health-initiatives-for-youth-hi-fy","updated_at":"2014-11-25T17:22:08.664-08:00","website":"http://www.youtube.com/hifymedia","url":"https://api.smc-connect.org/locations/health-initiatives-for-youth-hi-fy","address":{"id":723,"address_1":"235
+        Montgomery Street, Suite 430","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94104"},"organization":{"id":898,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Health
+        Initiatives for Youth (Hi-Fy)","website":null,"slug":"health-initiatives-for-youth-hi-fy","url":"https://api.smc-connect.org/organizations/health-initiatives-for-youth-hi-fy","locations_url":"https://api.smc-connect.org/organizations/health-initiatives-for-youth-hi-fy/locations"},"phones":[{"id":1193,"department":null,"extension":null,"number":"415
+        274-1970","number_type":"voice","vanity_number":null},{"id":3056,"department":null,"extension":null,"number":"415
+        274-1976","number_type":"fax","vanity_number":null}]}]'
+    http_version: 
+  recorded_at: Sun, 01 Jul 2018 01:50:52 GMT
+- request:
+    method: get
+    uri: https://api.smc-connect.org/search?keyword=hi&kind=Human%20Services&location=94103&page=1&per_page=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"5a18b0481ede5144244718ff9b3a1e1e"
+      X-Total-Count:
+      - '1'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 01 Jul 2018 01:50:53 GMT
+      Cache-Control:
+      - max-age=300, public
+      Vary:
+      - Origin
+      X-Request-Id:
+      - c72881d9-84de-40d4-ab57-0d3321a4f081
+      X-Runtime:
+      - '0.034295'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":898,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.402844,37.791402],"description":"Offers
+        training for service providers in the area of adolescent health and youth
+        development. Also offers health workshops for youth on such topics as self
+        esteem, sexuality, safer sex, substance use and harm reduction, and anti-homophobia.
+        Also offers training and technical assistance for peer educator groups. Extended
+        youth development training also available.","kind":"Human Services","latitude":37.791402,"longitude":-122.402844,"name":"Health
+        Initiatives for Youth (Hi-Fy)","short_desc":"Offers training programs in health
+        for service providers and health workshops for youth.","slug":"health-initiatives-for-youth-hi-fy","updated_at":"2014-11-25T17:22:08.664-08:00","website":"http://www.youtube.com/hifymedia","url":"https://api.smc-connect.org/locations/health-initiatives-for-youth-hi-fy","address":{"id":723,"address_1":"235
+        Montgomery Street, Suite 430","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94104"},"organization":{"id":898,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Health
+        Initiatives for Youth (Hi-Fy)","website":null,"slug":"health-initiatives-for-youth-hi-fy","url":"https://api.smc-connect.org/organizations/health-initiatives-for-youth-hi-fy","locations_url":"https://api.smc-connect.org/organizations/health-initiatives-for-youth-hi-fy/locations"},"phones":[{"id":1193,"department":null,"extension":null,"number":"415
+        274-1970","number_type":"voice","vanity_number":null},{"id":3056,"department":null,"extension":null,"number":"415
+        274-1976","number_type":"fax","vanity_number":null}]}]'
+    http_version: 
+  recorded_at: Sun, 01 Jul 2018 01:50:53 GMT
+recorded_with: VCR 4.0.0

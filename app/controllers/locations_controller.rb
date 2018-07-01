@@ -8,12 +8,12 @@ class LocationsController < ApplicationController
   def reply
     session[:counter] ||= 0
 
-    twiml = Twilio::TwiML::Response.new do |r|
-      r.Message ConversationTracker.new(params[:Body], session).message
+    twiml = Twilio::TwiML::MessagingResponse.new do |r|
+      r.message(body: ConversationTracker.new(params[:Body], session).message)
     end
 
     session[:counter] += 1
-    render xml: twiml.text
+    render xml: twiml.to_s
   end
 
   private

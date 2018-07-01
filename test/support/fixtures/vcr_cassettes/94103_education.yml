@@ -10,7 +10,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.2
+      - Ohanakapa Ruby Gem 1.1.3
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -22,8 +22,6 @@ http_interactions:
       - Cowboy
       Connection:
       - keep-alive
-      Strict-Transport-Security:
-      - max-age=31536000
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -31,92 +29,34 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Etag:
-      - '"1ce3ebd0bc6628f39da25cc9749f045a"'
+      - W/"d615dd6b61de572ce3709ff02480f331"
       Link:
-      - <https://api.smc-connect.org/search?keyword=Education&kind=Human+Services&location=94103&page=10&per_page=5>;
-        rel="last", <https://api.smc-connect.org/search?keyword=Education&kind=Human+Services&location=94103&page=2&per_page=5>;
+      - <https://api.smc-connect.org/search?keyword=Education&page=10&per_page=5>;
+        rel="last", <https://api.smc-connect.org/search?keyword=Education&page=2&per_page=5>;
         rel="next"
       X-Total-Count:
-      - '48'
-      Date:
-      - Mon, 11 May 2015 02:37:02 GMT
+      - '49'
       Content-Type:
       - application/json; charset=utf-8
+      Date:
+      - Sun, 01 Jul 2018 01:50:58 GMT
       Cache-Control:
       - max-age=300, public
       Vary:
       - Origin
       X-Request-Id:
-      - 179fdbd1-e75b-4ffc-960e-00c4ae468f2c
+      - 5467ceda-e1b6-4427-ac69-1fa48af28615
       X-Runtime:
-      - '0.066251'
-      X-Content-Digest:
-      - 02904b32de096fc9d3a7281f4c440ee8f0b483ec
-      Age:
-      - '0'
-      X-Rack-Cache:
-      - miss, store
-      Content-Length:
-      - '9454'
+      - '0.074097'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '[{"id":898,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.402844,37.791402],"description":"Offers
-        training for service providers in the area of adolescent health and youth
-        development. Also offers health workshops for youth on such topics as self
-        esteem, sexuality, safer sex, substance use and harm reduction, and anti-homophobia.
-        Also offers training and technical assistance for peer educator groups. Extended
-        youth development training also available.","kind":"Human Services","latitude":37.791402,"longitude":-122.402844,"name":"Health
-        Initiatives for Youth (Hi-Fy)","short_desc":"Offers training programs in health
-        for service providers and health workshops for youth.","slug":"health-initiatives-for-youth-hi-fy","updated_at":"2014-11-25T17:22:08.664-08:00","url":"https://api.smc-connect.org/locations/health-initiatives-for-youth-hi-fy","address":{"id":723,"address_1":"235
-        Montgomery Street, Suite 430","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94104"},"organization":{"id":898,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Health
-        Initiatives for Youth (Hi-Fy)","website":null,"slug":"health-initiatives-for-youth-hi-fy","url":"https://api.smc-connect.org/organizations/health-initiatives-for-youth-hi-fy","locations_url":"https://api.smc-connect.org/organizations/health-initiatives-for-youth-hi-fy/locations"},"phones":[{"id":1193,"department":null,"extension":null,"number":"415
-        274-1970","number_type":"voice","vanity_number":null},{"id":3056,"department":null,"extension":null,"number":"415
-        274-1976","number_type":"fax","vanity_number":null}]},{"id":1146,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4322445,37.7899046],"description":"Provides
-        free access to health and medical information. Subjects covered at the center
-        include self care and first aid, physiology and anatomy, occupational health
-        hazards, alcoholism, smoking, stress, mental health, acute and chronic diseases,
-        cancer, AIDS, alternative and complementary therapies, nutrition, fitness,
-        exercise, sexuality, genetics, childbirth and infant care, aging, death and
-        animal health care. Clipping file includes the latest information on medical
-        research, treatment approaches and technological advances. Provides information
-        by mail with basic packets on selected topics and in-depth research on any
-        medical diagnosis for a fee.","kind":"Human Services","latitude":37.7899046,"longitude":-122.4322445,"name":"Health
-        and Healing Center (A Planetree Affiliate)","short_desc":"Health education
-        resource library for lay persons.","slug":"health-and-healing-center-a-planetree-affiliate","updated_at":"2014-11-25T17:22:12.039-08:00","url":"https://api.smc-connect.org/locations/health-and-healing-center-a-planetree-affiliate","address":{"id":912,"address_1":"2040
-        Webster Street","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94115"},"organization":{"id":1146,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Institute
-        for Health and Healing","website":null,"slug":"institute-for-health-and-healing","url":"https://api.smc-connect.org/organizations/institute-for-health-and-healing","locations_url":"https://api.smc-connect.org/organizations/institute-for-health-and-healing/locations"},"phones":[{"id":1502,"department":null,"extension":null,"number":"415
-        600-3681","number_type":"voice","vanity_number":null},{"id":3203,"department":null,"extension":null,"number":"415
-        673-2629","number_type":"fax","vanity_number":null}]},{"id":176,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.4401406,37.778189],"description":"A
-        One Stop Job Resource Center with educational/vocational services for men
-        and women is available. Offers employment readiness and referrals. A Parent
-        Program offers support groups and pregnancy prevention programs. Infant and
-        Child Development Program has a licensed infant center in Hayes Valley serving
-        ages newborn - 3. Also has approximately 30 licensed provider homes in Bayview,
-        Visitaction Valley, outer Mission and the Western Addition serving age newborn
-        - 5. Provides comprehensive education, health, nutrition and developmental
-        services for children whose parents are low-income, in school or a job training
-        program, employed or seeking employment.","kind":"Human Services","latitude":37.778189,"longitude":-122.4401406,"name":"Florence
-        Crittenton Services","short_desc":"Residential treatment program for pregnant
-        or parenting teens with children age 3 or under, child care and infant day
-        care services.","slug":"florence-crittenton-services","updated_at":"2014-11-25T17:15:06.528-08:00","url":"https://api.smc-connect.org/locations/florence-crittenton-services","address":{"id":168,"address_1":"840
-        Broderick Street","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94115"},"organization":{"id":176,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Florence
-        Crittenton Services","website":null,"slug":"florence-crittenton-services","url":"https://api.smc-connect.org/organizations/florence-crittenton-services","locations_url":"https://api.smc-connect.org/organizations/florence-crittenton-services/locations"},"phones":[{"id":228,"department":null,"extension":null,"number":"415
-        567-2357","number_type":"voice","vanity_number":null}]},{"id":1004,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.435672,37.7514449],"description":"Services
-        include a private college preparatory education; medical, dental and optical
-        services; professional therapeutic counseling (if needed); academic support
-        services; summer athletic and enrichment programs; extended social services
-        for program graduates; and financial assistance for college. Provides full
-        room and board to youth age 10-14. Professionally trained residential counselors
-        live in the complex. Also offers a community-based program for girls.","kind":"Human
-        Services","latitude":37.7514449,"longitude":-122.435672,"name":"Boys Hope
-        Girls Hope San Francisco Bay Area","short_desc":"Provides a private college
-        preparatory education.","slug":"boys-hope-girls-hope-san-francisco-bay-area","updated_at":"2014-11-25T17:22:10.020-08:00","url":"https://api.smc-connect.org/locations/boys-hope-girls-hope-san-francisco-bay-area","address":{"id":797,"address_1":"4174
-        24th Street","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94114"},"organization":{"id":1004,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Boys
-        Hope Girls Hope San Francisco Bay Area","website":null,"slug":"boys-hope-girls-hope-san-francisco-bay-area","url":"https://api.smc-connect.org/organizations/boys-hope-girls-hope-san-francisco-bay-area","locations_url":"https://api.smc-connect.org/organizations/boys-hope-girls-hope-san-francisco-bay-area/locations"},"phones":[{"id":1309,"department":null,"extension":null,"number":"415
-        657-9302","number_type":"voice","vanity_number":null},{"id":3119,"department":null,"extension":null,"number":"415
-        684-7859","number_type":"fax","vanity_number":null}]},{"id":334,"active":true,"admin_emails":[],"alternate_name":null,"coordinates":[-122.403704,37.7882758],"description":"Community-based
+      string: '[{"id":334,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.403704,37.7882758],"description":"Community-based
         program offering no-cost services to persons with developmental disabilities
         and specialized services for deaf and hear impaired. Provides supported employment
         opportunities in janitorial, housekeeping and grounds-keeping services for
@@ -128,12 +68,1186 @@ http_interactions:
         Services","latitude":37.7882758,"longitude":-122.403704,"name":"Toolworks,
         Inc","short_desc":"Community-based program offering no-cost employment services
         to persons with developmental disabilities and specialized independent living
-        skills for deaf and hearing impaired adults.","slug":"toolworks-inc","updated_at":"2014-11-25T17:22:00.376-08:00","url":"https://api.smc-connect.org/locations/toolworks-inc","address":{"id":283,"address_1":"25
+        skills for deaf and hearing impaired adults.","slug":"toolworks-inc","updated_at":"2014-11-25T17:22:00.376-08:00","website":"http://www.toolworks.org","url":"https://api.smc-connect.org/locations/toolworks-inc","address":{"id":283,"address_1":"25
         Kearny Street, Suite 400","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94108"},"organization":{"id":334,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Toolworks,
         Inc","website":null,"slug":"toolworks-inc","url":"https://api.smc-connect.org/organizations/toolworks-inc","locations_url":"https://api.smc-connect.org/organizations/toolworks-inc/locations"},"phones":[{"id":443,"department":null,"extension":null,"number":"415
         733-0990","number_type":"voice","vanity_number":null},{"id":444,"department":null,"extension":null,"number":"415
         733-0992","number_type":"tty","vanity_number":null},{"id":2703,"department":null,"extension":null,"number":"415
-        733-0991","number_type":"fax","vanity_number":null}]}]'
+        733-0991","number_type":"fax","vanity_number":null}]},{"id":1151,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.430927,37.78667],"description":"Provides
+        bilingual social services primarily for Japanese persons, including translation
+        and interpretation. Drop-in center provides employment, housing and immigration
+        information, cultural, educational and recreational activities, and information
+        and referral. Offers a small library of Japanese books. A community board
+        lists job openings, housing information and educational opportunities in Japanese.
+        Publishes a bimonthly newsletter. A women''s project offers peer counseling
+        and group support.","kind":"Human Services","latitude":37.78667,"longitude":-122.430927,"name":"Nobiru
+        Kai Inc.","short_desc":"Bilingual social services for Japanese, including
+        translation and interpretation, a drop-in center, library, educational and
+        recreational activities.","slug":"nobiru-kai-inc","updated_at":"2014-12-04T11:08:56.272-08:00","website":"http://www.nobiru-kai.org","url":"https://api.smc-connect.org/locations/nobiru-kai-inc","address":{"id":917,"address_1":"1840
+        Sutter Street, Suite 207","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94115"},"organization":{"id":1151,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Japanese
+        Newcomers Services","website":null,"slug":"japanese-newcomers-services","url":"https://api.smc-connect.org/organizations/japanese-newcomers-services","locations_url":"https://api.smc-connect.org/organizations/japanese-newcomers-services/locations"},"phones":[{"id":1508,"department":null,"extension":null,"number":"415
+        922-2033","number_type":"voice","vanity_number":null},{"id":3208,"department":null,"extension":null,"number":"415
+        922-0410","number_type":"fax","vanity_number":null}]},{"id":1113,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4033543,37.7873279],"description":"Assists
+        and educates patients, physicians and the public with a program of support
+        and information services, and raises funds for research to find the cause
+        of, and cure for, Crohn''s disease and ulcerative colitis. Monthly support
+        meetings are held at various locations throughout the Bay Area for patients
+        with ulcerative colitis and Crohn''s disease and their families.","kind":"Human
+        Services","latitude":37.7873279,"longitude":-122.4033543,"name":"Northern
+        California Chapter","short_desc":"Education, support and fundraising to find
+        the cause of, and cure for, colitis and Crohn''s disease.","slug":"northern-california-chapter-5-third-street-suite-625","updated_at":"2014-12-04T11:08:56.229-08:00","website":"http://www.ccfa.org/chapters/northerncalifornia","url":"https://api.smc-connect.org/locations/northern-california-chapter-5-third-street-suite-625","address":{"id":885,"address_1":"5
+        Third Street, Suite 625","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94103"},"organization":{"id":1113,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Crohn''s
+        and Colitis Foundation of America, Inc","website":null,"slug":"crohn-s-and-colitis-foundation-of-america-inc","url":"https://api.smc-connect.org/organizations/crohn-s-and-colitis-foundation-of-america-inc","locations_url":"https://api.smc-connect.org/organizations/crohn-s-and-colitis-foundation-of-america-inc/locations"},"phones":[{"id":1455,"department":null,"extension":null,"number":"415
+        356-2232","number_type":"voice","vanity_number":null},{"id":3183,"department":null,"extension":null,"number":"415
+        356-0880","number_type":"fax","vanity_number":null}]},{"id":1062,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4071517,37.7850356],"description":"Promotes
+        liver health and disease prevention. Provides reasearch, education, and advocacy
+        for the 30 million Americans affected by liver related diseases, including
+        hepatitis.","kind":"Human Services","latitude":37.7850356,"longitude":-122.4071517,"name":"Northern
+        California Chapter","short_desc":"Information, education and support group
+        referrals to liver patients and their families.","slug":"northern-california-chapter-870-market-street-suite-1048","updated_at":"2014-12-04T11:08:54.134-08:00","website":"http://www.liverfoundation.org","url":"https://api.smc-connect.org/locations/northern-california-chapter-870-market-street-suite-1048","address":{"id":848,"address_1":"870
+        Market Street, Suite 1048","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94102"},"organization":{"id":1062,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"American
+        Liver Foundation","website":null,"slug":"american-liver-foundation","url":"https://api.smc-connect.org/organizations/american-liver-foundation","locations_url":"https://api.smc-connect.org/organizations/american-liver-foundation/locations"},"phones":[{"id":1379,"department":null,"extension":null,"number":"415
+        248-1060","number_type":"voice","vanity_number":null},{"id":1380,"department":null,"extension":null,"number":"800-465-4837","number_type":"voice","vanity_number":"800
+        GO-LIVER"},{"id":1381,"department":null,"extension":null,"number":"800 292-9099","number_type":"voice","vanity_number":null},{"id":3154,"department":null,"extension":null,"number":"415
+        248-1066","number_type":"fax","vanity_number":null}]},{"id":1170,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4230716,37.7872651],"description":"Provides
+        educational information about muscular dystrophy and other diseases of the
+        muscle. Provides direct services to those afflicted by the dystrophies including
+        a free medical clinic at California Pacific Medical Center in San Francisco,
+        loan of medical and orthopedic equipment, social activities and a summer camp
+        for children. Volunteers age 18 or over are needed as camp counselors or general
+        office help. Printed materials are available by request.","kind":"Human Services","latitude":37.7872651,"longitude":-122.4230716,"name":"Greater
+        Bay Area Chapter","short_desc":"Provides information about diseases of the
+        muscle, loan of medical and orthopedic equipment, social activities and a
+        summer camp for children.","slug":"greater-bay-area-chapter-1375-sutter-street-suite-300","updated_at":"2014-11-25T17:22:12.547-08:00","website":"http://www.mda.org","url":"https://api.smc-connect.org/locations/greater-bay-area-chapter-1375-sutter-street-suite-300","address":{"id":934,"address_1":"1375
+        Sutter Street, Suite 300","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94109"},"organization":{"id":1170,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Muscular
+        Dystrophy Association (MDA)","website":null,"slug":"muscular-dystrophy-association-mda","url":"https://api.smc-connect.org/organizations/muscular-dystrophy-association-mda","locations_url":"https://api.smc-connect.org/organizations/muscular-dystrophy-association-mda/locations"},"phones":[{"id":1535,"department":null,"extension":null,"number":"415
+        673-7500","number_type":"voice","vanity_number":null},{"id":3223,"department":null,"extension":null,"number":"415
+        673-7501","number_type":"fax","vanity_number":null}]}]'
     http_version: 
-  recorded_at: Mon, 11 May 2015 02:37:02 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Sun, 01 Jul 2018 01:50:58 GMT
+- request:
+    method: get
+    uri: https://api.smc-connect.org/search?keyword=Education&kind=Human%20Services&location=94103&page=1&per_page=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"d615dd6b61de572ce3709ff02480f331"
+      Link:
+      - <https://api.smc-connect.org/search?keyword=Education&page=10&per_page=5>;
+        rel="last", <https://api.smc-connect.org/search?keyword=Education&page=2&per_page=5>;
+        rel="next"
+      X-Total-Count:
+      - '49'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 01 Jul 2018 01:50:58 GMT
+      Cache-Control:
+      - max-age=300, public
+      Vary:
+      - Origin
+      X-Request-Id:
+      - b639836c-bd1f-475b-bc73-699f7c1f29ac
+      X-Runtime:
+      - '0.064859'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":334,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.403704,37.7882758],"description":"Community-based
+        program offering no-cost services to persons with developmental disabilities
+        and specialized services for deaf and hear impaired. Provides supported employment
+        opportunities in janitorial, housekeeping and grounds-keeping services for
+        disabled adults through off-site contracts. Training and placement services
+        are available for adults with disabilities. Offers a day activity center for
+        developmentally disabled adults. Specialized deaf services provide coursework
+        in American Sign Language and independent living skills for individuals referred
+        by the Regional Centers and the Department of Rehabilitation.","kind":"Human
+        Services","latitude":37.7882758,"longitude":-122.403704,"name":"Toolworks,
+        Inc","short_desc":"Community-based program offering no-cost employment services
+        to persons with developmental disabilities and specialized independent living
+        skills for deaf and hearing impaired adults.","slug":"toolworks-inc","updated_at":"2014-11-25T17:22:00.376-08:00","website":"http://www.toolworks.org","url":"https://api.smc-connect.org/locations/toolworks-inc","address":{"id":283,"address_1":"25
+        Kearny Street, Suite 400","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94108"},"organization":{"id":334,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Toolworks,
+        Inc","website":null,"slug":"toolworks-inc","url":"https://api.smc-connect.org/organizations/toolworks-inc","locations_url":"https://api.smc-connect.org/organizations/toolworks-inc/locations"},"phones":[{"id":443,"department":null,"extension":null,"number":"415
+        733-0990","number_type":"voice","vanity_number":null},{"id":444,"department":null,"extension":null,"number":"415
+        733-0992","number_type":"tty","vanity_number":null},{"id":2703,"department":null,"extension":null,"number":"415
+        733-0991","number_type":"fax","vanity_number":null}]},{"id":1151,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.430927,37.78667],"description":"Provides
+        bilingual social services primarily for Japanese persons, including translation
+        and interpretation. Drop-in center provides employment, housing and immigration
+        information, cultural, educational and recreational activities, and information
+        and referral. Offers a small library of Japanese books. A community board
+        lists job openings, housing information and educational opportunities in Japanese.
+        Publishes a bimonthly newsletter. A women''s project offers peer counseling
+        and group support.","kind":"Human Services","latitude":37.78667,"longitude":-122.430927,"name":"Nobiru
+        Kai Inc.","short_desc":"Bilingual social services for Japanese, including
+        translation and interpretation, a drop-in center, library, educational and
+        recreational activities.","slug":"nobiru-kai-inc","updated_at":"2014-12-04T11:08:56.272-08:00","website":"http://www.nobiru-kai.org","url":"https://api.smc-connect.org/locations/nobiru-kai-inc","address":{"id":917,"address_1":"1840
+        Sutter Street, Suite 207","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94115"},"organization":{"id":1151,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Japanese
+        Newcomers Services","website":null,"slug":"japanese-newcomers-services","url":"https://api.smc-connect.org/organizations/japanese-newcomers-services","locations_url":"https://api.smc-connect.org/organizations/japanese-newcomers-services/locations"},"phones":[{"id":1508,"department":null,"extension":null,"number":"415
+        922-2033","number_type":"voice","vanity_number":null},{"id":3208,"department":null,"extension":null,"number":"415
+        922-0410","number_type":"fax","vanity_number":null}]},{"id":1113,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4033543,37.7873279],"description":"Assists
+        and educates patients, physicians and the public with a program of support
+        and information services, and raises funds for research to find the cause
+        of, and cure for, Crohn''s disease and ulcerative colitis. Monthly support
+        meetings are held at various locations throughout the Bay Area for patients
+        with ulcerative colitis and Crohn''s disease and their families.","kind":"Human
+        Services","latitude":37.7873279,"longitude":-122.4033543,"name":"Northern
+        California Chapter","short_desc":"Education, support and fundraising to find
+        the cause of, and cure for, colitis and Crohn''s disease.","slug":"northern-california-chapter-5-third-street-suite-625","updated_at":"2014-12-04T11:08:56.229-08:00","website":"http://www.ccfa.org/chapters/northerncalifornia","url":"https://api.smc-connect.org/locations/northern-california-chapter-5-third-street-suite-625","address":{"id":885,"address_1":"5
+        Third Street, Suite 625","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94103"},"organization":{"id":1113,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Crohn''s
+        and Colitis Foundation of America, Inc","website":null,"slug":"crohn-s-and-colitis-foundation-of-america-inc","url":"https://api.smc-connect.org/organizations/crohn-s-and-colitis-foundation-of-america-inc","locations_url":"https://api.smc-connect.org/organizations/crohn-s-and-colitis-foundation-of-america-inc/locations"},"phones":[{"id":1455,"department":null,"extension":null,"number":"415
+        356-2232","number_type":"voice","vanity_number":null},{"id":3183,"department":null,"extension":null,"number":"415
+        356-0880","number_type":"fax","vanity_number":null}]},{"id":1062,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4071517,37.7850356],"description":"Promotes
+        liver health and disease prevention. Provides reasearch, education, and advocacy
+        for the 30 million Americans affected by liver related diseases, including
+        hepatitis.","kind":"Human Services","latitude":37.7850356,"longitude":-122.4071517,"name":"Northern
+        California Chapter","short_desc":"Information, education and support group
+        referrals to liver patients and their families.","slug":"northern-california-chapter-870-market-street-suite-1048","updated_at":"2014-12-04T11:08:54.134-08:00","website":"http://www.liverfoundation.org","url":"https://api.smc-connect.org/locations/northern-california-chapter-870-market-street-suite-1048","address":{"id":848,"address_1":"870
+        Market Street, Suite 1048","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94102"},"organization":{"id":1062,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"American
+        Liver Foundation","website":null,"slug":"american-liver-foundation","url":"https://api.smc-connect.org/organizations/american-liver-foundation","locations_url":"https://api.smc-connect.org/organizations/american-liver-foundation/locations"},"phones":[{"id":1379,"department":null,"extension":null,"number":"415
+        248-1060","number_type":"voice","vanity_number":null},{"id":1380,"department":null,"extension":null,"number":"800-465-4837","number_type":"voice","vanity_number":"800
+        GO-LIVER"},{"id":1381,"department":null,"extension":null,"number":"800 292-9099","number_type":"voice","vanity_number":null},{"id":3154,"department":null,"extension":null,"number":"415
+        248-1066","number_type":"fax","vanity_number":null}]},{"id":1170,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4230716,37.7872651],"description":"Provides
+        educational information about muscular dystrophy and other diseases of the
+        muscle. Provides direct services to those afflicted by the dystrophies including
+        a free medical clinic at California Pacific Medical Center in San Francisco,
+        loan of medical and orthopedic equipment, social activities and a summer camp
+        for children. Volunteers age 18 or over are needed as camp counselors or general
+        office help. Printed materials are available by request.","kind":"Human Services","latitude":37.7872651,"longitude":-122.4230716,"name":"Greater
+        Bay Area Chapter","short_desc":"Provides information about diseases of the
+        muscle, loan of medical and orthopedic equipment, social activities and a
+        summer camp for children.","slug":"greater-bay-area-chapter-1375-sutter-street-suite-300","updated_at":"2014-11-25T17:22:12.547-08:00","website":"http://www.mda.org","url":"https://api.smc-connect.org/locations/greater-bay-area-chapter-1375-sutter-street-suite-300","address":{"id":934,"address_1":"1375
+        Sutter Street, Suite 300","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94109"},"organization":{"id":1170,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Muscular
+        Dystrophy Association (MDA)","website":null,"slug":"muscular-dystrophy-association-mda","url":"https://api.smc-connect.org/organizations/muscular-dystrophy-association-mda","locations_url":"https://api.smc-connect.org/organizations/muscular-dystrophy-association-mda/locations"},"phones":[{"id":1535,"department":null,"extension":null,"number":"415
+        673-7500","number_type":"voice","vanity_number":null},{"id":3223,"department":null,"extension":null,"number":"415
+        673-7501","number_type":"fax","vanity_number":null}]}]'
+    http_version: 
+  recorded_at: Sun, 01 Jul 2018 01:50:59 GMT
+- request:
+    method: get
+    uri: https://api.smc-connect.org/search?keyword=Education&kind=Human%20Services&location=94103&page=1&per_page=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"d615dd6b61de572ce3709ff02480f331"
+      Link:
+      - <https://api.smc-connect.org/search?keyword=Education&page=10&per_page=5>;
+        rel="last", <https://api.smc-connect.org/search?keyword=Education&page=2&per_page=5>;
+        rel="next"
+      X-Total-Count:
+      - '49'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 01 Jul 2018 01:50:59 GMT
+      Cache-Control:
+      - max-age=300, public
+      Vary:
+      - Origin
+      X-Request-Id:
+      - e0df741d-3fd8-4d34-94fb-1716bd374fd5
+      X-Runtime:
+      - '0.055680'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":334,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.403704,37.7882758],"description":"Community-based
+        program offering no-cost services to persons with developmental disabilities
+        and specialized services for deaf and hear impaired. Provides supported employment
+        opportunities in janitorial, housekeeping and grounds-keeping services for
+        disabled adults through off-site contracts. Training and placement services
+        are available for adults with disabilities. Offers a day activity center for
+        developmentally disabled adults. Specialized deaf services provide coursework
+        in American Sign Language and independent living skills for individuals referred
+        by the Regional Centers and the Department of Rehabilitation.","kind":"Human
+        Services","latitude":37.7882758,"longitude":-122.403704,"name":"Toolworks,
+        Inc","short_desc":"Community-based program offering no-cost employment services
+        to persons with developmental disabilities and specialized independent living
+        skills for deaf and hearing impaired adults.","slug":"toolworks-inc","updated_at":"2014-11-25T17:22:00.376-08:00","website":"http://www.toolworks.org","url":"https://api.smc-connect.org/locations/toolworks-inc","address":{"id":283,"address_1":"25
+        Kearny Street, Suite 400","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94108"},"organization":{"id":334,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Toolworks,
+        Inc","website":null,"slug":"toolworks-inc","url":"https://api.smc-connect.org/organizations/toolworks-inc","locations_url":"https://api.smc-connect.org/organizations/toolworks-inc/locations"},"phones":[{"id":443,"department":null,"extension":null,"number":"415
+        733-0990","number_type":"voice","vanity_number":null},{"id":444,"department":null,"extension":null,"number":"415
+        733-0992","number_type":"tty","vanity_number":null},{"id":2703,"department":null,"extension":null,"number":"415
+        733-0991","number_type":"fax","vanity_number":null}]},{"id":1151,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.430927,37.78667],"description":"Provides
+        bilingual social services primarily for Japanese persons, including translation
+        and interpretation. Drop-in center provides employment, housing and immigration
+        information, cultural, educational and recreational activities, and information
+        and referral. Offers a small library of Japanese books. A community board
+        lists job openings, housing information and educational opportunities in Japanese.
+        Publishes a bimonthly newsletter. A women''s project offers peer counseling
+        and group support.","kind":"Human Services","latitude":37.78667,"longitude":-122.430927,"name":"Nobiru
+        Kai Inc.","short_desc":"Bilingual social services for Japanese, including
+        translation and interpretation, a drop-in center, library, educational and
+        recreational activities.","slug":"nobiru-kai-inc","updated_at":"2014-12-04T11:08:56.272-08:00","website":"http://www.nobiru-kai.org","url":"https://api.smc-connect.org/locations/nobiru-kai-inc","address":{"id":917,"address_1":"1840
+        Sutter Street, Suite 207","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94115"},"organization":{"id":1151,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Japanese
+        Newcomers Services","website":null,"slug":"japanese-newcomers-services","url":"https://api.smc-connect.org/organizations/japanese-newcomers-services","locations_url":"https://api.smc-connect.org/organizations/japanese-newcomers-services/locations"},"phones":[{"id":1508,"department":null,"extension":null,"number":"415
+        922-2033","number_type":"voice","vanity_number":null},{"id":3208,"department":null,"extension":null,"number":"415
+        922-0410","number_type":"fax","vanity_number":null}]},{"id":1113,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4033543,37.7873279],"description":"Assists
+        and educates patients, physicians and the public with a program of support
+        and information services, and raises funds for research to find the cause
+        of, and cure for, Crohn''s disease and ulcerative colitis. Monthly support
+        meetings are held at various locations throughout the Bay Area for patients
+        with ulcerative colitis and Crohn''s disease and their families.","kind":"Human
+        Services","latitude":37.7873279,"longitude":-122.4033543,"name":"Northern
+        California Chapter","short_desc":"Education, support and fundraising to find
+        the cause of, and cure for, colitis and Crohn''s disease.","slug":"northern-california-chapter-5-third-street-suite-625","updated_at":"2014-12-04T11:08:56.229-08:00","website":"http://www.ccfa.org/chapters/northerncalifornia","url":"https://api.smc-connect.org/locations/northern-california-chapter-5-third-street-suite-625","address":{"id":885,"address_1":"5
+        Third Street, Suite 625","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94103"},"organization":{"id":1113,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Crohn''s
+        and Colitis Foundation of America, Inc","website":null,"slug":"crohn-s-and-colitis-foundation-of-america-inc","url":"https://api.smc-connect.org/organizations/crohn-s-and-colitis-foundation-of-america-inc","locations_url":"https://api.smc-connect.org/organizations/crohn-s-and-colitis-foundation-of-america-inc/locations"},"phones":[{"id":1455,"department":null,"extension":null,"number":"415
+        356-2232","number_type":"voice","vanity_number":null},{"id":3183,"department":null,"extension":null,"number":"415
+        356-0880","number_type":"fax","vanity_number":null}]},{"id":1062,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4071517,37.7850356],"description":"Promotes
+        liver health and disease prevention. Provides reasearch, education, and advocacy
+        for the 30 million Americans affected by liver related diseases, including
+        hepatitis.","kind":"Human Services","latitude":37.7850356,"longitude":-122.4071517,"name":"Northern
+        California Chapter","short_desc":"Information, education and support group
+        referrals to liver patients and their families.","slug":"northern-california-chapter-870-market-street-suite-1048","updated_at":"2014-12-04T11:08:54.134-08:00","website":"http://www.liverfoundation.org","url":"https://api.smc-connect.org/locations/northern-california-chapter-870-market-street-suite-1048","address":{"id":848,"address_1":"870
+        Market Street, Suite 1048","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94102"},"organization":{"id":1062,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"American
+        Liver Foundation","website":null,"slug":"american-liver-foundation","url":"https://api.smc-connect.org/organizations/american-liver-foundation","locations_url":"https://api.smc-connect.org/organizations/american-liver-foundation/locations"},"phones":[{"id":1379,"department":null,"extension":null,"number":"415
+        248-1060","number_type":"voice","vanity_number":null},{"id":1380,"department":null,"extension":null,"number":"800-465-4837","number_type":"voice","vanity_number":"800
+        GO-LIVER"},{"id":1381,"department":null,"extension":null,"number":"800 292-9099","number_type":"voice","vanity_number":null},{"id":3154,"department":null,"extension":null,"number":"415
+        248-1066","number_type":"fax","vanity_number":null}]},{"id":1170,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4230716,37.7872651],"description":"Provides
+        educational information about muscular dystrophy and other diseases of the
+        muscle. Provides direct services to those afflicted by the dystrophies including
+        a free medical clinic at California Pacific Medical Center in San Francisco,
+        loan of medical and orthopedic equipment, social activities and a summer camp
+        for children. Volunteers age 18 or over are needed as camp counselors or general
+        office help. Printed materials are available by request.","kind":"Human Services","latitude":37.7872651,"longitude":-122.4230716,"name":"Greater
+        Bay Area Chapter","short_desc":"Provides information about diseases of the
+        muscle, loan of medical and orthopedic equipment, social activities and a
+        summer camp for children.","slug":"greater-bay-area-chapter-1375-sutter-street-suite-300","updated_at":"2014-11-25T17:22:12.547-08:00","website":"http://www.mda.org","url":"https://api.smc-connect.org/locations/greater-bay-area-chapter-1375-sutter-street-suite-300","address":{"id":934,"address_1":"1375
+        Sutter Street, Suite 300","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94109"},"organization":{"id":1170,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Muscular
+        Dystrophy Association (MDA)","website":null,"slug":"muscular-dystrophy-association-mda","url":"https://api.smc-connect.org/organizations/muscular-dystrophy-association-mda","locations_url":"https://api.smc-connect.org/organizations/muscular-dystrophy-association-mda/locations"},"phones":[{"id":1535,"department":null,"extension":null,"number":"415
+        673-7500","number_type":"voice","vanity_number":null},{"id":3223,"department":null,"extension":null,"number":"415
+        673-7501","number_type":"fax","vanity_number":null}]}]'
+    http_version: 
+  recorded_at: Sun, 01 Jul 2018 01:50:59 GMT
+- request:
+    method: get
+    uri: https://api.smc-connect.org/search?keyword=Education&kind=Human%20Services&location=94103&page=1&per_page=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"d615dd6b61de572ce3709ff02480f331"
+      Link:
+      - <https://api.smc-connect.org/search?keyword=Education&page=10&per_page=5>;
+        rel="last", <https://api.smc-connect.org/search?keyword=Education&page=2&per_page=5>;
+        rel="next"
+      X-Total-Count:
+      - '49'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 01 Jul 2018 01:50:59 GMT
+      Cache-Control:
+      - max-age=300, public
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 89c3caa0-3c97-42a1-8066-e9261dd348ee
+      X-Runtime:
+      - '0.062052'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":334,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.403704,37.7882758],"description":"Community-based
+        program offering no-cost services to persons with developmental disabilities
+        and specialized services for deaf and hear impaired. Provides supported employment
+        opportunities in janitorial, housekeeping and grounds-keeping services for
+        disabled adults through off-site contracts. Training and placement services
+        are available for adults with disabilities. Offers a day activity center for
+        developmentally disabled adults. Specialized deaf services provide coursework
+        in American Sign Language and independent living skills for individuals referred
+        by the Regional Centers and the Department of Rehabilitation.","kind":"Human
+        Services","latitude":37.7882758,"longitude":-122.403704,"name":"Toolworks,
+        Inc","short_desc":"Community-based program offering no-cost employment services
+        to persons with developmental disabilities and specialized independent living
+        skills for deaf and hearing impaired adults.","slug":"toolworks-inc","updated_at":"2014-11-25T17:22:00.376-08:00","website":"http://www.toolworks.org","url":"https://api.smc-connect.org/locations/toolworks-inc","address":{"id":283,"address_1":"25
+        Kearny Street, Suite 400","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94108"},"organization":{"id":334,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Toolworks,
+        Inc","website":null,"slug":"toolworks-inc","url":"https://api.smc-connect.org/organizations/toolworks-inc","locations_url":"https://api.smc-connect.org/organizations/toolworks-inc/locations"},"phones":[{"id":443,"department":null,"extension":null,"number":"415
+        733-0990","number_type":"voice","vanity_number":null},{"id":444,"department":null,"extension":null,"number":"415
+        733-0992","number_type":"tty","vanity_number":null},{"id":2703,"department":null,"extension":null,"number":"415
+        733-0991","number_type":"fax","vanity_number":null}]},{"id":1151,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.430927,37.78667],"description":"Provides
+        bilingual social services primarily for Japanese persons, including translation
+        and interpretation. Drop-in center provides employment, housing and immigration
+        information, cultural, educational and recreational activities, and information
+        and referral. Offers a small library of Japanese books. A community board
+        lists job openings, housing information and educational opportunities in Japanese.
+        Publishes a bimonthly newsletter. A women''s project offers peer counseling
+        and group support.","kind":"Human Services","latitude":37.78667,"longitude":-122.430927,"name":"Nobiru
+        Kai Inc.","short_desc":"Bilingual social services for Japanese, including
+        translation and interpretation, a drop-in center, library, educational and
+        recreational activities.","slug":"nobiru-kai-inc","updated_at":"2014-12-04T11:08:56.272-08:00","website":"http://www.nobiru-kai.org","url":"https://api.smc-connect.org/locations/nobiru-kai-inc","address":{"id":917,"address_1":"1840
+        Sutter Street, Suite 207","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94115"},"organization":{"id":1151,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Japanese
+        Newcomers Services","website":null,"slug":"japanese-newcomers-services","url":"https://api.smc-connect.org/organizations/japanese-newcomers-services","locations_url":"https://api.smc-connect.org/organizations/japanese-newcomers-services/locations"},"phones":[{"id":1508,"department":null,"extension":null,"number":"415
+        922-2033","number_type":"voice","vanity_number":null},{"id":3208,"department":null,"extension":null,"number":"415
+        922-0410","number_type":"fax","vanity_number":null}]},{"id":1113,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4033543,37.7873279],"description":"Assists
+        and educates patients, physicians and the public with a program of support
+        and information services, and raises funds for research to find the cause
+        of, and cure for, Crohn''s disease and ulcerative colitis. Monthly support
+        meetings are held at various locations throughout the Bay Area for patients
+        with ulcerative colitis and Crohn''s disease and their families.","kind":"Human
+        Services","latitude":37.7873279,"longitude":-122.4033543,"name":"Northern
+        California Chapter","short_desc":"Education, support and fundraising to find
+        the cause of, and cure for, colitis and Crohn''s disease.","slug":"northern-california-chapter-5-third-street-suite-625","updated_at":"2014-12-04T11:08:56.229-08:00","website":"http://www.ccfa.org/chapters/northerncalifornia","url":"https://api.smc-connect.org/locations/northern-california-chapter-5-third-street-suite-625","address":{"id":885,"address_1":"5
+        Third Street, Suite 625","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94103"},"organization":{"id":1113,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Crohn''s
+        and Colitis Foundation of America, Inc","website":null,"slug":"crohn-s-and-colitis-foundation-of-america-inc","url":"https://api.smc-connect.org/organizations/crohn-s-and-colitis-foundation-of-america-inc","locations_url":"https://api.smc-connect.org/organizations/crohn-s-and-colitis-foundation-of-america-inc/locations"},"phones":[{"id":1455,"department":null,"extension":null,"number":"415
+        356-2232","number_type":"voice","vanity_number":null},{"id":3183,"department":null,"extension":null,"number":"415
+        356-0880","number_type":"fax","vanity_number":null}]},{"id":1062,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4071517,37.7850356],"description":"Promotes
+        liver health and disease prevention. Provides reasearch, education, and advocacy
+        for the 30 million Americans affected by liver related diseases, including
+        hepatitis.","kind":"Human Services","latitude":37.7850356,"longitude":-122.4071517,"name":"Northern
+        California Chapter","short_desc":"Information, education and support group
+        referrals to liver patients and their families.","slug":"northern-california-chapter-870-market-street-suite-1048","updated_at":"2014-12-04T11:08:54.134-08:00","website":"http://www.liverfoundation.org","url":"https://api.smc-connect.org/locations/northern-california-chapter-870-market-street-suite-1048","address":{"id":848,"address_1":"870
+        Market Street, Suite 1048","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94102"},"organization":{"id":1062,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"American
+        Liver Foundation","website":null,"slug":"american-liver-foundation","url":"https://api.smc-connect.org/organizations/american-liver-foundation","locations_url":"https://api.smc-connect.org/organizations/american-liver-foundation/locations"},"phones":[{"id":1379,"department":null,"extension":null,"number":"415
+        248-1060","number_type":"voice","vanity_number":null},{"id":1380,"department":null,"extension":null,"number":"800-465-4837","number_type":"voice","vanity_number":"800
+        GO-LIVER"},{"id":1381,"department":null,"extension":null,"number":"800 292-9099","number_type":"voice","vanity_number":null},{"id":3154,"department":null,"extension":null,"number":"415
+        248-1066","number_type":"fax","vanity_number":null}]},{"id":1170,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4230716,37.7872651],"description":"Provides
+        educational information about muscular dystrophy and other diseases of the
+        muscle. Provides direct services to those afflicted by the dystrophies including
+        a free medical clinic at California Pacific Medical Center in San Francisco,
+        loan of medical and orthopedic equipment, social activities and a summer camp
+        for children. Volunteers age 18 or over are needed as camp counselors or general
+        office help. Printed materials are available by request.","kind":"Human Services","latitude":37.7872651,"longitude":-122.4230716,"name":"Greater
+        Bay Area Chapter","short_desc":"Provides information about diseases of the
+        muscle, loan of medical and orthopedic equipment, social activities and a
+        summer camp for children.","slug":"greater-bay-area-chapter-1375-sutter-street-suite-300","updated_at":"2014-11-25T17:22:12.547-08:00","website":"http://www.mda.org","url":"https://api.smc-connect.org/locations/greater-bay-area-chapter-1375-sutter-street-suite-300","address":{"id":934,"address_1":"1375
+        Sutter Street, Suite 300","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94109"},"organization":{"id":1170,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Muscular
+        Dystrophy Association (MDA)","website":null,"slug":"muscular-dystrophy-association-mda","url":"https://api.smc-connect.org/organizations/muscular-dystrophy-association-mda","locations_url":"https://api.smc-connect.org/organizations/muscular-dystrophy-association-mda/locations"},"phones":[{"id":1535,"department":null,"extension":null,"number":"415
+        673-7500","number_type":"voice","vanity_number":null},{"id":3223,"department":null,"extension":null,"number":"415
+        673-7501","number_type":"fax","vanity_number":null}]}]'
+    http_version: 
+  recorded_at: Sun, 01 Jul 2018 01:50:59 GMT
+- request:
+    method: get
+    uri: https://api.smc-connect.org/search?keyword=Education&kind=Human%20Services&location=94103&page=1&per_page=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"d615dd6b61de572ce3709ff02480f331"
+      Link:
+      - <https://api.smc-connect.org/search?keyword=Education&page=10&per_page=5>;
+        rel="last", <https://api.smc-connect.org/search?keyword=Education&page=2&per_page=5>;
+        rel="next"
+      X-Total-Count:
+      - '49'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 01 Jul 2018 01:50:59 GMT
+      Cache-Control:
+      - max-age=300, public
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 7fdc105d-3036-4147-93f9-82e99e46d3d7
+      X-Runtime:
+      - '0.050863'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":334,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.403704,37.7882758],"description":"Community-based
+        program offering no-cost services to persons with developmental disabilities
+        and specialized services for deaf and hear impaired. Provides supported employment
+        opportunities in janitorial, housekeeping and grounds-keeping services for
+        disabled adults through off-site contracts. Training and placement services
+        are available for adults with disabilities. Offers a day activity center for
+        developmentally disabled adults. Specialized deaf services provide coursework
+        in American Sign Language and independent living skills for individuals referred
+        by the Regional Centers and the Department of Rehabilitation.","kind":"Human
+        Services","latitude":37.7882758,"longitude":-122.403704,"name":"Toolworks,
+        Inc","short_desc":"Community-based program offering no-cost employment services
+        to persons with developmental disabilities and specialized independent living
+        skills for deaf and hearing impaired adults.","slug":"toolworks-inc","updated_at":"2014-11-25T17:22:00.376-08:00","website":"http://www.toolworks.org","url":"https://api.smc-connect.org/locations/toolworks-inc","address":{"id":283,"address_1":"25
+        Kearny Street, Suite 400","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94108"},"organization":{"id":334,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Toolworks,
+        Inc","website":null,"slug":"toolworks-inc","url":"https://api.smc-connect.org/organizations/toolworks-inc","locations_url":"https://api.smc-connect.org/organizations/toolworks-inc/locations"},"phones":[{"id":443,"department":null,"extension":null,"number":"415
+        733-0990","number_type":"voice","vanity_number":null},{"id":444,"department":null,"extension":null,"number":"415
+        733-0992","number_type":"tty","vanity_number":null},{"id":2703,"department":null,"extension":null,"number":"415
+        733-0991","number_type":"fax","vanity_number":null}]},{"id":1151,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.430927,37.78667],"description":"Provides
+        bilingual social services primarily for Japanese persons, including translation
+        and interpretation. Drop-in center provides employment, housing and immigration
+        information, cultural, educational and recreational activities, and information
+        and referral. Offers a small library of Japanese books. A community board
+        lists job openings, housing information and educational opportunities in Japanese.
+        Publishes a bimonthly newsletter. A women''s project offers peer counseling
+        and group support.","kind":"Human Services","latitude":37.78667,"longitude":-122.430927,"name":"Nobiru
+        Kai Inc.","short_desc":"Bilingual social services for Japanese, including
+        translation and interpretation, a drop-in center, library, educational and
+        recreational activities.","slug":"nobiru-kai-inc","updated_at":"2014-12-04T11:08:56.272-08:00","website":"http://www.nobiru-kai.org","url":"https://api.smc-connect.org/locations/nobiru-kai-inc","address":{"id":917,"address_1":"1840
+        Sutter Street, Suite 207","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94115"},"organization":{"id":1151,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Japanese
+        Newcomers Services","website":null,"slug":"japanese-newcomers-services","url":"https://api.smc-connect.org/organizations/japanese-newcomers-services","locations_url":"https://api.smc-connect.org/organizations/japanese-newcomers-services/locations"},"phones":[{"id":1508,"department":null,"extension":null,"number":"415
+        922-2033","number_type":"voice","vanity_number":null},{"id":3208,"department":null,"extension":null,"number":"415
+        922-0410","number_type":"fax","vanity_number":null}]},{"id":1113,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4033543,37.7873279],"description":"Assists
+        and educates patients, physicians and the public with a program of support
+        and information services, and raises funds for research to find the cause
+        of, and cure for, Crohn''s disease and ulcerative colitis. Monthly support
+        meetings are held at various locations throughout the Bay Area for patients
+        with ulcerative colitis and Crohn''s disease and their families.","kind":"Human
+        Services","latitude":37.7873279,"longitude":-122.4033543,"name":"Northern
+        California Chapter","short_desc":"Education, support and fundraising to find
+        the cause of, and cure for, colitis and Crohn''s disease.","slug":"northern-california-chapter-5-third-street-suite-625","updated_at":"2014-12-04T11:08:56.229-08:00","website":"http://www.ccfa.org/chapters/northerncalifornia","url":"https://api.smc-connect.org/locations/northern-california-chapter-5-third-street-suite-625","address":{"id":885,"address_1":"5
+        Third Street, Suite 625","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94103"},"organization":{"id":1113,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Crohn''s
+        and Colitis Foundation of America, Inc","website":null,"slug":"crohn-s-and-colitis-foundation-of-america-inc","url":"https://api.smc-connect.org/organizations/crohn-s-and-colitis-foundation-of-america-inc","locations_url":"https://api.smc-connect.org/organizations/crohn-s-and-colitis-foundation-of-america-inc/locations"},"phones":[{"id":1455,"department":null,"extension":null,"number":"415
+        356-2232","number_type":"voice","vanity_number":null},{"id":3183,"department":null,"extension":null,"number":"415
+        356-0880","number_type":"fax","vanity_number":null}]},{"id":1062,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4071517,37.7850356],"description":"Promotes
+        liver health and disease prevention. Provides reasearch, education, and advocacy
+        for the 30 million Americans affected by liver related diseases, including
+        hepatitis.","kind":"Human Services","latitude":37.7850356,"longitude":-122.4071517,"name":"Northern
+        California Chapter","short_desc":"Information, education and support group
+        referrals to liver patients and their families.","slug":"northern-california-chapter-870-market-street-suite-1048","updated_at":"2014-12-04T11:08:54.134-08:00","website":"http://www.liverfoundation.org","url":"https://api.smc-connect.org/locations/northern-california-chapter-870-market-street-suite-1048","address":{"id":848,"address_1":"870
+        Market Street, Suite 1048","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94102"},"organization":{"id":1062,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"American
+        Liver Foundation","website":null,"slug":"american-liver-foundation","url":"https://api.smc-connect.org/organizations/american-liver-foundation","locations_url":"https://api.smc-connect.org/organizations/american-liver-foundation/locations"},"phones":[{"id":1379,"department":null,"extension":null,"number":"415
+        248-1060","number_type":"voice","vanity_number":null},{"id":1380,"department":null,"extension":null,"number":"800-465-4837","number_type":"voice","vanity_number":"800
+        GO-LIVER"},{"id":1381,"department":null,"extension":null,"number":"800 292-9099","number_type":"voice","vanity_number":null},{"id":3154,"department":null,"extension":null,"number":"415
+        248-1066","number_type":"fax","vanity_number":null}]},{"id":1170,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4230716,37.7872651],"description":"Provides
+        educational information about muscular dystrophy and other diseases of the
+        muscle. Provides direct services to those afflicted by the dystrophies including
+        a free medical clinic at California Pacific Medical Center in San Francisco,
+        loan of medical and orthopedic equipment, social activities and a summer camp
+        for children. Volunteers age 18 or over are needed as camp counselors or general
+        office help. Printed materials are available by request.","kind":"Human Services","latitude":37.7872651,"longitude":-122.4230716,"name":"Greater
+        Bay Area Chapter","short_desc":"Provides information about diseases of the
+        muscle, loan of medical and orthopedic equipment, social activities and a
+        summer camp for children.","slug":"greater-bay-area-chapter-1375-sutter-street-suite-300","updated_at":"2014-11-25T17:22:12.547-08:00","website":"http://www.mda.org","url":"https://api.smc-connect.org/locations/greater-bay-area-chapter-1375-sutter-street-suite-300","address":{"id":934,"address_1":"1375
+        Sutter Street, Suite 300","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94109"},"organization":{"id":1170,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Muscular
+        Dystrophy Association (MDA)","website":null,"slug":"muscular-dystrophy-association-mda","url":"https://api.smc-connect.org/organizations/muscular-dystrophy-association-mda","locations_url":"https://api.smc-connect.org/organizations/muscular-dystrophy-association-mda/locations"},"phones":[{"id":1535,"department":null,"extension":null,"number":"415
+        673-7500","number_type":"voice","vanity_number":null},{"id":3223,"department":null,"extension":null,"number":"415
+        673-7501","number_type":"fax","vanity_number":null}]}]'
+    http_version: 
+  recorded_at: Sun, 01 Jul 2018 01:50:59 GMT
+- request:
+    method: get
+    uri: https://api.smc-connect.org/search?keyword=Education&kind=Human%20Services&location=94103&page=1&per_page=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"d615dd6b61de572ce3709ff02480f331"
+      Link:
+      - <https://api.smc-connect.org/search?keyword=Education&page=10&per_page=5>;
+        rel="last", <https://api.smc-connect.org/search?keyword=Education&page=2&per_page=5>;
+        rel="next"
+      X-Total-Count:
+      - '49'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 01 Jul 2018 01:50:59 GMT
+      Cache-Control:
+      - max-age=300, public
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 53aa969b-c619-42c9-be74-9079b5bf200e
+      X-Runtime:
+      - '0.047833'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":334,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.403704,37.7882758],"description":"Community-based
+        program offering no-cost services to persons with developmental disabilities
+        and specialized services for deaf and hear impaired. Provides supported employment
+        opportunities in janitorial, housekeeping and grounds-keeping services for
+        disabled adults through off-site contracts. Training and placement services
+        are available for adults with disabilities. Offers a day activity center for
+        developmentally disabled adults. Specialized deaf services provide coursework
+        in American Sign Language and independent living skills for individuals referred
+        by the Regional Centers and the Department of Rehabilitation.","kind":"Human
+        Services","latitude":37.7882758,"longitude":-122.403704,"name":"Toolworks,
+        Inc","short_desc":"Community-based program offering no-cost employment services
+        to persons with developmental disabilities and specialized independent living
+        skills for deaf and hearing impaired adults.","slug":"toolworks-inc","updated_at":"2014-11-25T17:22:00.376-08:00","website":"http://www.toolworks.org","url":"https://api.smc-connect.org/locations/toolworks-inc","address":{"id":283,"address_1":"25
+        Kearny Street, Suite 400","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94108"},"organization":{"id":334,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Toolworks,
+        Inc","website":null,"slug":"toolworks-inc","url":"https://api.smc-connect.org/organizations/toolworks-inc","locations_url":"https://api.smc-connect.org/organizations/toolworks-inc/locations"},"phones":[{"id":443,"department":null,"extension":null,"number":"415
+        733-0990","number_type":"voice","vanity_number":null},{"id":444,"department":null,"extension":null,"number":"415
+        733-0992","number_type":"tty","vanity_number":null},{"id":2703,"department":null,"extension":null,"number":"415
+        733-0991","number_type":"fax","vanity_number":null}]},{"id":1151,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.430927,37.78667],"description":"Provides
+        bilingual social services primarily for Japanese persons, including translation
+        and interpretation. Drop-in center provides employment, housing and immigration
+        information, cultural, educational and recreational activities, and information
+        and referral. Offers a small library of Japanese books. A community board
+        lists job openings, housing information and educational opportunities in Japanese.
+        Publishes a bimonthly newsletter. A women''s project offers peer counseling
+        and group support.","kind":"Human Services","latitude":37.78667,"longitude":-122.430927,"name":"Nobiru
+        Kai Inc.","short_desc":"Bilingual social services for Japanese, including
+        translation and interpretation, a drop-in center, library, educational and
+        recreational activities.","slug":"nobiru-kai-inc","updated_at":"2014-12-04T11:08:56.272-08:00","website":"http://www.nobiru-kai.org","url":"https://api.smc-connect.org/locations/nobiru-kai-inc","address":{"id":917,"address_1":"1840
+        Sutter Street, Suite 207","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94115"},"organization":{"id":1151,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Japanese
+        Newcomers Services","website":null,"slug":"japanese-newcomers-services","url":"https://api.smc-connect.org/organizations/japanese-newcomers-services","locations_url":"https://api.smc-connect.org/organizations/japanese-newcomers-services/locations"},"phones":[{"id":1508,"department":null,"extension":null,"number":"415
+        922-2033","number_type":"voice","vanity_number":null},{"id":3208,"department":null,"extension":null,"number":"415
+        922-0410","number_type":"fax","vanity_number":null}]},{"id":1113,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4033543,37.7873279],"description":"Assists
+        and educates patients, physicians and the public with a program of support
+        and information services, and raises funds for research to find the cause
+        of, and cure for, Crohn''s disease and ulcerative colitis. Monthly support
+        meetings are held at various locations throughout the Bay Area for patients
+        with ulcerative colitis and Crohn''s disease and their families.","kind":"Human
+        Services","latitude":37.7873279,"longitude":-122.4033543,"name":"Northern
+        California Chapter","short_desc":"Education, support and fundraising to find
+        the cause of, and cure for, colitis and Crohn''s disease.","slug":"northern-california-chapter-5-third-street-suite-625","updated_at":"2014-12-04T11:08:56.229-08:00","website":"http://www.ccfa.org/chapters/northerncalifornia","url":"https://api.smc-connect.org/locations/northern-california-chapter-5-third-street-suite-625","address":{"id":885,"address_1":"5
+        Third Street, Suite 625","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94103"},"organization":{"id":1113,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Crohn''s
+        and Colitis Foundation of America, Inc","website":null,"slug":"crohn-s-and-colitis-foundation-of-america-inc","url":"https://api.smc-connect.org/organizations/crohn-s-and-colitis-foundation-of-america-inc","locations_url":"https://api.smc-connect.org/organizations/crohn-s-and-colitis-foundation-of-america-inc/locations"},"phones":[{"id":1455,"department":null,"extension":null,"number":"415
+        356-2232","number_type":"voice","vanity_number":null},{"id":3183,"department":null,"extension":null,"number":"415
+        356-0880","number_type":"fax","vanity_number":null}]},{"id":1062,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4071517,37.7850356],"description":"Promotes
+        liver health and disease prevention. Provides reasearch, education, and advocacy
+        for the 30 million Americans affected by liver related diseases, including
+        hepatitis.","kind":"Human Services","latitude":37.7850356,"longitude":-122.4071517,"name":"Northern
+        California Chapter","short_desc":"Information, education and support group
+        referrals to liver patients and their families.","slug":"northern-california-chapter-870-market-street-suite-1048","updated_at":"2014-12-04T11:08:54.134-08:00","website":"http://www.liverfoundation.org","url":"https://api.smc-connect.org/locations/northern-california-chapter-870-market-street-suite-1048","address":{"id":848,"address_1":"870
+        Market Street, Suite 1048","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94102"},"organization":{"id":1062,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"American
+        Liver Foundation","website":null,"slug":"american-liver-foundation","url":"https://api.smc-connect.org/organizations/american-liver-foundation","locations_url":"https://api.smc-connect.org/organizations/american-liver-foundation/locations"},"phones":[{"id":1379,"department":null,"extension":null,"number":"415
+        248-1060","number_type":"voice","vanity_number":null},{"id":1380,"department":null,"extension":null,"number":"800-465-4837","number_type":"voice","vanity_number":"800
+        GO-LIVER"},{"id":1381,"department":null,"extension":null,"number":"800 292-9099","number_type":"voice","vanity_number":null},{"id":3154,"department":null,"extension":null,"number":"415
+        248-1066","number_type":"fax","vanity_number":null}]},{"id":1170,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4230716,37.7872651],"description":"Provides
+        educational information about muscular dystrophy and other diseases of the
+        muscle. Provides direct services to those afflicted by the dystrophies including
+        a free medical clinic at California Pacific Medical Center in San Francisco,
+        loan of medical and orthopedic equipment, social activities and a summer camp
+        for children. Volunteers age 18 or over are needed as camp counselors or general
+        office help. Printed materials are available by request.","kind":"Human Services","latitude":37.7872651,"longitude":-122.4230716,"name":"Greater
+        Bay Area Chapter","short_desc":"Provides information about diseases of the
+        muscle, loan of medical and orthopedic equipment, social activities and a
+        summer camp for children.","slug":"greater-bay-area-chapter-1375-sutter-street-suite-300","updated_at":"2014-11-25T17:22:12.547-08:00","website":"http://www.mda.org","url":"https://api.smc-connect.org/locations/greater-bay-area-chapter-1375-sutter-street-suite-300","address":{"id":934,"address_1":"1375
+        Sutter Street, Suite 300","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94109"},"organization":{"id":1170,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Muscular
+        Dystrophy Association (MDA)","website":null,"slug":"muscular-dystrophy-association-mda","url":"https://api.smc-connect.org/organizations/muscular-dystrophy-association-mda","locations_url":"https://api.smc-connect.org/organizations/muscular-dystrophy-association-mda/locations"},"phones":[{"id":1535,"department":null,"extension":null,"number":"415
+        673-7500","number_type":"voice","vanity_number":null},{"id":3223,"department":null,"extension":null,"number":"415
+        673-7501","number_type":"fax","vanity_number":null}]}]'
+    http_version: 
+  recorded_at: Sun, 01 Jul 2018 01:50:59 GMT
+- request:
+    method: get
+    uri: https://api.smc-connect.org/search?keyword=Education&kind=Human%20Services&location=94103&page=1&per_page=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"d615dd6b61de572ce3709ff02480f331"
+      Link:
+      - <https://api.smc-connect.org/search?keyword=Education&page=10&per_page=5>;
+        rel="last", <https://api.smc-connect.org/search?keyword=Education&page=2&per_page=5>;
+        rel="next"
+      X-Total-Count:
+      - '49'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 01 Jul 2018 01:50:59 GMT
+      Cache-Control:
+      - max-age=300, public
+      Vary:
+      - Origin
+      X-Request-Id:
+      - eabf7d52-29e8-48bd-822b-bcceab2467c7
+      X-Runtime:
+      - '0.051655'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":334,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.403704,37.7882758],"description":"Community-based
+        program offering no-cost services to persons with developmental disabilities
+        and specialized services for deaf and hear impaired. Provides supported employment
+        opportunities in janitorial, housekeeping and grounds-keeping services for
+        disabled adults through off-site contracts. Training and placement services
+        are available for adults with disabilities. Offers a day activity center for
+        developmentally disabled adults. Specialized deaf services provide coursework
+        in American Sign Language and independent living skills for individuals referred
+        by the Regional Centers and the Department of Rehabilitation.","kind":"Human
+        Services","latitude":37.7882758,"longitude":-122.403704,"name":"Toolworks,
+        Inc","short_desc":"Community-based program offering no-cost employment services
+        to persons with developmental disabilities and specialized independent living
+        skills for deaf and hearing impaired adults.","slug":"toolworks-inc","updated_at":"2014-11-25T17:22:00.376-08:00","website":"http://www.toolworks.org","url":"https://api.smc-connect.org/locations/toolworks-inc","address":{"id":283,"address_1":"25
+        Kearny Street, Suite 400","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94108"},"organization":{"id":334,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Toolworks,
+        Inc","website":null,"slug":"toolworks-inc","url":"https://api.smc-connect.org/organizations/toolworks-inc","locations_url":"https://api.smc-connect.org/organizations/toolworks-inc/locations"},"phones":[{"id":443,"department":null,"extension":null,"number":"415
+        733-0990","number_type":"voice","vanity_number":null},{"id":444,"department":null,"extension":null,"number":"415
+        733-0992","number_type":"tty","vanity_number":null},{"id":2703,"department":null,"extension":null,"number":"415
+        733-0991","number_type":"fax","vanity_number":null}]},{"id":1151,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.430927,37.78667],"description":"Provides
+        bilingual social services primarily for Japanese persons, including translation
+        and interpretation. Drop-in center provides employment, housing and immigration
+        information, cultural, educational and recreational activities, and information
+        and referral. Offers a small library of Japanese books. A community board
+        lists job openings, housing information and educational opportunities in Japanese.
+        Publishes a bimonthly newsletter. A women''s project offers peer counseling
+        and group support.","kind":"Human Services","latitude":37.78667,"longitude":-122.430927,"name":"Nobiru
+        Kai Inc.","short_desc":"Bilingual social services for Japanese, including
+        translation and interpretation, a drop-in center, library, educational and
+        recreational activities.","slug":"nobiru-kai-inc","updated_at":"2014-12-04T11:08:56.272-08:00","website":"http://www.nobiru-kai.org","url":"https://api.smc-connect.org/locations/nobiru-kai-inc","address":{"id":917,"address_1":"1840
+        Sutter Street, Suite 207","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94115"},"organization":{"id":1151,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Japanese
+        Newcomers Services","website":null,"slug":"japanese-newcomers-services","url":"https://api.smc-connect.org/organizations/japanese-newcomers-services","locations_url":"https://api.smc-connect.org/organizations/japanese-newcomers-services/locations"},"phones":[{"id":1508,"department":null,"extension":null,"number":"415
+        922-2033","number_type":"voice","vanity_number":null},{"id":3208,"department":null,"extension":null,"number":"415
+        922-0410","number_type":"fax","vanity_number":null}]},{"id":1113,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4033543,37.7873279],"description":"Assists
+        and educates patients, physicians and the public with a program of support
+        and information services, and raises funds for research to find the cause
+        of, and cure for, Crohn''s disease and ulcerative colitis. Monthly support
+        meetings are held at various locations throughout the Bay Area for patients
+        with ulcerative colitis and Crohn''s disease and their families.","kind":"Human
+        Services","latitude":37.7873279,"longitude":-122.4033543,"name":"Northern
+        California Chapter","short_desc":"Education, support and fundraising to find
+        the cause of, and cure for, colitis and Crohn''s disease.","slug":"northern-california-chapter-5-third-street-suite-625","updated_at":"2014-12-04T11:08:56.229-08:00","website":"http://www.ccfa.org/chapters/northerncalifornia","url":"https://api.smc-connect.org/locations/northern-california-chapter-5-third-street-suite-625","address":{"id":885,"address_1":"5
+        Third Street, Suite 625","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94103"},"organization":{"id":1113,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Crohn''s
+        and Colitis Foundation of America, Inc","website":null,"slug":"crohn-s-and-colitis-foundation-of-america-inc","url":"https://api.smc-connect.org/organizations/crohn-s-and-colitis-foundation-of-america-inc","locations_url":"https://api.smc-connect.org/organizations/crohn-s-and-colitis-foundation-of-america-inc/locations"},"phones":[{"id":1455,"department":null,"extension":null,"number":"415
+        356-2232","number_type":"voice","vanity_number":null},{"id":3183,"department":null,"extension":null,"number":"415
+        356-0880","number_type":"fax","vanity_number":null}]},{"id":1062,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4071517,37.7850356],"description":"Promotes
+        liver health and disease prevention. Provides reasearch, education, and advocacy
+        for the 30 million Americans affected by liver related diseases, including
+        hepatitis.","kind":"Human Services","latitude":37.7850356,"longitude":-122.4071517,"name":"Northern
+        California Chapter","short_desc":"Information, education and support group
+        referrals to liver patients and their families.","slug":"northern-california-chapter-870-market-street-suite-1048","updated_at":"2014-12-04T11:08:54.134-08:00","website":"http://www.liverfoundation.org","url":"https://api.smc-connect.org/locations/northern-california-chapter-870-market-street-suite-1048","address":{"id":848,"address_1":"870
+        Market Street, Suite 1048","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94102"},"organization":{"id":1062,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"American
+        Liver Foundation","website":null,"slug":"american-liver-foundation","url":"https://api.smc-connect.org/organizations/american-liver-foundation","locations_url":"https://api.smc-connect.org/organizations/american-liver-foundation/locations"},"phones":[{"id":1379,"department":null,"extension":null,"number":"415
+        248-1060","number_type":"voice","vanity_number":null},{"id":1380,"department":null,"extension":null,"number":"800-465-4837","number_type":"voice","vanity_number":"800
+        GO-LIVER"},{"id":1381,"department":null,"extension":null,"number":"800 292-9099","number_type":"voice","vanity_number":null},{"id":3154,"department":null,"extension":null,"number":"415
+        248-1066","number_type":"fax","vanity_number":null}]},{"id":1170,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4230716,37.7872651],"description":"Provides
+        educational information about muscular dystrophy and other diseases of the
+        muscle. Provides direct services to those afflicted by the dystrophies including
+        a free medical clinic at California Pacific Medical Center in San Francisco,
+        loan of medical and orthopedic equipment, social activities and a summer camp
+        for children. Volunteers age 18 or over are needed as camp counselors or general
+        office help. Printed materials are available by request.","kind":"Human Services","latitude":37.7872651,"longitude":-122.4230716,"name":"Greater
+        Bay Area Chapter","short_desc":"Provides information about diseases of the
+        muscle, loan of medical and orthopedic equipment, social activities and a
+        summer camp for children.","slug":"greater-bay-area-chapter-1375-sutter-street-suite-300","updated_at":"2014-11-25T17:22:12.547-08:00","website":"http://www.mda.org","url":"https://api.smc-connect.org/locations/greater-bay-area-chapter-1375-sutter-street-suite-300","address":{"id":934,"address_1":"1375
+        Sutter Street, Suite 300","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94109"},"organization":{"id":1170,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Muscular
+        Dystrophy Association (MDA)","website":null,"slug":"muscular-dystrophy-association-mda","url":"https://api.smc-connect.org/organizations/muscular-dystrophy-association-mda","locations_url":"https://api.smc-connect.org/organizations/muscular-dystrophy-association-mda/locations"},"phones":[{"id":1535,"department":null,"extension":null,"number":"415
+        673-7500","number_type":"voice","vanity_number":null},{"id":3223,"department":null,"extension":null,"number":"415
+        673-7501","number_type":"fax","vanity_number":null}]}]'
+    http_version: 
+  recorded_at: Sun, 01 Jul 2018 01:50:59 GMT
+- request:
+    method: get
+    uri: https://api.smc-connect.org/search?keyword=Education&kind=Human%20Services&location=94103&page=1&per_page=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"d615dd6b61de572ce3709ff02480f331"
+      Link:
+      - <https://api.smc-connect.org/search?keyword=Education&page=10&per_page=5>;
+        rel="last", <https://api.smc-connect.org/search?keyword=Education&page=2&per_page=5>;
+        rel="next"
+      X-Total-Count:
+      - '49'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 01 Jul 2018 01:50:59 GMT
+      Cache-Control:
+      - max-age=300, public
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 14098cbe-dc46-4db8-a258-196dff7c1580
+      X-Runtime:
+      - '0.052574'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":334,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.403704,37.7882758],"description":"Community-based
+        program offering no-cost services to persons with developmental disabilities
+        and specialized services for deaf and hear impaired. Provides supported employment
+        opportunities in janitorial, housekeeping and grounds-keeping services for
+        disabled adults through off-site contracts. Training and placement services
+        are available for adults with disabilities. Offers a day activity center for
+        developmentally disabled adults. Specialized deaf services provide coursework
+        in American Sign Language and independent living skills for individuals referred
+        by the Regional Centers and the Department of Rehabilitation.","kind":"Human
+        Services","latitude":37.7882758,"longitude":-122.403704,"name":"Toolworks,
+        Inc","short_desc":"Community-based program offering no-cost employment services
+        to persons with developmental disabilities and specialized independent living
+        skills for deaf and hearing impaired adults.","slug":"toolworks-inc","updated_at":"2014-11-25T17:22:00.376-08:00","website":"http://www.toolworks.org","url":"https://api.smc-connect.org/locations/toolworks-inc","address":{"id":283,"address_1":"25
+        Kearny Street, Suite 400","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94108"},"organization":{"id":334,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Toolworks,
+        Inc","website":null,"slug":"toolworks-inc","url":"https://api.smc-connect.org/organizations/toolworks-inc","locations_url":"https://api.smc-connect.org/organizations/toolworks-inc/locations"},"phones":[{"id":443,"department":null,"extension":null,"number":"415
+        733-0990","number_type":"voice","vanity_number":null},{"id":444,"department":null,"extension":null,"number":"415
+        733-0992","number_type":"tty","vanity_number":null},{"id":2703,"department":null,"extension":null,"number":"415
+        733-0991","number_type":"fax","vanity_number":null}]},{"id":1151,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.430927,37.78667],"description":"Provides
+        bilingual social services primarily for Japanese persons, including translation
+        and interpretation. Drop-in center provides employment, housing and immigration
+        information, cultural, educational and recreational activities, and information
+        and referral. Offers a small library of Japanese books. A community board
+        lists job openings, housing information and educational opportunities in Japanese.
+        Publishes a bimonthly newsletter. A women''s project offers peer counseling
+        and group support.","kind":"Human Services","latitude":37.78667,"longitude":-122.430927,"name":"Nobiru
+        Kai Inc.","short_desc":"Bilingual social services for Japanese, including
+        translation and interpretation, a drop-in center, library, educational and
+        recreational activities.","slug":"nobiru-kai-inc","updated_at":"2014-12-04T11:08:56.272-08:00","website":"http://www.nobiru-kai.org","url":"https://api.smc-connect.org/locations/nobiru-kai-inc","address":{"id":917,"address_1":"1840
+        Sutter Street, Suite 207","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94115"},"organization":{"id":1151,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Japanese
+        Newcomers Services","website":null,"slug":"japanese-newcomers-services","url":"https://api.smc-connect.org/organizations/japanese-newcomers-services","locations_url":"https://api.smc-connect.org/organizations/japanese-newcomers-services/locations"},"phones":[{"id":1508,"department":null,"extension":null,"number":"415
+        922-2033","number_type":"voice","vanity_number":null},{"id":3208,"department":null,"extension":null,"number":"415
+        922-0410","number_type":"fax","vanity_number":null}]},{"id":1113,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4033543,37.7873279],"description":"Assists
+        and educates patients, physicians and the public with a program of support
+        and information services, and raises funds for research to find the cause
+        of, and cure for, Crohn''s disease and ulcerative colitis. Monthly support
+        meetings are held at various locations throughout the Bay Area for patients
+        with ulcerative colitis and Crohn''s disease and their families.","kind":"Human
+        Services","latitude":37.7873279,"longitude":-122.4033543,"name":"Northern
+        California Chapter","short_desc":"Education, support and fundraising to find
+        the cause of, and cure for, colitis and Crohn''s disease.","slug":"northern-california-chapter-5-third-street-suite-625","updated_at":"2014-12-04T11:08:56.229-08:00","website":"http://www.ccfa.org/chapters/northerncalifornia","url":"https://api.smc-connect.org/locations/northern-california-chapter-5-third-street-suite-625","address":{"id":885,"address_1":"5
+        Third Street, Suite 625","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94103"},"organization":{"id":1113,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Crohn''s
+        and Colitis Foundation of America, Inc","website":null,"slug":"crohn-s-and-colitis-foundation-of-america-inc","url":"https://api.smc-connect.org/organizations/crohn-s-and-colitis-foundation-of-america-inc","locations_url":"https://api.smc-connect.org/organizations/crohn-s-and-colitis-foundation-of-america-inc/locations"},"phones":[{"id":1455,"department":null,"extension":null,"number":"415
+        356-2232","number_type":"voice","vanity_number":null},{"id":3183,"department":null,"extension":null,"number":"415
+        356-0880","number_type":"fax","vanity_number":null}]},{"id":1062,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4071517,37.7850356],"description":"Promotes
+        liver health and disease prevention. Provides reasearch, education, and advocacy
+        for the 30 million Americans affected by liver related diseases, including
+        hepatitis.","kind":"Human Services","latitude":37.7850356,"longitude":-122.4071517,"name":"Northern
+        California Chapter","short_desc":"Information, education and support group
+        referrals to liver patients and their families.","slug":"northern-california-chapter-870-market-street-suite-1048","updated_at":"2014-12-04T11:08:54.134-08:00","website":"http://www.liverfoundation.org","url":"https://api.smc-connect.org/locations/northern-california-chapter-870-market-street-suite-1048","address":{"id":848,"address_1":"870
+        Market Street, Suite 1048","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94102"},"organization":{"id":1062,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"American
+        Liver Foundation","website":null,"slug":"american-liver-foundation","url":"https://api.smc-connect.org/organizations/american-liver-foundation","locations_url":"https://api.smc-connect.org/organizations/american-liver-foundation/locations"},"phones":[{"id":1379,"department":null,"extension":null,"number":"415
+        248-1060","number_type":"voice","vanity_number":null},{"id":1380,"department":null,"extension":null,"number":"800-465-4837","number_type":"voice","vanity_number":"800
+        GO-LIVER"},{"id":1381,"department":null,"extension":null,"number":"800 292-9099","number_type":"voice","vanity_number":null},{"id":3154,"department":null,"extension":null,"number":"415
+        248-1066","number_type":"fax","vanity_number":null}]},{"id":1170,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4230716,37.7872651],"description":"Provides
+        educational information about muscular dystrophy and other diseases of the
+        muscle. Provides direct services to those afflicted by the dystrophies including
+        a free medical clinic at California Pacific Medical Center in San Francisco,
+        loan of medical and orthopedic equipment, social activities and a summer camp
+        for children. Volunteers age 18 or over are needed as camp counselors or general
+        office help. Printed materials are available by request.","kind":"Human Services","latitude":37.7872651,"longitude":-122.4230716,"name":"Greater
+        Bay Area Chapter","short_desc":"Provides information about diseases of the
+        muscle, loan of medical and orthopedic equipment, social activities and a
+        summer camp for children.","slug":"greater-bay-area-chapter-1375-sutter-street-suite-300","updated_at":"2014-11-25T17:22:12.547-08:00","website":"http://www.mda.org","url":"https://api.smc-connect.org/locations/greater-bay-area-chapter-1375-sutter-street-suite-300","address":{"id":934,"address_1":"1375
+        Sutter Street, Suite 300","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94109"},"organization":{"id":1170,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Muscular
+        Dystrophy Association (MDA)","website":null,"slug":"muscular-dystrophy-association-mda","url":"https://api.smc-connect.org/organizations/muscular-dystrophy-association-mda","locations_url":"https://api.smc-connect.org/organizations/muscular-dystrophy-association-mda/locations"},"phones":[{"id":1535,"department":null,"extension":null,"number":"415
+        673-7500","number_type":"voice","vanity_number":null},{"id":3223,"department":null,"extension":null,"number":"415
+        673-7501","number_type":"fax","vanity_number":null}]}]'
+    http_version: 
+  recorded_at: Sun, 01 Jul 2018 01:50:59 GMT
+- request:
+    method: get
+    uri: https://api.smc-connect.org/search?keyword=Education&kind=Human%20Services&location=94103&page=1&per_page=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"d615dd6b61de572ce3709ff02480f331"
+      Link:
+      - <https://api.smc-connect.org/search?keyword=Education&page=10&per_page=5>;
+        rel="last", <https://api.smc-connect.org/search?keyword=Education&page=2&per_page=5>;
+        rel="next"
+      X-Total-Count:
+      - '49'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 01 Jul 2018 01:51:00 GMT
+      Cache-Control:
+      - max-age=300, public
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 2eac49b3-2d9a-4d53-bcfd-8c0ab975aa4a
+      X-Runtime:
+      - '0.059242'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":334,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.403704,37.7882758],"description":"Community-based
+        program offering no-cost services to persons with developmental disabilities
+        and specialized services for deaf and hear impaired. Provides supported employment
+        opportunities in janitorial, housekeeping and grounds-keeping services for
+        disabled adults through off-site contracts. Training and placement services
+        are available for adults with disabilities. Offers a day activity center for
+        developmentally disabled adults. Specialized deaf services provide coursework
+        in American Sign Language and independent living skills for individuals referred
+        by the Regional Centers and the Department of Rehabilitation.","kind":"Human
+        Services","latitude":37.7882758,"longitude":-122.403704,"name":"Toolworks,
+        Inc","short_desc":"Community-based program offering no-cost employment services
+        to persons with developmental disabilities and specialized independent living
+        skills for deaf and hearing impaired adults.","slug":"toolworks-inc","updated_at":"2014-11-25T17:22:00.376-08:00","website":"http://www.toolworks.org","url":"https://api.smc-connect.org/locations/toolworks-inc","address":{"id":283,"address_1":"25
+        Kearny Street, Suite 400","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94108"},"organization":{"id":334,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Toolworks,
+        Inc","website":null,"slug":"toolworks-inc","url":"https://api.smc-connect.org/organizations/toolworks-inc","locations_url":"https://api.smc-connect.org/organizations/toolworks-inc/locations"},"phones":[{"id":443,"department":null,"extension":null,"number":"415
+        733-0990","number_type":"voice","vanity_number":null},{"id":444,"department":null,"extension":null,"number":"415
+        733-0992","number_type":"tty","vanity_number":null},{"id":2703,"department":null,"extension":null,"number":"415
+        733-0991","number_type":"fax","vanity_number":null}]},{"id":1151,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.430927,37.78667],"description":"Provides
+        bilingual social services primarily for Japanese persons, including translation
+        and interpretation. Drop-in center provides employment, housing and immigration
+        information, cultural, educational and recreational activities, and information
+        and referral. Offers a small library of Japanese books. A community board
+        lists job openings, housing information and educational opportunities in Japanese.
+        Publishes a bimonthly newsletter. A women''s project offers peer counseling
+        and group support.","kind":"Human Services","latitude":37.78667,"longitude":-122.430927,"name":"Nobiru
+        Kai Inc.","short_desc":"Bilingual social services for Japanese, including
+        translation and interpretation, a drop-in center, library, educational and
+        recreational activities.","slug":"nobiru-kai-inc","updated_at":"2014-12-04T11:08:56.272-08:00","website":"http://www.nobiru-kai.org","url":"https://api.smc-connect.org/locations/nobiru-kai-inc","address":{"id":917,"address_1":"1840
+        Sutter Street, Suite 207","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94115"},"organization":{"id":1151,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Japanese
+        Newcomers Services","website":null,"slug":"japanese-newcomers-services","url":"https://api.smc-connect.org/organizations/japanese-newcomers-services","locations_url":"https://api.smc-connect.org/organizations/japanese-newcomers-services/locations"},"phones":[{"id":1508,"department":null,"extension":null,"number":"415
+        922-2033","number_type":"voice","vanity_number":null},{"id":3208,"department":null,"extension":null,"number":"415
+        922-0410","number_type":"fax","vanity_number":null}]},{"id":1113,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4033543,37.7873279],"description":"Assists
+        and educates patients, physicians and the public with a program of support
+        and information services, and raises funds for research to find the cause
+        of, and cure for, Crohn''s disease and ulcerative colitis. Monthly support
+        meetings are held at various locations throughout the Bay Area for patients
+        with ulcerative colitis and Crohn''s disease and their families.","kind":"Human
+        Services","latitude":37.7873279,"longitude":-122.4033543,"name":"Northern
+        California Chapter","short_desc":"Education, support and fundraising to find
+        the cause of, and cure for, colitis and Crohn''s disease.","slug":"northern-california-chapter-5-third-street-suite-625","updated_at":"2014-12-04T11:08:56.229-08:00","website":"http://www.ccfa.org/chapters/northerncalifornia","url":"https://api.smc-connect.org/locations/northern-california-chapter-5-third-street-suite-625","address":{"id":885,"address_1":"5
+        Third Street, Suite 625","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94103"},"organization":{"id":1113,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Crohn''s
+        and Colitis Foundation of America, Inc","website":null,"slug":"crohn-s-and-colitis-foundation-of-america-inc","url":"https://api.smc-connect.org/organizations/crohn-s-and-colitis-foundation-of-america-inc","locations_url":"https://api.smc-connect.org/organizations/crohn-s-and-colitis-foundation-of-america-inc/locations"},"phones":[{"id":1455,"department":null,"extension":null,"number":"415
+        356-2232","number_type":"voice","vanity_number":null},{"id":3183,"department":null,"extension":null,"number":"415
+        356-0880","number_type":"fax","vanity_number":null}]},{"id":1062,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4071517,37.7850356],"description":"Promotes
+        liver health and disease prevention. Provides reasearch, education, and advocacy
+        for the 30 million Americans affected by liver related diseases, including
+        hepatitis.","kind":"Human Services","latitude":37.7850356,"longitude":-122.4071517,"name":"Northern
+        California Chapter","short_desc":"Information, education and support group
+        referrals to liver patients and their families.","slug":"northern-california-chapter-870-market-street-suite-1048","updated_at":"2014-12-04T11:08:54.134-08:00","website":"http://www.liverfoundation.org","url":"https://api.smc-connect.org/locations/northern-california-chapter-870-market-street-suite-1048","address":{"id":848,"address_1":"870
+        Market Street, Suite 1048","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94102"},"organization":{"id":1062,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"American
+        Liver Foundation","website":null,"slug":"american-liver-foundation","url":"https://api.smc-connect.org/organizations/american-liver-foundation","locations_url":"https://api.smc-connect.org/organizations/american-liver-foundation/locations"},"phones":[{"id":1379,"department":null,"extension":null,"number":"415
+        248-1060","number_type":"voice","vanity_number":null},{"id":1380,"department":null,"extension":null,"number":"800-465-4837","number_type":"voice","vanity_number":"800
+        GO-LIVER"},{"id":1381,"department":null,"extension":null,"number":"800 292-9099","number_type":"voice","vanity_number":null},{"id":3154,"department":null,"extension":null,"number":"415
+        248-1066","number_type":"fax","vanity_number":null}]},{"id":1170,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4230716,37.7872651],"description":"Provides
+        educational information about muscular dystrophy and other diseases of the
+        muscle. Provides direct services to those afflicted by the dystrophies including
+        a free medical clinic at California Pacific Medical Center in San Francisco,
+        loan of medical and orthopedic equipment, social activities and a summer camp
+        for children. Volunteers age 18 or over are needed as camp counselors or general
+        office help. Printed materials are available by request.","kind":"Human Services","latitude":37.7872651,"longitude":-122.4230716,"name":"Greater
+        Bay Area Chapter","short_desc":"Provides information about diseases of the
+        muscle, loan of medical and orthopedic equipment, social activities and a
+        summer camp for children.","slug":"greater-bay-area-chapter-1375-sutter-street-suite-300","updated_at":"2014-11-25T17:22:12.547-08:00","website":"http://www.mda.org","url":"https://api.smc-connect.org/locations/greater-bay-area-chapter-1375-sutter-street-suite-300","address":{"id":934,"address_1":"1375
+        Sutter Street, Suite 300","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94109"},"organization":{"id":1170,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Muscular
+        Dystrophy Association (MDA)","website":null,"slug":"muscular-dystrophy-association-mda","url":"https://api.smc-connect.org/organizations/muscular-dystrophy-association-mda","locations_url":"https://api.smc-connect.org/organizations/muscular-dystrophy-association-mda/locations"},"phones":[{"id":1535,"department":null,"extension":null,"number":"415
+        673-7500","number_type":"voice","vanity_number":null},{"id":3223,"department":null,"extension":null,"number":"415
+        673-7501","number_type":"fax","vanity_number":null}]}]'
+    http_version: 
+  recorded_at: Sun, 01 Jul 2018 01:51:00 GMT
+- request:
+    method: get
+    uri: https://api.smc-connect.org/search?keyword=Education&kind=Human%20Services&location=94103&page=1&per_page=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"d615dd6b61de572ce3709ff02480f331"
+      Link:
+      - <https://api.smc-connect.org/search?keyword=Education&page=10&per_page=5>;
+        rel="last", <https://api.smc-connect.org/search?keyword=Education&page=2&per_page=5>;
+        rel="next"
+      X-Total-Count:
+      - '49'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 01 Jul 2018 01:51:00 GMT
+      Cache-Control:
+      - max-age=300, public
+      Vary:
+      - Origin
+      X-Request-Id:
+      - 78b581d9-1237-4a6f-bd56-e9db5d4c669b
+      X-Runtime:
+      - '0.051745'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":334,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.403704,37.7882758],"description":"Community-based
+        program offering no-cost services to persons with developmental disabilities
+        and specialized services for deaf and hear impaired. Provides supported employment
+        opportunities in janitorial, housekeeping and grounds-keeping services for
+        disabled adults through off-site contracts. Training and placement services
+        are available for adults with disabilities. Offers a day activity center for
+        developmentally disabled adults. Specialized deaf services provide coursework
+        in American Sign Language and independent living skills for individuals referred
+        by the Regional Centers and the Department of Rehabilitation.","kind":"Human
+        Services","latitude":37.7882758,"longitude":-122.403704,"name":"Toolworks,
+        Inc","short_desc":"Community-based program offering no-cost employment services
+        to persons with developmental disabilities and specialized independent living
+        skills for deaf and hearing impaired adults.","slug":"toolworks-inc","updated_at":"2014-11-25T17:22:00.376-08:00","website":"http://www.toolworks.org","url":"https://api.smc-connect.org/locations/toolworks-inc","address":{"id":283,"address_1":"25
+        Kearny Street, Suite 400","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94108"},"organization":{"id":334,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Toolworks,
+        Inc","website":null,"slug":"toolworks-inc","url":"https://api.smc-connect.org/organizations/toolworks-inc","locations_url":"https://api.smc-connect.org/organizations/toolworks-inc/locations"},"phones":[{"id":443,"department":null,"extension":null,"number":"415
+        733-0990","number_type":"voice","vanity_number":null},{"id":444,"department":null,"extension":null,"number":"415
+        733-0992","number_type":"tty","vanity_number":null},{"id":2703,"department":null,"extension":null,"number":"415
+        733-0991","number_type":"fax","vanity_number":null}]},{"id":1151,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.430927,37.78667],"description":"Provides
+        bilingual social services primarily for Japanese persons, including translation
+        and interpretation. Drop-in center provides employment, housing and immigration
+        information, cultural, educational and recreational activities, and information
+        and referral. Offers a small library of Japanese books. A community board
+        lists job openings, housing information and educational opportunities in Japanese.
+        Publishes a bimonthly newsletter. A women''s project offers peer counseling
+        and group support.","kind":"Human Services","latitude":37.78667,"longitude":-122.430927,"name":"Nobiru
+        Kai Inc.","short_desc":"Bilingual social services for Japanese, including
+        translation and interpretation, a drop-in center, library, educational and
+        recreational activities.","slug":"nobiru-kai-inc","updated_at":"2014-12-04T11:08:56.272-08:00","website":"http://www.nobiru-kai.org","url":"https://api.smc-connect.org/locations/nobiru-kai-inc","address":{"id":917,"address_1":"1840
+        Sutter Street, Suite 207","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94115"},"organization":{"id":1151,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Japanese
+        Newcomers Services","website":null,"slug":"japanese-newcomers-services","url":"https://api.smc-connect.org/organizations/japanese-newcomers-services","locations_url":"https://api.smc-connect.org/organizations/japanese-newcomers-services/locations"},"phones":[{"id":1508,"department":null,"extension":null,"number":"415
+        922-2033","number_type":"voice","vanity_number":null},{"id":3208,"department":null,"extension":null,"number":"415
+        922-0410","number_type":"fax","vanity_number":null}]},{"id":1113,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4033543,37.7873279],"description":"Assists
+        and educates patients, physicians and the public with a program of support
+        and information services, and raises funds for research to find the cause
+        of, and cure for, Crohn''s disease and ulcerative colitis. Monthly support
+        meetings are held at various locations throughout the Bay Area for patients
+        with ulcerative colitis and Crohn''s disease and their families.","kind":"Human
+        Services","latitude":37.7873279,"longitude":-122.4033543,"name":"Northern
+        California Chapter","short_desc":"Education, support and fundraising to find
+        the cause of, and cure for, colitis and Crohn''s disease.","slug":"northern-california-chapter-5-third-street-suite-625","updated_at":"2014-12-04T11:08:56.229-08:00","website":"http://www.ccfa.org/chapters/northerncalifornia","url":"https://api.smc-connect.org/locations/northern-california-chapter-5-third-street-suite-625","address":{"id":885,"address_1":"5
+        Third Street, Suite 625","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94103"},"organization":{"id":1113,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Crohn''s
+        and Colitis Foundation of America, Inc","website":null,"slug":"crohn-s-and-colitis-foundation-of-america-inc","url":"https://api.smc-connect.org/organizations/crohn-s-and-colitis-foundation-of-america-inc","locations_url":"https://api.smc-connect.org/organizations/crohn-s-and-colitis-foundation-of-america-inc/locations"},"phones":[{"id":1455,"department":null,"extension":null,"number":"415
+        356-2232","number_type":"voice","vanity_number":null},{"id":3183,"department":null,"extension":null,"number":"415
+        356-0880","number_type":"fax","vanity_number":null}]},{"id":1062,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4071517,37.7850356],"description":"Promotes
+        liver health and disease prevention. Provides reasearch, education, and advocacy
+        for the 30 million Americans affected by liver related diseases, including
+        hepatitis.","kind":"Human Services","latitude":37.7850356,"longitude":-122.4071517,"name":"Northern
+        California Chapter","short_desc":"Information, education and support group
+        referrals to liver patients and their families.","slug":"northern-california-chapter-870-market-street-suite-1048","updated_at":"2014-12-04T11:08:54.134-08:00","website":"http://www.liverfoundation.org","url":"https://api.smc-connect.org/locations/northern-california-chapter-870-market-street-suite-1048","address":{"id":848,"address_1":"870
+        Market Street, Suite 1048","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94102"},"organization":{"id":1062,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"American
+        Liver Foundation","website":null,"slug":"american-liver-foundation","url":"https://api.smc-connect.org/organizations/american-liver-foundation","locations_url":"https://api.smc-connect.org/organizations/american-liver-foundation/locations"},"phones":[{"id":1379,"department":null,"extension":null,"number":"415
+        248-1060","number_type":"voice","vanity_number":null},{"id":1380,"department":null,"extension":null,"number":"800-465-4837","number_type":"voice","vanity_number":"800
+        GO-LIVER"},{"id":1381,"department":null,"extension":null,"number":"800 292-9099","number_type":"voice","vanity_number":null},{"id":3154,"department":null,"extension":null,"number":"415
+        248-1066","number_type":"fax","vanity_number":null}]},{"id":1170,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.4230716,37.7872651],"description":"Provides
+        educational information about muscular dystrophy and other diseases of the
+        muscle. Provides direct services to those afflicted by the dystrophies including
+        a free medical clinic at California Pacific Medical Center in San Francisco,
+        loan of medical and orthopedic equipment, social activities and a summer camp
+        for children. Volunteers age 18 or over are needed as camp counselors or general
+        office help. Printed materials are available by request.","kind":"Human Services","latitude":37.7872651,"longitude":-122.4230716,"name":"Greater
+        Bay Area Chapter","short_desc":"Provides information about diseases of the
+        muscle, loan of medical and orthopedic equipment, social activities and a
+        summer camp for children.","slug":"greater-bay-area-chapter-1375-sutter-street-suite-300","updated_at":"2014-11-25T17:22:12.547-08:00","website":"http://www.mda.org","url":"https://api.smc-connect.org/locations/greater-bay-area-chapter-1375-sutter-street-suite-300","address":{"id":934,"address_1":"1375
+        Sutter Street, Suite 300","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94109"},"organization":{"id":1170,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Muscular
+        Dystrophy Association (MDA)","website":null,"slug":"muscular-dystrophy-association-mda","url":"https://api.smc-connect.org/organizations/muscular-dystrophy-association-mda","locations_url":"https://api.smc-connect.org/organizations/muscular-dystrophy-association-mda/locations"},"phones":[{"id":1535,"department":null,"extension":null,"number":"415
+        673-7500","number_type":"voice","vanity_number":null},{"id":3223,"department":null,"extension":null,"number":"415
+        673-7501","number_type":"fax","vanity_number":null}]}]'
+    http_version: 
+  recorded_at: Sun, 01 Jul 2018 01:51:00 GMT
+recorded_with: VCR 4.0.0

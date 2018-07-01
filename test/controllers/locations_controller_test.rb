@@ -8,9 +8,9 @@ class LocationsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test 'sends a Twilio::TwiML::Response' do
-    twiml = Twilio::TwiML::Response.new { |r| r.Message 'foo' }
-    Twilio::TwiML::Response.expects(:new).returns(twiml)
+  test 'sends a Twilio::TwiML::MessagingResponse' do
+    twiml = Twilio::TwiML::MessagingResponse.new { |r| r.message(body: 'foo') }
+    Twilio::TwiML::MessagingResponse.expects(:new).returns(twiml)
     assert get_reply_with_body('boo')
   end
 
@@ -287,8 +287,8 @@ class LocationsControllerTest < ActionController::TestCase
       get_reply_with_body('hi')
       get_reply_with_body('94103')
       get_reply_with_body('hi')
-      get_reply_with_body('2')
-      get_reply_with_body('5')
+      get_reply_with_body('2') # enter a number greater than the number of locations returned
+      get_reply_with_body('1')
       assert_match(/Phone:/, sms_body)
     end
   end

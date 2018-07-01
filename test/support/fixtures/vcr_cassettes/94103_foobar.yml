@@ -10,7 +10,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.2
+      - Ohanakapa Ruby Gem 1.1.3
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -22,8 +22,6 @@ http_interactions:
       - Cowboy
       Connection:
       - keep-alive
-      Strict-Transport-Security:
-      - max-age=31536000
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -31,37 +29,32 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Etag:
-      - '"16c3049458228ea83575d75b67465260"'
+      - W/"993f2ba56cc5d30638902784ea098f17"
       Link:
-      - <https://api.smc-connect.org/search?keyword=foobar&kind=Human+Services&location=94103&page=0&per_page=5>;
-        rel="last"
+      - <https://api.smc-connect.org/search?keyword=foobar&page=0&per_page=5>; rel="last"
       X-Total-Count:
       - '0'
-      Date:
-      - Mon, 11 May 2015 02:40:56 GMT
       Content-Type:
       - application/json; charset=utf-8
+      Date:
+      - Sun, 01 Jul 2018 01:50:58 GMT
       Cache-Control:
       - max-age=300, public
       Vary:
       - Origin
       X-Request-Id:
-      - c7e3268c-eea7-4dbe-89c2-50570537efb0
+      - 0d321393-6dbb-430b-8799-7f27ab6fe25e
       X-Runtime:
-      - '0.045277'
-      X-Content-Digest:
-      - 97d170e1550eee4afc0af065b78cda302a97674c
-      Age:
-      - '73'
-      X-Rack-Cache:
-      - fresh
-      Content-Length:
-      - '2'
+      - '0.025473'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: "[]"
     http_version: 
-  recorded_at: Mon, 11 May 2015 02:42:10 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Sun, 01 Jul 2018 01:50:58 GMT
+recorded_with: VCR 4.0.0

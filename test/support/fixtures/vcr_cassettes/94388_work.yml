@@ -10,7 +10,7 @@ http_interactions:
       Accept:
       - application/vnd.ohanapi-v1+json
       User-Agent:
-      - Ohanakapa Ruby Gem 1.1.2
+      - Ohanakapa Ruby Gem 1.1.3
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
@@ -22,8 +22,6 @@ http_interactions:
       - Cowboy
       Connection:
       - keep-alive
-      Strict-Transport-Security:
-      - max-age=31536000
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -31,37 +29,32 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Etag:
-      - '"d4247f9e20940ab55a3c7dd9094413e5"'
+      - W/"93e6d6a7a3c2ecaea7be1687e314f817"
       Link:
-      - <https://api.smc-connect.org/search?keyword=Work&kind=Human+Services&location=94388&page=0&per_page=5>;
-        rel="last"
+      - <https://api.smc-connect.org/search?keyword=Work&page=0&per_page=5>; rel="last"
       X-Total-Count:
       - '0'
-      Date:
-      - Mon, 11 May 2015 02:37:02 GMT
       Content-Type:
       - application/json; charset=utf-8
+      Date:
+      - Sun, 01 Jul 2018 01:51:01 GMT
       Cache-Control:
       - max-age=300, public
       Vary:
       - Origin
       X-Request-Id:
-      - b0756495-d38b-4d11-8336-47911c63b1d8
+      - 73b56fc5-6dd1-41b0-96bf-7210e96a46ab
       X-Runtime:
-      - '0.046830'
-      X-Content-Digest:
-      - 97d170e1550eee4afc0af065b78cda302a97674c
-      Age:
-      - '0'
-      X-Rack-Cache:
-      - miss, store
-      Content-Length:
-      - '2'
+      - '0.483187'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: "[]"
     http_version: 
-  recorded_at: Mon, 11 May 2015 02:37:02 GMT
-recorded_with: VCR 2.9.3
+  recorded_at: Sun, 01 Jul 2018 01:51:01 GMT
+recorded_with: VCR 4.0.0
