@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-ruby '2.3.3'
+ruby '2.5.1'
 
 gem 'faraday-http-cache', '~> 2.0'
 gem 'figaro'
@@ -24,9 +24,9 @@ group :development, :test do
 end
 
 group :test do
-  gem 'codeclimate-test-reporter', require: nil
   gem 'mocha'
   gem 'rubocop'
+  gem 'simplecov', require: false
   gem 'vcr'
   gem 'webmock'
 end

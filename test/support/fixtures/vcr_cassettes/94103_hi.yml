@@ -35,15 +35,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 01 Jul 2018 01:50:52 GMT
+      - Sun, 01 Jul 2018 19:58:00 GMT
       Cache-Control:
       - max-age=300, public
       Vary:
       - Origin
       X-Request-Id:
-      - 25d67116-0038-421d-9ea5-027825b81a6d
+      - a6bee246-0b20-4088-a65e-5c0bd8098c95
       X-Runtime:
-      - '0.564308'
+      - '0.046376'
       Strict-Transport-Security:
       - max-age=15552000; includeSubDomains
       Transfer-Encoding:
@@ -65,7 +65,7 @@ http_interactions:
         274-1970","number_type":"voice","vanity_number":null},{"id":3056,"department":null,"extension":null,"number":"415
         274-1976","number_type":"fax","vanity_number":null}]}]'
     http_version: 
-  recorded_at: Sun, 01 Jul 2018 01:50:52 GMT
+  recorded_at: Sun, 01 Jul 2018 19:58:00 GMT
 - request:
     method: get
     uri: https://api.smc-connect.org/search?keyword=hi&kind=Human%20Services&location=94103&page=1&per_page=5
@@ -101,15 +101,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 01 Jul 2018 01:50:52 GMT
+      - Sun, 01 Jul 2018 19:58:00 GMT
       Cache-Control:
       - max-age=300, public
       Vary:
       - Origin
       X-Request-Id:
-      - 9cc49201-b862-4e25-9b0d-6b8980f58d8f
+      - 6e14693f-e0df-4a02-891d-b3cb8aa5936c
       X-Runtime:
-      - '0.033211'
+      - '0.082362'
       Strict-Transport-Security:
       - max-age=15552000; includeSubDomains
       Transfer-Encoding:
@@ -131,7 +131,7 @@ http_interactions:
         274-1970","number_type":"voice","vanity_number":null},{"id":3056,"department":null,"extension":null,"number":"415
         274-1976","number_type":"fax","vanity_number":null}]}]'
     http_version: 
-  recorded_at: Sun, 01 Jul 2018 01:50:52 GMT
+  recorded_at: Sun, 01 Jul 2018 19:58:01 GMT
 - request:
     method: get
     uri: https://api.smc-connect.org/search?keyword=hi&kind=Human%20Services&location=94103&page=1&per_page=5
@@ -167,15 +167,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 01 Jul 2018 01:50:53 GMT
+      - Sun, 01 Jul 2018 19:58:01 GMT
       Cache-Control:
       - max-age=300, public
       Vary:
       - Origin
       X-Request-Id:
-      - c72881d9-84de-40d4-ab57-0d3321a4f081
+      - f9af0eaf-5aa4-44ec-8be6-6b2f62fbfe2e
       X-Runtime:
-      - '0.034295'
+      - '0.077047'
       Strict-Transport-Security:
       - max-age=15552000; includeSubDomains
       Transfer-Encoding:
@@ -197,5 +197,137 @@ http_interactions:
         274-1970","number_type":"voice","vanity_number":null},{"id":3056,"department":null,"extension":null,"number":"415
         274-1976","number_type":"fax","vanity_number":null}]}]'
     http_version: 
-  recorded_at: Sun, 01 Jul 2018 01:50:53 GMT
+  recorded_at: Sun, 01 Jul 2018 19:58:01 GMT
+- request:
+    method: get
+    uri: https://api.smc-connect.org/search?keyword=hi&kind=Human%20Services&location=94103&page=1&per_page=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"5a18b0481ede5144244718ff9b3a1e1e"
+      X-Total-Count:
+      - '1'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 01 Jul 2018 19:58:01 GMT
+      Cache-Control:
+      - max-age=300, public
+      Vary:
+      - Origin
+      X-Request-Id:
+      - f3744338-bca1-4dcd-853d-da31df086969
+      X-Runtime:
+      - '0.081077'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":898,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.402844,37.791402],"description":"Offers
+        training for service providers in the area of adolescent health and youth
+        development. Also offers health workshops for youth on such topics as self
+        esteem, sexuality, safer sex, substance use and harm reduction, and anti-homophobia.
+        Also offers training and technical assistance for peer educator groups. Extended
+        youth development training also available.","kind":"Human Services","latitude":37.791402,"longitude":-122.402844,"name":"Health
+        Initiatives for Youth (Hi-Fy)","short_desc":"Offers training programs in health
+        for service providers and health workshops for youth.","slug":"health-initiatives-for-youth-hi-fy","updated_at":"2014-11-25T17:22:08.664-08:00","website":"http://www.youtube.com/hifymedia","url":"https://api.smc-connect.org/locations/health-initiatives-for-youth-hi-fy","address":{"id":723,"address_1":"235
+        Montgomery Street, Suite 430","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94104"},"organization":{"id":898,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Health
+        Initiatives for Youth (Hi-Fy)","website":null,"slug":"health-initiatives-for-youth-hi-fy","url":"https://api.smc-connect.org/organizations/health-initiatives-for-youth-hi-fy","locations_url":"https://api.smc-connect.org/organizations/health-initiatives-for-youth-hi-fy/locations"},"phones":[{"id":1193,"department":null,"extension":null,"number":"415
+        274-1970","number_type":"voice","vanity_number":null},{"id":3056,"department":null,"extension":null,"number":"415
+        274-1976","number_type":"fax","vanity_number":null}]}]'
+    http_version: 
+  recorded_at: Sun, 01 Jul 2018 19:58:01 GMT
+- request:
+    method: get
+    uri: https://api.smc-connect.org/search?keyword=hi&kind=Human%20Services&location=94103&page=1&per_page=5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.ohanapi-v1+json
+      User-Agent:
+      - Ohanakapa Ruby Gem 1.1.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"5a18b0481ede5144244718ff9b3a1e1e"
+      X-Total-Count:
+      - '1'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 01 Jul 2018 19:58:01 GMT
+      Cache-Control:
+      - max-age=300, public
+      Vary:
+      - Origin
+      X-Request-Id:
+      - e5f33a2d-6b99-47a1-972f-20092c75773f
+      X-Runtime:
+      - '0.040874'
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":898,"active":true,"admin_emails":null,"alternate_name":null,"coordinates":[-122.402844,37.791402],"description":"Offers
+        training for service providers in the area of adolescent health and youth
+        development. Also offers health workshops for youth on such topics as self
+        esteem, sexuality, safer sex, substance use and harm reduction, and anti-homophobia.
+        Also offers training and technical assistance for peer educator groups. Extended
+        youth development training also available.","kind":"Human Services","latitude":37.791402,"longitude":-122.402844,"name":"Health
+        Initiatives for Youth (Hi-Fy)","short_desc":"Offers training programs in health
+        for service providers and health workshops for youth.","slug":"health-initiatives-for-youth-hi-fy","updated_at":"2014-11-25T17:22:08.664-08:00","website":"http://www.youtube.com/hifymedia","url":"https://api.smc-connect.org/locations/health-initiatives-for-youth-hi-fy","address":{"id":723,"address_1":"235
+        Montgomery Street, Suite 430","address_2":null,"city":"San Francisco","state_province":"CA","postal_code":"94104"},"organization":{"id":898,"accreditations":[],"alternate_name":null,"date_incorporated":null,"description":null,"email":null,"funding_sources":[],"licenses":[],"name":"Health
+        Initiatives for Youth (Hi-Fy)","website":null,"slug":"health-initiatives-for-youth-hi-fy","url":"https://api.smc-connect.org/organizations/health-initiatives-for-youth-hi-fy","locations_url":"https://api.smc-connect.org/organizations/health-initiatives-for-youth-hi-fy/locations"},"phones":[{"id":1193,"department":null,"extension":null,"number":"415
+        274-1970","number_type":"voice","vanity_number":null},{"id":3056,"department":null,"extension":null,"number":"415
+        274-1976","number_type":"fax","vanity_number":null}]}]'
+    http_version: 
+  recorded_at: Sun, 01 Jul 2018 19:58:01 GMT
 recorded_with: VCR 4.0.0

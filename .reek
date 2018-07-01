@@ -1,0 +1,10 @@
+DuplicateMethodCall:
+  exclude:
+    - 'LocationsController#reply'
+
+FeatureEnvy:
+  exclude:
+    - Messenger#search_term
+
+IrresponsibleModule:
+  enabled: false

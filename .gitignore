@@ -17,3 +17,5 @@ log
 /config/application.yml
 
 bin/update_gems
+
+coverage/*

@@ -309,6 +309,7 @@ class LocationsControllerTest < ActionController::TestCase
     assert_match(/Hola/, sms_body)
     get_reply_with_body('94103', 'es')
     assert_match(/elija una categoría/, sms_body)
+    assert_match(/Asistencia/, sms_body)
   end
 
   test 'uses English category names for API search' do

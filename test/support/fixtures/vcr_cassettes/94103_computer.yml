@@ -35,15 +35,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 01 Jul 2018 01:50:55 GMT
+      - Sun, 01 Jul 2018 19:58:08 GMT
       Cache-Control:
       - max-age=300, public
       Vary:
       - Origin
       X-Request-Id:
-      - c3d4ab13-a40d-4570-9cbb-28ac2439a6a5
+      - 839e6212-eb14-4483-85f3-8d41cea9a7b5
       X-Runtime:
-      - '0.034293'
+      - '0.040435'
       Strict-Transport-Security:
       - max-age=15552000; includeSubDomains
       Transfer-Encoding:
@@ -67,7 +67,7 @@ http_interactions:
         777-0333","number_type":"voice","vanity_number":null},{"id":3239,"department":null,"extension":null,"number":"415
         777-1770","number_type":"fax","vanity_number":null}]}]'
     http_version: 
-  recorded_at: Sun, 01 Jul 2018 01:50:55 GMT
+  recorded_at: Sun, 01 Jul 2018 19:58:08 GMT
 - request:
     method: get
     uri: https://api.smc-connect.org/search?keyword=computer&kind=Human%20Services&location=94103&page=1&per_page=5
@@ -103,15 +103,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 01 Jul 2018 01:50:55 GMT
+      - Sun, 01 Jul 2018 19:58:08 GMT
       Cache-Control:
       - max-age=300, public
       Vary:
       - Origin
       X-Request-Id:
-      - cc50e4cd-3ad0-47c8-9bef-0ec0b5357c11
+      - d7bbf282-e860-4fbc-aa05-ab29ee4c8a00
       X-Runtime:
-      - '0.036099'
+      - '0.052587'
       Strict-Transport-Security:
       - max-age=15552000; includeSubDomains
       Transfer-Encoding:
@@ -135,5 +135,5 @@ http_interactions:
         777-0333","number_type":"voice","vanity_number":null},{"id":3239,"department":null,"extension":null,"number":"415
         777-1770","number_type":"fax","vanity_number":null}]}]'
     http_version: 
-  recorded_at: Sun, 01 Jul 2018 01:50:55 GMT
+  recorded_at: Sun, 01 Jul 2018 19:58:08 GMT
 recorded_with: VCR 4.0.0

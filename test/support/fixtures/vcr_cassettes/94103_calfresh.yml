@@ -35,15 +35,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 01 Jul 2018 01:51:00 GMT
+      - Sun, 01 Jul 2018 19:58:08 GMT
       Cache-Control:
       - max-age=300, public
       Vary:
       - Origin
       X-Request-Id:
-      - 5ee55de9-340c-4df9-901f-a119f14f4eb4
+      - 80f1d424-5710-4d84-9cd7-7c47dcf7cb7f
       X-Runtime:
-      - '0.032822'
+      - '0.126141'
       Strict-Transport-Security:
       - max-age=15552000; includeSubDomains
       Transfer-Encoding:
@@ -82,7 +82,7 @@ http_interactions:
         808-7339","number_type":"voice","vanity_number":null},{"id":1652,"department":null,"extension":null,"number":"415
         808-4440","number_type":"tty","vanity_number":null}]}]'
     http_version: 
-  recorded_at: Sun, 01 Jul 2018 01:51:00 GMT
+  recorded_at: Sun, 01 Jul 2018 19:58:08 GMT
 - request:
     method: get
     uri: https://api.smc-connect.org/search?keyword=calfresh&kind=Human%20Services&location=94103&page=1&per_page=5
@@ -118,15 +118,15 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sun, 01 Jul 2018 01:51:00 GMT
+      - Sun, 01 Jul 2018 19:58:08 GMT
       Cache-Control:
       - max-age=300, public
       Vary:
       - Origin
       X-Request-Id:
-      - 4748c886-fee9-46d3-a07f-7ddc1207b2f8
+      - 484add72-1047-4d88-9c16-7b2c4474a220
       X-Runtime:
-      - '0.032489'
+      - '0.085596'
       Strict-Transport-Security:
       - max-age=15552000; includeSubDomains
       Transfer-Encoding:
@@ -165,5 +165,5 @@ http_interactions:
         808-7339","number_type":"voice","vanity_number":null},{"id":1652,"department":null,"extension":null,"number":"415
         808-4440","number_type":"tty","vanity_number":null}]}]'
     http_version: 
-  recorded_at: Sun, 01 Jul 2018 01:51:00 GMT
+  recorded_at: Sun, 01 Jul 2018 19:58:08 GMT
 recorded_with: VCR 4.0.0
