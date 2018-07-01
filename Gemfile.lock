@@ -84,7 +84,7 @@ GEM
       metaclass (~> 0.0.1)
     multi_json (1.12.1)
     multipart-post (2.0.0)
-    newrelic_rpm (5.0.0.342)
+    newrelic_rpm (5.2.0.345)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
     ohanakapa (1.1.3)
