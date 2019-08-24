@@ -26,6 +26,7 @@ end
 group :test do
   gem 'mocha'
   gem 'rubocop'
+  gem 'rubocop-rails'
   gem 'simplecov', require: false
   gem 'vcr'
   gem 'webmock'

@@ -6,4 +6,4 @@ echo '====Running tests===='
 bin/rake test
 
 echo "\n====Running Rubocop===="
-rubocop -R
+bundle exec rubocop
