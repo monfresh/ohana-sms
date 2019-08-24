@@ -93,7 +93,7 @@ GEM
     mocha (1.9.0)
       metaclass (~> 0.0.1)
     multipart-post (2.0.0)
-    newrelic_rpm (6.2.0.354)
+    newrelic_rpm (6.5.0.357)
     nio4r (2.3.1)
     nokogiri (1.10.2)
       mini_portile2 (~> 2.4.0)
