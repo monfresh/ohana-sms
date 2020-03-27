@@ -27,7 +27,7 @@ group :test do
   gem 'mocha'
   gem 'rubocop'
   gem 'rubocop-rails'
-  gem 'simplecov', require: false
+  gem 'simplecov', '>= 0.17.1', require: false
   gem 'vcr'
   gem 'webmock'
 end
