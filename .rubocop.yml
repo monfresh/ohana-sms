@@ -16,7 +16,7 @@ AllCops:
 Rails:
   Enabled: true
 
-Layout/AlignParameters:
+Layout/ParameterAlignment:
   # Alignment of parameters in multi-line method calls.
   #
   # The `with_first_parameter` style aligns the following lines along the same
@@ -59,8 +59,7 @@ Layout/ExtraSpacing:
   ForceEqualSignAlignment: false
 
 # Checks the indentation of the first element in an array literal.
-Layout/IndentFirstArrayElement:
-  # The value `special_inside_parentheses` means that array literals with
+Layout/FirstArrayElementIndentation:  # The value `special_inside_parentheses` means that array literals with
   # brackets that have their opening bracket on the same line as a surrounding
   # opening round parenthesis, shall have their first element indented relative
   # to the first position inside the parenthesis.
@@ -88,6 +87,12 @@ Layout/MultilineOperationIndentation:
   # By default, the indentation width from Style/IndentationWidth is used
   # But it can be overridden by setting this parameter
   IndentationWidth: ~
+
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
 
 Metrics/AbcSize:
   Description: A calculated magnitude based on number of assignments, branches, and
@@ -177,6 +182,15 @@ Style/EmptyElse:
     - empty
     - nil
     - both
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
 
 Style/IfUnlessModifier:
   Description: Favor modifier if/unless usage when you have a single-line body.
