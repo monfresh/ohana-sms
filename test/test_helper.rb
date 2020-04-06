@@ -6,7 +6,7 @@ SimpleCov.start
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../config/environment', __dir__)
 require 'rails/test_help'
-require 'mocha/mini_test'
+require 'mocha/minitest'
 require 'webmock/minitest'
 WebMock.disable_net_connect!(allow_localhost: true)
 

@@ -32,25 +32,24 @@ jobs:
           paths:
             - vendor/bundle
 
-      - run:
-          name: Install Code Climate Test Reporter
-          command: |
-            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-            chmod +x ./cc-test-reporter
+      # - run:
+      #     name: Install Code Climate Test Reporter
+      #     command: |
+      #       curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+      #       chmod +x ./cc-test-reporter
 
       - run:
           name: Run Tests
           command: |
             mkdir /tmp/test-results
-            ./cc-test-reporter before-build
 
             bundle exec rake
 
-      - run:
-          name: Upload Test Results to Code Climate
-          command: |
-            ./cc-test-reporter format-coverage -t simplecov $CIRCLE_ARTIFACTS/coverage/.resultset.json
-            ./cc-test-reporter upload-coverage
+      # - run:
+      #     name: Upload Test Results to Code Climate
+      #     command: |
+      #       ./cc-test-reporter format-coverage -t simplecov $CIRCLE_ARTIFACTS/coverage/.resultset.json
+      #       ./cc-test-reporter upload-coverage
 
       # collect reports
       - store_test_results:
