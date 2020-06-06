@@ -90,7 +90,7 @@ GEM
     minitest (5.14.0)
     mocha (1.11.2)
     multipart-post (2.1.1)
-    newrelic_rpm (6.9.0.363)
+    newrelic_rpm (6.11.0.365)
     nio4r (2.5.2)
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
