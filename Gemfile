@@ -8,7 +8,7 @@ gem 'faraday-http-cache', '~> 2.0'
 gem 'figaro'
 gem 'ohanakapa', '~> 1.1.1'
 gem 'puma'
-gem 'rails', '~> 5.2.0'
+gem 'rails', '~> 5.2.4', '>= 5.2.4.3'
 gem 'twilio-ruby'
 
 group :production do
@@ -26,7 +26,7 @@ end
 group :test do
   gem 'mocha'
   gem 'rubocop'
-  gem 'rubocop-rails'
+  gem 'rubocop-rails', '>= 2.5.2'
   gem 'simplecov', require: false
   gem 'vcr'
   gem 'webmock'
