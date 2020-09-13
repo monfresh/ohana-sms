@@ -19,8 +19,6 @@ end
 
 group :development, :test do
   gem 'bummr'
-  gem 'spring'
-  gem 'spring-watcher-listen'
 end
 
 group :test do
