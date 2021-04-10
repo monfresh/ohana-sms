@@ -23,8 +23,8 @@ end
 
 group :test do
   gem 'mocha'
-  gem 'rubocop'
-  gem 'rubocop-rails'
+  gem 'rubocop', '>= 0.90.0'
+  gem 'rubocop-rails', '>= 2.8.0'
   gem 'simplecov', require: false
   gem 'vcr'
   gem 'webmock'
