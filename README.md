@@ -12,8 +12,8 @@ but it can be modified to work with any API.
 
 ## Stack Overview
 
-* Ruby version 2.7.2
-* Rails version 5.2.0
+* Ruby version 2.7.3
+* Rails version 5.2.5
 * Testing Frameworks: MiniTest
 
 ## Local Installation
