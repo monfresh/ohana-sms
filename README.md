@@ -23,7 +23,7 @@ You'll need a Ruby development environment on your computer, and a Twilio accoun
 
 #### Ruby
 If you're on a Mac, the easiest way to get up and running is to run my
-[laptop script](https://github.com/monfresh/laptop). On Linux, you'll need to
+[Ruby on Mac script](https://rubyonmac.dev). On Linux, you'll need to
 install [Build tools][build-tools], [Ruby with RVM][ruby], and [Node.js][node].
 
 Once your environment is ready to go, install the app:
