@@ -7,7 +7,7 @@ ruby '~> 2.7.3'
 gem 'faraday-http-cache', '~> 2.0'
 gem 'figaro'
 gem 'ohanakapa', '~> 1.1.1'
-gem 'puma', '~> 5.6.2'
+gem 'puma', '~> 5.6.4'
 gem 'rails', '~> 5.2.0'
 gem 'twilio-ruby'
 
