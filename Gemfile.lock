@@ -72,7 +72,7 @@ GEM
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     jwt (2.2.2)
-    kgio (2.11.3)
+    kgio (2.11.4)
     loofah (2.9.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
