@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-ruby '~> 2.7.3'
+ruby File.read('.ruby-version').strip
 
 gem 'faraday-http-cache', '~> 2.0'
 gem 'figaro'
